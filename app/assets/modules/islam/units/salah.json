@@ -1,0 +1,1324 @@
+{
+  "unitId": "salah",
+  "lessons": [
+    {
+      "id": "islam.salah.l1",
+      "title": "Why We Pray",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.salah.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: salah = The ritual prayer; khushu’ = Humble, focused presence in prayer; qiblah = The direction of the Ka’bah; imam = The one who leads the prayer.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "salah",
+              "right": "The ritual prayer",
+              "leftArabic": "صَلَاة"
+            },
+            {
+              "left": "khushu’",
+              "right": "Humble, focused presence in prayer",
+              "leftArabic": "خُشُوع"
+            },
+            {
+              "left": "qiblah",
+              "right": "The direction of the Ka’bah",
+              "leftArabic": "قِبْلَة"
+            },
+            {
+              "left": "imam",
+              "right": "The one who leads the prayer",
+              "leftArabic": "إِمَام"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"salah\" (صَلَاة) mean?",
+          "explanation": "salah (صَلَاة) means \"The ritual prayer\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "The one who leads the prayer"
+            },
+            {
+              "text": "The call to prayer"
+            },
+            {
+              "text": "Saying \"Allahu Akbar\""
+            },
+            {
+              "text": "The ritual prayer"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"The ritual prayer\"?",
+          "explanation": "\"The ritual prayer\" is salah (صَلَاة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "salah",
+              "arabic": "صَلَاة"
+            },
+            {
+              "text": "qiblah",
+              "arabic": "قِبْلَة"
+            },
+            {
+              "text": "ruku’",
+              "arabic": "رُكُوع"
+            },
+            {
+              "text": "khushu’",
+              "arabic": "خُشُوع"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "How many fard prayers are there each day?",
+          "explanation": "Fajr, Dhuhr, Asr, Maghrib and Isha - five anchors that structure the whole day.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Prayer has been decreed upon the believers at specified times."
+          },
+          "options": [
+            {
+              "text": "Two"
+            },
+            {
+              "text": "Three"
+            },
+            {
+              "text": "Seven"
+            },
+            {
+              "text": "Five"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "Which pillar of Islam is the one that immediately follows the testimony of faith?",
+          "explanation": "The Prophet built Islam on five: shahada, prayer, zakat, fasting and Hajj - prayer comes first after belief.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "8",
+            "grading": "sahih",
+            "text": "Islam is built upon five: the testimony of faith, the prayer, zakat, the fast of Ramadan and the pilgrimage."
+          },
+          "options": [
+            {
+              "text": "Prayer"
+            },
+            {
+              "text": "Fasting Ramadan"
+            },
+            {
+              "text": "Zakat"
+            },
+            {
+              "text": "Hajj"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "What is khushu?",
+          "explanation": "The Quran opens Surah al-Mu’minun with the successful believers - those humble in their prayer.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "23:2",
+            "text": "Those who are humble in their prayer."
+          },
+          "options": [
+            {
+              "text": "Praying only in a congregation"
+            },
+            {
+              "text": "Presence of heart and humility during prayer"
+            },
+            {
+              "text": "Raising the voice so others hear"
+            },
+            {
+              "text": "Praying as fast as possible"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "What is salah?",
+          "explanation": "Salah is the second pillar of Islam - structured worship at fixed times, not an optional extra.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Indeed, prayer has been decreed upon the believers at specified times."
+          },
+          "options": [
+            {
+              "text": "A type of charity (sadaqah)"
+            },
+            {
+              "text": "Any personal dua made during the day"
+            },
+            {
+              "text": "A weekly community gathering"
+            },
+            {
+              "text": "The five daily ritual prayers performed at fixed times"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.salah.l2",
+      "title": "Getting Ready to Pray",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.salah.l2.e1",
+          "type": "orderSteps",
+          "prompt": "Arrange the steps of preparing for prayer in the correct order.",
+          "explanation": "Before prayer: purify your body, clothes and place, perform wudu, face the qiblah, make the intention in your heart, then begin with the takbir.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "O you who believe, when you rise to pray, wash your faces and your forearms to the elbows, wipe over your heads and wash your feet to the ankles."
+          },
+          "steps": [
+            {
+              "text": "Make sure your body, clothes and place of prayer are clean"
+            },
+            {
+              "text": "Perform wudu"
+            },
+            {
+              "text": "Face the qiblah"
+            },
+            {
+              "text": "Make the intention (niyyah) in your heart"
+            },
+            {
+              "text": "Raise your hands and say the opening takbir"
+            },
+            {
+              "text": "Begin reciting al-Fatihah"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "Where does the niyyah (intention) of prayer live?",
+          "explanation": "The intention is the heart’s orientation - the Prophet and his Companions never announced it aloud.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1",
+            "grading": "sahih",
+            "text": "Actions are only judged by intentions, and every person will have what he intended."
+          },
+          "options": [
+            {
+              "text": "In the heart"
+            },
+            {
+              "text": "In the words announced out loud"
+            },
+            {
+              "text": "In the raised hands"
+            },
+            {
+              "text": "In a written note"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l2.e3",
+          "type": "multipleChoice",
+          "prompt": "Which three things must be clean before you point your prayer mat toward the qiblah?",
+          "explanation": "Purification covers the person, the garment and the ground - the earth itself is a place of purification for the ummah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "335",
+            "grading": "sahih",
+            "text": "The earth has been made for me a place of worship and a means of purification."
+          },
+          "options": [
+            {
+              "text": "Only your face and hands"
+            },
+            {
+              "text": "Body, clothes and place of prayer"
+            },
+            {
+              "text": "Only your clothes"
+            },
+            {
+              "text": "Only the prayer mat"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l2.e4",
+          "type": "multipleChoice",
+          "prompt": "Which direction do Muslims face in prayer?",
+          "explanation": "Allah commanded the turning to al-Masjid al-Haram; every mosque’s mihrab marks that direction.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "2:144",
+            "text": "So turn your face toward al-Masjid al-Haram; wherever you are, turn your faces toward it."
+          },
+          "options": [
+            {
+              "text": "Toward the nearest mosque"
+            },
+            {
+              "text": "Toward the Ka’bah in Makkah - the qiblah"
+            },
+            {
+              "text": "Toward the sunrise"
+            },
+            {
+              "text": "Toward al-Aqsa in every city"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "You are praying behind an imam. When do you move?",
+          "explanation": "The imam is appointed to be followed: you say takbir after his takbir, bow after he bows.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "722",
+            "grading": "sahih",
+            "text": "The imam is to be followed: say the takbir when he says it, bow when he bows, prostrate when he prostrates."
+          },
+          "options": [
+            {
+              "text": "Whenever you finish your own recitation"
+            },
+            {
+              "text": "You follow the imam - never moving before him"
+            },
+            {
+              "text": "Only on the final salam"
+            },
+            {
+              "text": "Half a second before him to be ready"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"khushu’\" (خُشُوع) mean?",
+          "explanation": "khushu’ (خُشُوع) means \"Humble, focused presence in prayer\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "The direction of the Ka’bah"
+            },
+            {
+              "text": "Bowing in prayer"
+            },
+            {
+              "text": "The ritual prayer"
+            },
+            {
+              "text": "Humble, focused presence in prayer"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l2.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"The direction of the Ka’bah\"?",
+          "explanation": "\"The direction of the Ka’bah\" is qiblah (قِبْلَة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "athan",
+              "arabic": "أَذَان"
+            },
+            {
+              "text": "khushu’",
+              "arabic": "خُشُوع"
+            },
+            {
+              "text": "takbir",
+              "arabic": "تَكْبِير"
+            },
+            {
+              "text": "qiblah",
+              "arabic": "قِبْلَة"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.salah.l3",
+      "title": "The Five Times",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.salah.l3.e1",
+          "type": "orderSteps",
+          "prompt": "Put the five daily prayers in time order, starting with the first.",
+          "explanation": "Allah fixed five prayers across the day: Fajr at dawn, Dhuhr after midday, Asr in the afternoon, Maghrib just after sunset, and Isha at night.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Indeed, prayer has been decreed upon the believers at specified times."
+          },
+          "steps": [
+            {
+              "text": "Fajr - at dawn, before sunrise"
+            },
+            {
+              "text": "Dhuhr - just after midday"
+            },
+            {
+              "text": "Asr - in the afternoon"
+            },
+            {
+              "text": "Maghrib - just after sunset"
+            },
+            {
+              "text": "Isha - at night"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "Which prayer comes just after midday?",
+          "explanation": "The working day pauses: Dhuhr is established when the sun passes its highest point.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:78",
+            "text": "Establish prayer at the decline of the sun."
+          },
+          "options": [
+            {
+              "text": "Asr"
+            },
+            {
+              "text": "Fajr"
+            },
+            {
+              "text": "Isha"
+            },
+            {
+              "text": "Dhuhr"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet compare the five daily prayers to?",
+          "explanation": "The river simile makes the math easy: sins wash off as the prayer-cycle repeats.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "528",
+            "grading": "sahih",
+            "text": "If there was a river at your door and you bathed in it five times a day, would any dirt remain? That is the case with the five prayers."
+          },
+          "options": [
+            {
+              "text": "A journey around the world"
+            },
+            {
+              "text": "A mountain of gold"
+            },
+            {
+              "text": "A locked vault"
+            },
+            {
+              "text": "A river at your door, washing away dirt five times a day"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "You oversleep and miss Asr entirely. What should you do?",
+          "explanation": "Missing a prayer through sleep or forgetfulness is prayed the moment it is remembered - no penalty beyond that.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "684",
+            "grading": "sahih",
+            "text": "Whoever forgets a prayer or sleeps through it, let him pray it when he remembers it."
+          },
+          "options": [
+            {
+              "text": "Wait for next year’s same day"
+            },
+            {
+              "text": "Pay charity instead"
+            },
+            {
+              "text": "Pray it as soon as you remember"
+            },
+            {
+              "text": "Never speak of it"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l3.e5",
+          "type": "multipleChoice",
+          "prompt": "Which prayer comes at dawn, before sunrise?",
+          "explanation": "The Quran calls it the recitation of dawn - witnessed by angels as the day opens.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:78",
+            "text": "Establish prayer at the decline of the sun until the darkness of night, and the recitation of dawn - indeed it is witnessed."
+          },
+          "options": [
+            {
+              "text": "Maghrib"
+            },
+            {
+              "text": "Isha"
+            },
+            {
+              "text": "Fajr"
+            },
+            {
+              "text": "Dhuhr"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l3.e6",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: salah = The ritual prayer; rak’ah = One unit of the prayer; takbir = Saying \"Allahu Akbar\"; athan = The call to prayer.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "salah",
+              "right": "The ritual prayer",
+              "leftArabic": "صَلَاة"
+            },
+            {
+              "left": "rak’ah",
+              "right": "One unit of the prayer",
+              "leftArabic": "رَكْعَة"
+            },
+            {
+              "left": "takbir",
+              "right": "Saying \"Allahu Akbar\"",
+              "leftArabic": "تَكْبِير"
+            },
+            {
+              "left": "athan",
+              "right": "The call to prayer",
+              "leftArabic": "أَذَان"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l3.e7",
+          "type": "multipleChoice",
+          "prompt": "What does \"athan\" (أَذَان) mean?",
+          "explanation": "athan (أَذَان) means \"The call to prayer\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Bowing in prayer"
+            },
+            {
+              "text": "The call to prayer"
+            },
+            {
+              "text": "The direction of the Ka’bah"
+            },
+            {
+              "text": "The ritual prayer"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "islam.salah.l4",
+      "title": "Inside the Rakah",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.salah.l4.e1",
+          "type": "orderSteps",
+          "prompt": "Arrange what happens inside one rakah in the correct order.",
+          "explanation": "The Prophet taught the steps of a rakah: takbir, reciting al-Fatihah and a short surah, bowing, rising, then two prostrations with a sitting between them.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "397",
+            "grading": "sahih",
+            "text": "The Prophet taught the man who prayed badly: when you stand for prayer say the takbir, then recite, then bow until at rest, then rise, then prostrate until at rest..."
+          },
+          "steps": [
+            {
+              "text": "Say \"Allahu Akbar\" to begin"
+            },
+            {
+              "text": "Recite Surah al-Fatihah"
+            },
+            {
+              "text": "Recite a short surah (in the first two rakahs)"
+            },
+            {
+              "text": "Bow in ruku saying \"Subhana Rabbiyal-Azim\""
+            },
+            {
+              "text": "Rise saying \"Sami Allahu liman hamidah\""
+            },
+            {
+              "text": "Prostrate in sujud saying \"Subhana Rabbiyal-Ala\""
+            },
+            {
+              "text": "Sit up between the two prostrations"
+            },
+            {
+              "text": "Make the second prostration"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "What concludes the prayer?",
+          "explanation": "As the takbir opens the prayer, the taslim closes it - peace spoken to the sides and to the angels.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "61",
+            "grading": "hasan (per some scholars)",
+            "text": "The key of the prayer is purification, its opening is the takbir, and its closing is the taslim."
+          },
+          "options": [
+            {
+              "text": "Raising both hands"
+            },
+            {
+              "text": "The salam - turning to the right and left: \"As-salamu alaykum wa rahmatullah\""
+            },
+            {
+              "text": "Saying \"Amin\" loudly"
+            },
+            {
+              "text": "Standing up immediately"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "What begins the prayer?",
+          "explanation": "The takbir marks the boundary: before it you move freely, after it you are standing before Allah.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "397",
+            "grading": "sahih",
+            "text": "When you stand for prayer, say the takbir, then recite..."
+          },
+          "options": [
+            {
+              "text": "The first ruku"
+            },
+            {
+              "text": "The final salam"
+            },
+            {
+              "text": "The opening takbir - \"Allahu Akbar\""
+            },
+            {
+              "text": "Reciting al-Fatihah"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "What is said while prostrating (sujud)?",
+          "explanation": "Sujud is the closest a servant comes to Allah - and the words glorify Him as the Most High.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "482",
+            "grading": "sahih",
+            "text": "The Prophet prostrated saying: Glory to my Lord the Most High."
+          },
+          "options": [
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Ala\""
+            },
+            {
+              "text": "The shahada"
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Azim\""
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l4.e5",
+          "type": "multipleChoice",
+          "prompt": "What is said while bowing (ruku)?",
+          "explanation": "Ruku glorifies Allah as the Supreme One; sujud glorifies Him as the Most High - each posture has its own words.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "397",
+            "grading": "sahih",
+            "text": "The Prophet bowed saying: Glory to my Lord the Supreme."
+          },
+          "options": [
+            {
+              "text": "\"Subhana Rabbiyal-Azim\""
+            },
+            {
+              "text": "\"Allahu Akbar\""
+            },
+            {
+              "text": "\"Sami Allahu liman hamidah\""
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Ala\" (that is for sujud)"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l4.e6",
+          "type": "multipleChoice",
+          "prompt": "Which surah is recited in every single rakah?",
+          "explanation": "There is no prayer for the one who does not recite the Opening of the Book - al-Fatihah is the heartbeat of every rakah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "756",
+            "grading": "sahih",
+            "text": "There is no prayer for the one who does not recite the Opening of the Book (al-Fatihah)."
+          },
+          "options": [
+            {
+              "text": "Surah al-Ikhlas"
+            },
+            {
+              "text": "Surah al-Fatihah"
+            },
+            {
+              "text": "Any surah chosen freely instead"
+            },
+            {
+              "text": "Surah Yasin"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l4.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: rak’ah = One unit of the prayer; takbir = Saying \"Allahu Akbar\"; sujud = Prostration; ruku’ = Bowing in prayer.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "rak’ah",
+              "right": "One unit of the prayer",
+              "leftArabic": "رَكْعَة"
+            },
+            {
+              "left": "takbir",
+              "right": "Saying \"Allahu Akbar\"",
+              "leftArabic": "تَكْبِير"
+            },
+            {
+              "left": "sujud",
+              "right": "Prostration",
+              "leftArabic": "سُجُود"
+            },
+            {
+              "left": "ruku’",
+              "right": "Bowing in prayer",
+              "leftArabic": "رُكُوع"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l4.e8",
+          "type": "multipleChoice",
+          "prompt": "What does \"ruku’\" (رُكُوع) mean?",
+          "explanation": "ruku’ (رُكُوع) means \"Bowing in prayer\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Prostration"
+            },
+            {
+              "text": "One unit of the prayer"
+            },
+            {
+              "text": "Bowing in prayer"
+            },
+            {
+              "text": "The ritual prayer"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l4.e9",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Prostration\"?",
+          "explanation": "\"Prostration\" is sujud (سُجُود).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "imam",
+              "arabic": "إِمَام"
+            },
+            {
+              "text": "sujud",
+              "arabic": "سُجُود"
+            },
+            {
+              "text": "salah",
+              "arabic": "صَلَاة"
+            },
+            {
+              "text": "rak’ah",
+              "arabic": "رَكْعَة"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "islam.salah.l5",
+      "title": "Praying with Focus",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.salah.l5.e1",
+          "type": "multipleChoice",
+          "prompt": "What builds khushu over time?",
+          "explanation": "Focus grows from familiarity: a mind that understands the words wanders less.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Prayer is decreed at specified times - punctuality trains the heart."
+          },
+          "options": [
+            {
+              "text": "Praying only when motivated"
+            },
+            {
+              "text": "Praying as late as possible to feel urgency"
+            },
+            {
+              "text": "Memorizing long surahs for display"
+            },
+            {
+              "text": "Praying on time and learning the meaning of what you recite"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "Your mind wanders mid-prayer. What is the first practical step?",
+          "explanation": "Khushu is a practice of returning - awareness drifts, and the trained heart brings it back to the words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "23:2",
+            "text": "Those who are humble and focused in their prayer."
+          },
+          "options": [
+            {
+              "text": "Pray faster to finish sooner"
+            },
+            {
+              "text": "Abandon the prayer"
+            },
+            {
+              "text": "Return your attention to the words you are saying"
+            },
+            {
+              "text": "Restart the prayer from zero each time"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "Standing hurts because of illness. What does the Sunnah allow?",
+          "explanation": "Islam is ease: the Prophet’s guidance adapts prayer to ability rather than dropping it.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1117",
+            "grading": "sahih",
+            "text": "Pray standing; if you cannot, then sitting; if you cannot, then lying on your side."
+          },
+          "options": [
+            {
+              "text": "Pray sitting, and if you cannot, then lying on your side"
+            },
+            {
+              "text": "Pray only when you recover"
+            },
+            {
+              "text": "Have someone pray in your place"
+            },
+            {
+              "text": "Pray with a shortened Fatihah standing"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say about a prayer rushed without its essential parts?",
+          "explanation": "The man who prayed badly was taught the full sequence - rushing strips a prayer to the bone.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "397",
+            "grading": "sahih",
+            "text": "The Prophet made the man who rushed his prayer repeat it, and taught him each part until he did it properly."
+          },
+          "options": [
+            {
+              "text": "It is not accepted as a proper prayer - he made the man repeat it"
+            },
+            {
+              "text": "It only needs repeating on Fridays"
+            },
+            {
+              "text": "It counts as half"
+            },
+            {
+              "text": "It counts fully anyway"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.salah.l5.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: khushu’ = Humble, focused presence in prayer; salah = The ritual prayer; imam = The one who leads the prayer; qiblah = The direction of the Ka’bah.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "khushu’",
+              "right": "Humble, focused presence in prayer",
+              "leftArabic": "خُشُوع"
+            },
+            {
+              "left": "salah",
+              "right": "The ritual prayer",
+              "leftArabic": "صَلَاة"
+            },
+            {
+              "left": "imam",
+              "right": "The one who leads the prayer",
+              "leftArabic": "إِمَام"
+            },
+            {
+              "left": "qiblah",
+              "right": "The direction of the Ka’bah",
+              "leftArabic": "قِبْلَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"imam\" (إِمَام) mean?",
+          "explanation": "imam (إِمَام) means \"The one who leads the prayer\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Bowing in prayer"
+            },
+            {
+              "text": "The ritual prayer"
+            },
+            {
+              "text": "The one who leads the prayer"
+            },
+            {
+              "text": "The call to prayer"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l5.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Humble, focused presence in prayer\"?",
+          "explanation": "\"Humble, focused presence in prayer\" is khushu’ (خُشُوع).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "takbir",
+              "arabic": "تَكْبِير"
+            },
+            {
+              "text": "khushu’",
+              "arabic": "خُشُوع"
+            },
+            {
+              "text": "sujud",
+              "arabic": "سُجُود"
+            },
+            {
+              "text": "athan",
+              "arabic": "أَذَان"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "islam.salah.l6",
+      "title": "Salah Review",
+      "xp": 15,
+      "exercises": [
+        {
+          "id": "islam.salah.l6.e1",
+          "type": "multipleChoice",
+          "prompt": "Which pillar of Islam is the one that immediately follows the testimony of faith?",
+          "explanation": "The Prophet built Islam on five: shahada, prayer, zakat, fasting and Hajj - prayer comes first after belief.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "8",
+            "grading": "sahih",
+            "text": "Islam is built upon five: the testimony of faith, the prayer, zakat, the fast of Ramadan and the pilgrimage."
+          },
+          "options": [
+            {
+              "text": "Fasting Ramadan"
+            },
+            {
+              "text": "Prayer"
+            },
+            {
+              "text": "Hajj"
+            },
+            {
+              "text": "Zakat"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l6.e2",
+          "type": "multipleChoice",
+          "prompt": "Which direction do Muslims face in prayer?",
+          "explanation": "Allah commanded the turning to al-Masjid al-Haram; every mosque’s mihrab marks that direction.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "2:144",
+            "text": "So turn your face toward al-Masjid al-Haram; wherever you are, turn your faces toward it."
+          },
+          "options": [
+            {
+              "text": "Toward the nearest mosque"
+            },
+            {
+              "text": "Toward the sunrise"
+            },
+            {
+              "text": "Toward al-Aqsa in every city"
+            },
+            {
+              "text": "Toward the Ka’bah in Makkah - the qiblah"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l6.e3",
+          "type": "multipleChoice",
+          "prompt": "Which prayer comes at dawn, before sunrise?",
+          "explanation": "The Quran calls it the recitation of dawn - witnessed by angels as the day opens.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:78",
+            "text": "Establish prayer at the decline of the sun until the darkness of night, and the recitation of dawn - indeed it is witnessed."
+          },
+          "options": [
+            {
+              "text": "Dhuhr"
+            },
+            {
+              "text": "Maghrib"
+            },
+            {
+              "text": "Fajr"
+            },
+            {
+              "text": "Isha"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.salah.l6.e4",
+          "type": "multipleChoice",
+          "prompt": "What is said while prostrating (sujud)?",
+          "explanation": "Sujud is the closest a servant comes to Allah - and the words glorify Him as the Most High.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "482",
+            "grading": "sahih",
+            "text": "The Prophet prostrated saying: Glory to my Lord the Most High."
+          },
+          "options": [
+            {
+              "text": "The shahada"
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Ala\""
+            },
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Azim\""
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.salah.l6.e5",
+          "type": "multipleChoice",
+          "prompt": "What builds khushu over time?",
+          "explanation": "Focus grows from familiarity: a mind that understands the words wanders less.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Prayer is decreed at specified times - punctuality trains the heart."
+          },
+          "options": [
+            {
+              "text": "Memorizing long surahs for display"
+            },
+            {
+              "text": "Praying only when motivated"
+            },
+            {
+              "text": "Praying as late as possible to feel urgency"
+            },
+            {
+              "text": "Praying on time and learning the meaning of what you recite"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l6.e6",
+          "type": "multipleChoice",
+          "prompt": "What is salah?",
+          "explanation": "Salah is the second pillar of Islam - structured worship at fixed times, not an optional extra.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:103",
+            "text": "Indeed, prayer has been decreed upon the believers at specified times."
+          },
+          "options": [
+            {
+              "text": "Any personal dua made during the day"
+            },
+            {
+              "text": "A type of charity (sadaqah)"
+            },
+            {
+              "text": "A weekly community gathering"
+            },
+            {
+              "text": "The five daily ritual prayers performed at fixed times"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.salah.l6.e7",
+          "type": "orderSteps",
+          "prompt": "Arrange what happens inside one rakah in the correct order.",
+          "explanation": "The Prophet taught the steps of a rakah: takbir, reciting al-Fatihah and a short surah, bowing, rising, then two prostrations with a sitting between them.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "397",
+            "grading": "sahih",
+            "text": "The Prophet taught the man who prayed badly: when you stand for prayer say the takbir, then recite, then bow until at rest, then rise, then prostrate until at rest..."
+          },
+          "steps": [
+            {
+              "text": "Say \"Allahu Akbar\" to begin"
+            },
+            {
+              "text": "Recite Surah al-Fatihah"
+            },
+            {
+              "text": "Recite a short surah (in the first two rakahs)"
+            },
+            {
+              "text": "Bow in ruku saying \"Subhana Rabbiyal-Azim\""
+            },
+            {
+              "text": "Rise saying \"Sami Allahu liman hamidah\""
+            },
+            {
+              "text": "Prostrate in sujud saying \"Subhana Rabbiyal-Ala\""
+            },
+            {
+              "text": "Sit up between the two prostrations"
+            },
+            {
+              "text": "Make the second prostration"
+            }
+          ]
+        },
+        {
+          "id": "islam.salah.l6.e8",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: salah = The ritual prayer; takbir = Saying \"Allahu Akbar\"; sujud = Prostration; qiblah = The direction of the Ka’bah; khushu’ = Humble, focused presence in prayer; athan = The call to prayer.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "salah",
+              "right": "The ritual prayer",
+              "leftArabic": "صَلَاة"
+            },
+            {
+              "left": "takbir",
+              "right": "Saying \"Allahu Akbar\"",
+              "leftArabic": "تَكْبِير"
+            },
+            {
+              "left": "sujud",
+              "right": "Prostration",
+              "leftArabic": "سُجُود"
+            },
+            {
+              "left": "qiblah",
+              "right": "The direction of the Ka’bah",
+              "leftArabic": "قِبْلَة"
+            },
+            {
+              "left": "khushu’",
+              "right": "Humble, focused presence in prayer",
+              "leftArabic": "خُشُوع"
+            },
+            {
+              "left": "athan",
+              "right": "The call to prayer",
+              "leftArabic": "أَذَان"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

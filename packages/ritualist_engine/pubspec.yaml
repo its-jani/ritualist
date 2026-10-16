@@ -1,0 +1,7 @@
+name: ritualist_engine
+description: Pure-Dart, zero-dependency lesson engine for Ritualist - models, runner state machine, SM-2-lite spaced repetition, progress store and content validators.
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.2

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "islam",
+  "title": "Islam",
+  "tagline": "Daily worship, one small step at a time",
+  "description": "A gamified micro-course on the daily practice of Islam: purification (taharah), prayer (salah), everyday etiquette (adab), character (akhlaq), and purifying the heart from envy (hasad) and showing off (riya). Content is built from the Quran and authentic hadith.",
+  "disclaimer": "Content review notice: this module summarizes widely accepted Islamic practices from the Quran and hadith collections. Hadith gradings are shown with each exercise and sources are listed in docs/curriculum-sources.md. Reports of scholarly verification are welcome before relying on this app for religious rulings (fiqh) - consult a qualified teacher for detailed questions.",
+  "units": [
+    {
+      "id": "taharah",
+      "title": "Taharah",
+      "subtitle": "Purification before worship",
+      "colorIndex": 0,
+      "file": "units/taharah.json",
+      "lessons": [
+        {
+          "id": "islam.taharah.l1",
+          "title": "What Purity Means",
+          "exercises": 7
+        },
+        {
+          "id": "islam.taharah.l2",
+          "title": "Wudu Step by Step",
+          "exercises": 8
+        },
+        {
+          "id": "islam.taharah.l3",
+          "title": "What Breaks Wudu",
+          "exercises": 8
+        },
+        {
+          "id": "islam.taharah.l4",
+          "title": "Cleanliness Habits",
+          "exercises": 7
+        },
+        {
+          "id": "islam.taharah.l5",
+          "title": "When Water Is Not Found",
+          "exercises": 8
+        },
+        {
+          "id": "islam.taharah.l6",
+          "title": "Taharah Review",
+          "exercises": 9
+        }
+      ]
+    },
+    {
+      "id": "salah",
+      "title": "Salah",
+      "subtitle": "The five daily prayers",
+      "colorIndex": 1,
+      "file": "units/salah.json",
+      "lessons": [
+        {
+          "id": "islam.salah.l1",
+          "title": "Why We Pray",
+          "exercises": 7
+        },
+        {
+          "id": "islam.salah.l2",
+          "title": "Getting Ready to Pray",
+          "exercises": 7
+        },
+        {
+          "id": "islam.salah.l3",
+          "title": "The Five Times",
+          "exercises": 7
+        },
+        {
+          "id": "islam.salah.l4",
+          "title": "Inside the Rakah",
+          "exercises": 9
+        },
+        {
+          "id": "islam.salah.l5",
+          "title": "Praying with Focus",
+          "exercises": 7
+        },
+        {
+          "id": "islam.salah.l6",
+          "title": "Salah Review",
+          "exercises": 8
+        }
+      ]
+    },
+    {
+      "id": "adab",
+      "title": "Daily Adab",
+      "subtitle": "Etiquette for every day",
+      "colorIndex": 2,
+      "file": "units/adab.json",
+      "lessons": [
+        {
+          "id": "islam.adab.l1",
+          "title": "Living with Bismillah",
+          "exercises": 7
+        },
+        {
+          "id": "islam.adab.l2",
+          "title": "Waking and Sleeping",
+          "exercises": 7
+        },
+        {
+          "id": "islam.adab.l3",
+          "title": "Eating and Drinking",
+          "exercises": 9
+        },
+        {
+          "id": "islam.adab.l4",
+          "title": "Mirror, Clothes and Doors",
+          "exercises": 10
+        },
+        {
+          "id": "islam.adab.l5",
+          "title": "Salaam and Kind Words",
+          "exercises": 8
+        },
+        {
+          "id": "islam.adab.l6",
+          "title": "Bathroom, Travel and Rain",
+          "exercises": 11
+        },
+        {
+          "id": "islam.adab.l7",
+          "title": "Adab Review",
+          "exercises": 15
+        }
+      ]
+    },
+    {
+      "id": "akhlaq",
+      "title": "Akhlaq",
+      "subtitle": "Character in action",
+      "colorIndex": 3,
+      "file": "units/akhlaq.json",
+      "lessons": [
+        {
+          "id": "islam.akhlaq.l1",
+          "title": "The Weight of Good Character",
+          "exercises": 7
+        },
+        {
+          "id": "islam.akhlaq.l2",
+          "title": "Etiquette with Parents",
+          "exercises": 7
+        },
+        {
+          "id": "islam.akhlaq.l3",
+          "title": "Family and Elders",
+          "exercises": 6
+        },
+        {
+          "id": "islam.akhlaq.l4",
+          "title": "Neighbors and Guests",
+          "exercises": 8
+        },
+        {
+          "id": "islam.akhlaq.l5",
+          "title": "Guarding the Tongue",
+          "exercises": 6
+        },
+        {
+          "id": "islam.akhlaq.l6",
+          "title": "Everyday Life",
+          "exercises": 9
+        },
+        {
+          "id": "islam.akhlaq.l7",
+          "title": "Akhlaq Review",
+          "exercises": 8
+        }
+      ]
+    },
+    {
+      "id": "hasad",
+      "title": "Hasad",
+      "subtitle": "Freeing the heart from envy",
+      "colorIndex": 4,
+      "file": "units/hasad.json",
+      "lessons": [
+        {
+          "id": "islam.hasad.l1",
+          "title": "What Envy Is",
+          "exercises": 7
+        },
+        {
+          "id": "islam.hasad.l2",
+          "title": "The Damage of Envy",
+          "exercises": 7
+        },
+        {
+          "id": "islam.hasad.l3",
+          "title": "Envy in Daily Life",
+          "exercises": 7
+        },
+        {
+          "id": "islam.hasad.l4",
+          "title": "The Cure for Envy",
+          "exercises": 7
+        },
+        {
+          "id": "islam.hasad.l5",
+          "title": "Hasad Review",
+          "exercises": 8
+        }
+      ]
+    },
+    {
+      "id": "riya",
+      "title": "Riya",
+      "subtitle": "Worship for Allah alone",
+      "colorIndex": 5,
+      "file": "units/riya.json",
+      "lessons": [
+        {
+          "id": "islam.riya.l1",
+          "title": "Why Intention Matters",
+          "exercises": 7
+        },
+        {
+          "id": "islam.riya.l2",
+          "title": "Hidden and Open",
+          "exercises": 7
+        },
+        {
+          "id": "islam.riya.l3",
+          "title": "The Three Who Were Judged",
+          "exercises": 7
+        },
+        {
+          "id": "islam.riya.l4",
+          "title": "Purifying Intention",
+          "exercises": 7
+        },
+        {
+          "id": "islam.riya.l5",
+          "title": "Riya Review",
+          "exercises": 8
+        }
+      ]
+    }
+  ]
+}

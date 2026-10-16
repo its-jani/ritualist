@@ -1,0 +1,20 @@
+# Standalone analyzer config - mirrors the app's, no external lint packages.
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    todo: ignore
+
+linter:
+  rules:
+    - always_declare_return_types
+    - avoid_empty_else
+    - avoid_print
+    - avoid_relative_lib_imports
+    - camel_case_types
+    - curly_braces_in_flow_control_structures
+    - prefer_final_locals
+    - prefer_single_quotes
+    - unnecessary_brace_in_string_interps

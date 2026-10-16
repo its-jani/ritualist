@@ -1,0 +1,1051 @@
+{
+  "unitId": "hasad",
+  "lessons": [
+    {
+      "id": "islam.hasad.l1",
+      "title": "What Envy Is",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.hasad.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: hasad = Envy (resenting someone’s blessing); ghibta = Benign wish for a similar blessing (without wanting it removed); tazkiyah = Purification of the self and heart; niyyah = Intention.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "hasad",
+              "right": "Envy (resenting someone’s blessing)",
+              "leftArabic": "حَسَد"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            },
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            }
+          ]
+        },
+        {
+          "id": "islam.hasad.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"hasad\" (حَسَد) mean?",
+          "explanation": "hasad (حَسَد) means \"Envy (resenting someone’s blessing)\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Benign wish for a similar blessing (without wanting it removed)"
+            },
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.hasad.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Benign wish for a similar blessing (without wanting it removed)\"?",
+          "explanation": "\"Benign wish for a similar blessing (without wanting it removed)\" is ghibta (غِبْطَة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "tazkiyah",
+              "arabic": "تَزْكِيَة"
+            },
+            {
+              "text": "ghibta",
+              "arabic": "غِبْطَة"
+            },
+            {
+              "text": "riya",
+              "arabic": "رِيَاء"
+            },
+            {
+              "text": "hasad",
+              "arabic": "حَسَد"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.hasad.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "Envy of someone’s blessings is really a complaint against whom?",
+          "explanation": "Before envy becomes a feeling about a person, it is a hidden objection to Allah’s distribution.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:54",
+            "text": "Or do they envy people for what Allah has given them of His bounty?"
+          },
+          "options": [
+            {
+              "text": "Society in general"
+            },
+            {
+              "text": "The envier’s family"
+            },
+            {
+              "text": "The blessed person"
+            },
+            {
+              "text": "Allah - the One who distributed His bounty"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.hasad.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "What is ghibta, and how does it differ from hasad?",
+          "explanation": "Ghibta is clean aspiration - the Prophet’s hadith allows this kind of \"envy\" in two cases only.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "73",
+            "grading": "sahih",
+            "text": "There is no (harmful) envy except in two cases: a man whom Allah gave wealth and he spends it in truth, and a man whom Allah gave knowledge and he teaches it."
+          },
+          "options": [
+            {
+              "text": "Watching others succeed without caring at all"
+            },
+            {
+              "text": "Another word for hasad"
+            },
+            {
+              "text": "Wishing for a similar blessing without wanting it removed from the other person"
+            },
+            {
+              "text": "Copying someone’s exact lifestyle"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "Which two situations did the Prophet describe as the only acceptable form of \"envy\"?",
+          "explanation": "The only permitted envy is the desire to do MORE good - not to have more things.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "73",
+            "grading": "sahih",
+            "text": "There is no envy except in two cases: a man whom Allah has given wealth and he spends it in the right way, and a man whom Allah has given wisdom and he judges by it and teaches it."
+          },
+          "options": [
+            {
+              "text": "Aspiration for athletes and actors"
+            },
+            {
+              "text": "Aspiration for whoever has more followers"
+            },
+            {
+              "text": "Aspiration for someone who spends wealth in truth and someone who teaches knowledge"
+            },
+            {
+              "text": "Aspiration for famous people and rich people"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "What is hasad (envy)?",
+          "explanation": "Hasad targets the blessing itself: the envier wants it gone, not matched - that is what the Quran seeks refuge from.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "113:5",
+            "text": "And from the evil of an envier when he envies."
+          },
+          "options": [
+            {
+              "text": "Feeling sad when someone is harmed"
+            },
+            {
+              "text": "Wanting a similar blessing for yourself"
+            },
+            {
+              "text": "Resenting someone’s blessing and wishing it were removed from them"
+            },
+            {
+              "text": "Being competitive at work"
+            }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "islam.hasad.l2",
+      "title": "The Damage of Envy",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.hasad.l2.e1",
+          "type": "multipleChoice",
+          "prompt": "Why did Iblis refuse to prostrate to Adam?",
+          "explanation": "The first act of hasad in history was the first act of defiance - envy and arrogance travel together.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "7:12",
+            "text": "He said: I am better than him; You created me from fire and created him from clay."
+          },
+          "options": [
+            {
+              "text": "He did not hear the command"
+            },
+            {
+              "text": "He was busy in worship"
+            },
+            {
+              "text": "Arrogance and envy of Adam’s honored station"
+            },
+            {
+              "text": "He thought Adam had wronged him"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "Who does envy damage first?",
+          "explanation": "The envier’s chest is the first casualty: anxiety, insomnia and bitterness arrive long before the \"revenge\".",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "113:5",
+            "text": "And from the evil of an envier when he envies - the envier’s harm starts with his own state."
+          },
+          "options": [
+            {
+              "text": "The person who carries it - it eats their peace before it reaches anyone else"
+            },
+            {
+              "text": "Nobody - it is just a feeling"
+            },
+            {
+              "text": "The envier’s friends"
+            },
+            {
+              "text": "The envied person only"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l2.e3",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet warn envy does to good deeds?",
+          "explanation": "A warning worth taking seriously - with an honest note on its grading, since scholars differ about this narration.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4903",
+            "grading": "da’if (weak per some scholars; some grade it hasan)",
+            "text": "Envy consumes good deeds the way fire consumes wood."
+          },
+          "options": [
+            {
+              "text": "It consumes them the way fire consumes wood"
+            },
+            {
+              "text": "It makes them count double"
+            },
+            {
+              "text": "It has no effect on deeds"
+            },
+            {
+              "text": "It delays them until Ramadan"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l2.e4",
+          "type": "multipleChoice",
+          "prompt": "An envious person watches someone else’s blessing fade and feels relief. What did the Prophet guard against with daily dua?",
+          "explanation": "Envy wishes loss on others; the cure is asking Allah to protect your own blessing rather than delighting in anyone losing theirs.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2732",
+            "grading": "sahih",
+            "text": "The dua of a Muslim for his brother in his absence is answered; the angel says: Ameen, and may you have the same."
+          },
+          "options": [
+            {
+              "text": "That we never hear bad news"
+            },
+            {
+              "text": "That we gain more followers"
+            },
+            {
+              "text": "That our enemies fail"
+            },
+            {
+              "text": "That our good be not lost or transferred"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.hasad.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "What does \"ghibta\" (غِبْطَة) mean?",
+          "explanation": "ghibta (غِبْطَة) means \"Benign wish for a similar blessing (without wanting it removed)\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Benign wish for a similar blessing (without wanting it removed)"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Envy (resenting someone’s blessing)\"?",
+          "explanation": "\"Envy (resenting someone’s blessing)\" is hasad (حَسَد).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "ghibta",
+              "arabic": "غِبْطَة"
+            },
+            {
+              "text": "tazkiyah",
+              "arabic": "تَزْكِيَة"
+            },
+            {
+              "text": "hasad",
+              "arabic": "حَسَد"
+            },
+            {
+              "text": "niyyah",
+              "arabic": "نِيَّة"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l2.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: hasad = Envy (resenting someone’s blessing); ghibta = Benign wish for a similar blessing (without wanting it removed); niyyah = Intention; ikhlas = Sincere devotion, purely for Allah.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "hasad",
+              "right": "Envy (resenting someone’s blessing)",
+              "leftArabic": "حَسَد"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islam.hasad.l3",
+      "title": "Envy in Daily Life",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.hasad.l3.e1",
+          "type": "multipleChoice",
+          "prompt": "Your cousin buys the house you also hoped for. What is the clean alternative to hasad?",
+          "explanation": "The two permitted kinds of \"envy\" turn the sting of comparison into fuel: aspire to give and to teach.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "73",
+            "grading": "sahih",
+            "text": "There is no envy except: a man given wealth who spends it in truth, and a man given knowledge who teaches it."
+          },
+          "options": [
+            {
+              "text": "Ghibta - be glad for them and ask Allah from His bounty for yourself too"
+            },
+            {
+              "text": "Find something wrong with their house"
+            },
+            {
+              "text": "Compare their loan terms critically"
+            },
+            {
+              "text": "Never visit their home again"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "You catch yourself comparing followers and feeling resentment. What breaks the habit?",
+          "explanation": "The Quran promises: gratitude grows blessings, and resentment only consumes the blessing of the envier.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "14:7",
+            "text": "If you are grateful, I will surely increase you [in favor]."
+          },
+          "options": [
+            {
+              "text": "Trading comparison for gratitude - and making dua for the people you envy"
+            },
+            {
+              "text": "Working until you out-perform everyone visible"
+            },
+            {
+              "text": "Deleting the app and staying offline forever"
+            },
+            {
+              "text": "Avoiding anyone more successful than you"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say to say when you admire something in someone else?",
+          "explanation": "Asking for barakah is the opposite of hasad: you are praying the blessing stays and grows.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "Book of Greetings and Manners",
+            "grading": "sahih",
+            "text": "When one of you sees something pleasing in himself, his brother or his property, let him ask Allah to bless it."
+          },
+          "options": [
+            {
+              "text": "Compliment only if they deserve it"
+            },
+            {
+              "text": "Point out its price"
+            },
+            {
+              "text": "Say nothing - truth brings envy"
+            },
+            {
+              "text": "Make dua for barakah in it"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.hasad.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "A classmate posts a great exam result and your chest tightens. What does iman ask of you?",
+          "explanation": "The Prophet’s measure of love: wanting for your brother what you want for yourself - even in exam results.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "13",
+            "grading": "sahih",
+            "text": "None of you truly believes until he loves for his brother what he loves for himself."
+          },
+          "options": [
+            {
+              "text": "Keep the anger and let it grow"
+            },
+            {
+              "text": "Wish for them what you love for yourself - and ask Allah for your own share"
+            },
+            {
+              "text": "Mute them immediately - problem solved"
+            },
+            {
+              "text": "Comment something backhanded"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.hasad.l3.e5",
+          "type": "multipleChoice",
+          "prompt": "What does \"tazkiyah\" (تَزْكِيَة) mean?",
+          "explanation": "tazkiyah (تَزْكِيَة) means \"Purification of the self and heart\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            },
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Intention"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l3.e6",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Intention\"?",
+          "explanation": "\"Intention\" is niyyah (نِيَّة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "niyyah",
+              "arabic": "نِيَّة"
+            },
+            {
+              "text": "hasad",
+              "arabic": "حَسَد"
+            },
+            {
+              "text": "tazkiyah",
+              "arabic": "تَزْكِيَة"
+            },
+            {
+              "text": "ghibta",
+              "arabic": "غِبْطَة"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l3.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: tazkiyah = Purification of the self and heart; hasad = Envy (resenting someone’s blessing); ghibta = Benign wish for a similar blessing (without wanting it removed); niyyah = Intention.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            },
+            {
+              "left": "hasad",
+              "right": "Envy (resenting someone’s blessing)",
+              "leftArabic": "حَسَد"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islam.hasad.l4",
+      "title": "The Cure for Envy",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.hasad.l4.e1",
+          "type": "multipleChoice",
+          "prompt": "You make dua for someone in their absence. What did the Prophet say happens?",
+          "explanation": "This is the exact medicine for hasad: you cannot fear someone’s blessing and sincerely pray for it at the same time.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2732",
+            "grading": "sahih",
+            "text": "Whoever makes dua for his brother in his absence, the angel says: Ameen, and may you have the same."
+          },
+          "options": [
+            {
+              "text": "You gain only half"
+            },
+            {
+              "text": "The dua is ignored"
+            },
+            {
+              "text": "The angel says: Ameen - and you get the same"
+            },
+            {
+              "text": "The person must be told"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "You feel envy toward your sibling’s success. What is the specific, active Sunnah move?",
+          "explanation": "Repel the bad impulse with a good one: dua for the envied person rewires the heart from resentment to generosity.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "41:34",
+            "text": "Repel evil with that which is better; then the one who had enmity between you and him may become like a close friend."
+          },
+          "options": [
+            {
+              "text": "Share their news negatively with others"
+            },
+            {
+              "text": "Compete silently and say nothing"
+            },
+            {
+              "text": "Deliberately make dua for them to have even more"
+            },
+            {
+              "text": "Ignore the feeling until it fades"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "Followers, salaries and house sizes keep changing. What scale did the Prophet point to?",
+          "explanation": "Allah does not look at your forms or appearances; He looks at your hearts and your actions - the only scoreboard that holds still.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2564",
+            "grading": "sahih",
+            "text": "Allah does not look at your bodies or your appearances, but He looks at your hearts and your actions."
+          },
+          "options": [
+            {
+              "text": "Notability in society"
+            },
+            {
+              "text": "The size of one’s friend group"
+            },
+            {
+              "text": "Hearts and deeds - not appearances or numbers"
+            },
+            {
+              "text": "Bank balances and property"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "Where does the cure for envy start?",
+          "explanation": "Once you settle that the scales belong to Allah, the enemy of the envier becomes a paper tiger.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:54",
+            "text": "Or do they envy people for what Allah has given them of His bounty? And We had already given... which is better than whatever they accumulate."
+          },
+          "options": [
+            {
+              "text": "Collecting more than the other person"
+            },
+            {
+              "text": "Avoiding all social contact"
+            },
+            {
+              "text": "Explaining your own goodness to people"
+            },
+            {
+              "text": "Knowing the blessing is Allah’s distribution - and being content with your share"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.hasad.l4.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: hasad = Envy (resenting someone’s blessing); tazkiyah = Purification of the self and heart; ghibta = Benign wish for a similar blessing (without wanting it removed); sidq = Truthfulness.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "hasad",
+              "right": "Envy (resenting someone’s blessing)",
+              "leftArabic": "حَسَد"
+            },
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            }
+          ]
+        },
+        {
+          "id": "islam.hasad.l4.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"tazkiyah\" (تَزْكِيَة) mean?",
+          "explanation": "tazkiyah (تَزْكِيَة) means \"Purification of the self and heart\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            },
+            {
+              "text": "Intention"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.hasad.l4.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Envy (resenting someone’s blessing)\"?",
+          "explanation": "\"Envy (resenting someone’s blessing)\" is hasad (حَسَد).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "niyyah",
+              "arabic": "نِيَّة"
+            },
+            {
+              "text": "riya",
+              "arabic": "رِيَاء"
+            },
+            {
+              "text": "ghibta",
+              "arabic": "غِبْطَة"
+            },
+            {
+              "text": "hasad",
+              "arabic": "حَسَد"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.hasad.l5",
+      "title": "Hasad Review",
+      "xp": 15,
+      "exercises": [
+        {
+          "id": "islam.hasad.l5.e1",
+          "type": "multipleChoice",
+          "prompt": "What is hasad (envy)?",
+          "explanation": "Hasad targets the blessing itself: the envier wants it gone, not matched - that is what the Quran seeks refuge from.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "113:5",
+            "text": "And from the evil of an envier when he envies."
+          },
+          "options": [
+            {
+              "text": "Resenting someone’s blessing and wishing it were removed from them"
+            },
+            {
+              "text": "Feeling sad when someone is harmed"
+            },
+            {
+              "text": "Being competitive at work"
+            },
+            {
+              "text": "Wanting a similar blessing for yourself"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "An envious person watches someone else’s blessing fade and feels relief. What did the Prophet guard against with daily dua?",
+          "explanation": "Envy wishes loss on others; the cure is asking Allah to protect your own blessing rather than delighting in anyone losing theirs.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2732",
+            "grading": "sahih",
+            "text": "The dua of a Muslim for his brother in his absence is answered; the angel says: Ameen, and may you have the same."
+          },
+          "options": [
+            {
+              "text": "That our enemies fail"
+            },
+            {
+              "text": "That our good be not lost or transferred"
+            },
+            {
+              "text": "That we gain more followers"
+            },
+            {
+              "text": "That we never hear bad news"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.hasad.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "Your cousin buys the house you also hoped for. What is the clean alternative to hasad?",
+          "explanation": "The two permitted kinds of \"envy\" turn the sting of comparison into fuel: aspire to give and to teach.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "73",
+            "grading": "sahih",
+            "text": "There is no envy except: a man given wealth who spends it in truth, and a man given knowledge who teaches it."
+          },
+          "options": [
+            {
+              "text": "Compare their loan terms critically"
+            },
+            {
+              "text": "Find something wrong with their house"
+            },
+            {
+              "text": "Ghibta - be glad for them and ask Allah from His bounty for yourself too"
+            },
+            {
+              "text": "Never visit their home again"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "You feel envy toward your sibling’s success. What is the specific, active Sunnah move?",
+          "explanation": "Repel the bad impulse with a good one: dua for the envied person rewires the heart from resentment to generosity.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "41:34",
+            "text": "Repel evil with that which is better; then the one who had enmity between you and him may become like a close friend."
+          },
+          "options": [
+            {
+              "text": "Deliberately make dua for them to have even more"
+            },
+            {
+              "text": "Share their news negatively with others"
+            },
+            {
+              "text": "Ignore the feeling until it fades"
+            },
+            {
+              "text": "Compete silently and say nothing"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l5.e5",
+          "type": "multipleChoice",
+          "prompt": "What is ghibta, and how does it differ from hasad?",
+          "explanation": "Ghibta is clean aspiration - the Prophet’s hadith allows this kind of \"envy\" in two cases only.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "73",
+            "grading": "sahih",
+            "text": "There is no (harmful) envy except in two cases: a man whom Allah gave wealth and he spends it in truth, and a man whom Allah gave knowledge and he teaches it."
+          },
+          "options": [
+            {
+              "text": "Copying someone’s exact lifestyle"
+            },
+            {
+              "text": "Watching others succeed without caring at all"
+            },
+            {
+              "text": "Wishing for a similar blessing without wanting it removed from the other person"
+            },
+            {
+              "text": "Another word for hasad"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.hasad.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet warn envy does to good deeds?",
+          "explanation": "A warning worth taking seriously - with an honest note on its grading, since scholars differ about this narration.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4903",
+            "grading": "da’if (weak per some scholars; some grade it hasan)",
+            "text": "Envy consumes good deeds the way fire consumes wood."
+          },
+          "options": [
+            {
+              "text": "It consumes them the way fire consumes wood"
+            },
+            {
+              "text": "It has no effect on deeds"
+            },
+            {
+              "text": "It makes them count double"
+            },
+            {
+              "text": "It delays them until Ramadan"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.hasad.l5.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: hasad = Envy (resenting someone’s blessing); ghibta = Benign wish for a similar blessing (without wanting it removed); tazkiyah = Purification of the self and heart; niyyah = Intention; ikhlas = Sincere devotion, purely for Allah; sidq = Truthfulness.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "hasad",
+              "right": "Envy (resenting someone’s blessing)",
+              "leftArabic": "حَسَد"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            },
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            }
+          ]
+        },
+        {
+          "id": "islam.hasad.l5.e8",
+          "type": "multipleChoice",
+          "prompt": "Your younger sibling breaks something of yours and you feel anger boiling inside. What should you say?",
+          "explanation": "I seek refuge with Allah from the accursed devil. (A’udhu billahi minash-shaytanir-rajim). Said when anger flares - anger comes from the devil, and refuge is sought with Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "I seek refuge with Allah from the accursed devil."
+            },
+            {
+              "text": "May Allah guide you and set your affairs right."
+            },
+            {
+              "text": "In the name of Allah, I place my trust in Allah; there is no strength or power except with Allah."
+            },
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            }
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  ]
+}

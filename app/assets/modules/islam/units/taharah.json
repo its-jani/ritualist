@@ -1,0 +1,1374 @@
+{
+  "unitId": "taharah",
+  "lessons": [
+    {
+      "id": "islam.taharah.l1",
+      "title": "What Purity Means",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.taharah.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: taharah = Purification / purity; wudu = Ablution (washing before prayer); ghusl = Full-body ritual bath; tayammum = Dry purification using clean earth; najasah = Ritual impurity (something najis).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "taharah",
+              "right": "Purification / purity",
+              "leftArabic": "طَهَارَة"
+            },
+            {
+              "left": "wudu",
+              "right": "Ablution (washing before prayer)",
+              "leftArabic": "وُضُوء"
+            },
+            {
+              "left": "ghusl",
+              "right": "Full-body ritual bath",
+              "leftArabic": "غُسْل"
+            },
+            {
+              "left": "tayammum",
+              "right": "Dry purification using clean earth",
+              "leftArabic": "تَيَمُّم"
+            },
+            {
+              "left": "najasah",
+              "right": "Ritual impurity (something najis)",
+              "leftArabic": "نَجَاسَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"wudu\" (وُضُوء) mean?",
+          "explanation": "wudu (وُضُوء) means \"Ablution (washing before prayer)\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Natural human disposition"
+            },
+            {
+              "text": "Full-body ritual bath"
+            },
+            {
+              "text": "Purification / purity"
+            },
+            {
+              "text": "Ablution (washing before prayer)"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Purification / purity\"?",
+          "explanation": "\"Purification / purity\" is taharah (طَهَارَة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "istinja",
+              "arabic": "اِسْتِنْجَاء"
+            },
+            {
+              "text": "najasah",
+              "arabic": "نَجَاسَة"
+            },
+            {
+              "text": "taharah",
+              "arabic": "طَهَارَة"
+            },
+            {
+              "text": "tayammum",
+              "arabic": "تَيَمُّم"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "What is taharah about?",
+          "explanation": "Taharah means ritual purity: removing impurity (najasah) and the state that wudu or ghusl fixes.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "74:4",
+            "text": "And purify your clothing."
+          },
+          "options": [
+            {
+              "text": "Looking presentable for other people"
+            },
+            {
+              "text": "Avoiding all contact with dust and soil"
+            },
+            {
+              "text": "Being clean and free from anything that blocks valid worship"
+            },
+            {
+              "text": "Keeping only the face and hands clean"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "The Prophet called cleanliness \"half of faith\". What does that mean for daily life?",
+          "explanation": "Taharah is not a formality - it is worship itself: the same care you give your body is counted as faith.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "223",
+            "grading": "sahih",
+            "text": "Cleanliness is half of faith."
+          },
+          "options": [
+            {
+              "text": "Cleanliness matters only inside a mosque"
+            },
+            {
+              "text": "Keeping body, clothes and surroundings clean is a major part of the religion"
+            },
+            {
+              "text": "Only clothes must be clean before prayer"
+            },
+            {
+              "text": "Washing more than three times is always better"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.taharah.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "Your shirt has a small stain of urine from a child you carried. What is the ruling mindset?",
+          "explanation": "Najasah is ritual impurity; cleaning it is required before prayer is valid in that garment.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "The Prophet washed the urine of a child with water."
+          },
+          "options": [
+            {
+              "text": "Treat it as najasah - clean the area before praying in it"
+            },
+            {
+              "text": "Burn the shirt"
+            },
+            {
+              "text": "Only clean it on Fridays"
+            },
+            {
+              "text": "Ignore it, it will dry out"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "When does wudu matter most?",
+          "explanation": "Allah commands wudu when you rise to pray: purity is the gateway to standing before Him.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "O you who believe, when you rise to pray, wash your faces and your forearms to the elbows."
+          },
+          "options": [
+            {
+              "text": "Only inside the mosque"
+            },
+            {
+              "text": "Only on Fridays"
+            },
+            {
+              "text": "Only during Ramadan"
+            },
+            {
+              "text": "Before the ritual prayer and when handling the Quran (per most scholars)"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.taharah.l2",
+      "title": "Wudu Step by Step",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.taharah.l2.e1",
+          "type": "orderSteps",
+          "prompt": "Arrange the steps of wudu in the correct order.",
+          "explanation": "Wudu follows the order the Quran and the Prophet (peace be upon him) described: hands, mouth, nose, face, forearms, head, ears, feet.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "159",
+            "grading": "sahih",
+            "text": "Uthman ibn Affan called for water and performed ablution, washing each part three times, then said: \"I saw the Messenger of Allah perform ablution like this.\""
+          },
+          "steps": [
+            {
+              "text": "Make the intention and say \"Bismillah\""
+            },
+            {
+              "text": "Wash both hands up to the wrists three times"
+            },
+            {
+              "text": "Rinse the mouth (madmadah) three times"
+            },
+            {
+              "text": "Rinse the nose (istinshaq) three times"
+            },
+            {
+              "text": "Wash the face three times"
+            },
+            {
+              "text": "Wash the forearms up to the elbows three times"
+            },
+            {
+              "text": "Wipe the head once with wet hands"
+            },
+            {
+              "text": "Wipe the ears once"
+            },
+            {
+              "text": "Wash the feet up to the ankles three times"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "You are about to perform wudu. What do you say as you begin?",
+          "explanation": "In the name of Allah (before wudu). (Bismillah). Said at the start of wudu; the Prophet said there is no (complete) wudu for the one who does not mention Allah’s name.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "101",
+            "grading": "hasan",
+            "text": "There is no wudu for the one who does not mention the name of Allah upon it."
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            },
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "May Allah guide you and set your affairs right."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.taharah.l2.e3",
+          "type": "multipleChoice",
+          "prompt": "You have just completed wudu. What do you say?",
+          "explanation": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger. (Ashhadu an la ilaha illallahu wahdahu la sharika lah, wa ashhadu anna Muhammadan abduhu wa rasuluh). Said after completing wudu; the eight gates of Paradise are opened for the one who says it.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "234",
+            "grading": "sahih",
+            "text": "Whoever performs wudu and says this, the eight gates of Paradise are opened for him."
+          },
+          "options": [
+            {
+              "text": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            },
+            {
+              "text": "O Allah, I seek refuge in You from male and female devils."
+            },
+            {
+              "text": "All praise is for Allah who gave us life after death, and to Him is the return."
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l2.e4",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: wudu = Ablution (washing before prayer); ghusl = Full-body ritual bath; miswak = A natural tooth-cleaning stick; fitrah = Natural human disposition.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "wudu",
+              "right": "Ablution (washing before prayer)",
+              "leftArabic": "وُضُوء"
+            },
+            {
+              "left": "ghusl",
+              "right": "Full-body ritual bath",
+              "leftArabic": "غُسْل"
+            },
+            {
+              "left": "miswak",
+              "right": "A natural tooth-cleaning stick",
+              "leftArabic": "سِوَاك"
+            },
+            {
+              "left": "fitrah",
+              "right": "Natural human disposition",
+              "leftArabic": "فِطْرَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "Which parts are wiped with wet hands rather than washed?",
+          "explanation": "The Quran orders washing for the face, arms and feet, and wiping (mas-h) for the head; the ears share the head’s ruling.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "Wash your faces and your forearms to the elbows, wipe over your heads, and wash your feet to the ankles."
+          },
+          "options": [
+            {
+              "text": "The head and the ears"
+            },
+            {
+              "text": "The forearms and elbows"
+            },
+            {
+              "text": "The feet and ankles"
+            },
+            {
+              "text": "The face and the chin"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "How many times did the Prophet commonly wash each limb in wudu?",
+          "explanation": "Uthman described the Prophet’s wudu washing each part three times - the middle path of the Sunnah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "159",
+            "grading": "sahih",
+            "text": "Uthman performed ablution washing each part three times, then said: I saw the Messenger of Allah perform ablution like this."
+          },
+          "options": [
+            {
+              "text": "Seven times"
+            },
+            {
+              "text": "As many times as possible"
+            },
+            {
+              "text": "Exactly once"
+            },
+            {
+              "text": "Three times"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l2.e7",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say after finishing wudu?",
+          "explanation": "The shahada dua after wudu is the full-circle moment: purification ends with a testimony of faith.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "234",
+            "grading": "sahih",
+            "text": "Whoever performs wudu and says the shahada, the eight gates of Paradise are opened for him."
+          },
+          "options": [
+            {
+              "text": "The shahada dua - and the eight gates of Paradise open for it"
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "Nothing is said after wudu"
+            },
+            {
+              "text": "\"Yarhamukallah\""
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l2.e8",
+          "type": "multipleChoice",
+          "prompt": "What is said at the start of wudu?",
+          "explanation": "Beginning with Allah’s name is a small habit with a big reward attached to wudu.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "101",
+            "grading": "hasan",
+            "text": "There is no wudu for the one who does not mention the name of Allah upon it."
+          },
+          "options": [
+            {
+              "text": "\"Subhanallah\""
+            },
+            {
+              "text": "Nothing is said at all"
+            },
+            {
+              "text": "\"Bismillah\""
+            },
+            {
+              "text": "\"Alhamdulillah\""
+            }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "islam.taharah.l3",
+      "title": "What Breaks Wudu",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.taharah.l3.e1",
+          "type": "multipleChoice",
+          "prompt": "Why does deep sleep while lying down break wudu, while light dozing while seated may not?",
+          "explanation": "The issue is not sleep itself but awareness: deep sleep while lying down removes the certainty needed for wudu’s validity.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "The Companions waited for the Prophet to wake for prayer; deep sleep was treated as breaking wudu."
+          },
+          "options": [
+            {
+              "text": "Because sleep is a sin"
+            },
+            {
+              "text": "Because lying down is always impure"
+            },
+            {
+              "text": "Because the bed may be dirty"
+            },
+            {
+              "text": "Because full awareness of bodily control is lost"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "Which of these does NOT break wudu?",
+          "explanation": "Wudu breaks by what leaves the body or by losing awareness in deep sleep - simple washing never breaks it.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "The Prophet distinguished acts that require renewal of wudu from ordinary daily actions."
+          },
+          "options": [
+            {
+              "text": "Passing wind"
+            },
+            {
+              "text": "Using the toilet"
+            },
+            {
+              "text": "Deep sleep lying down"
+            },
+            {
+              "text": "Washing your hands for a meal"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "Which of these breaks wudu?",
+          "explanation": "Anything exiting from the front or back passage breaks wudu - the classic case is using the toilet.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "Wudu is broken by what exits from the two passages."
+          },
+          "options": [
+            {
+              "text": "Shaking someone’s hand"
+            },
+            {
+              "text": "Eating a light snack"
+            },
+            {
+              "text": "Using the toilet"
+            },
+            {
+              "text": "Washing your hands"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "You feel a faint sensation after praying but are 90% sure it is nothing. What do you rely on?",
+          "explanation": "Doubt does not break certainty: the Prophet said one should not leave prayer for a mere doubt until hearing a sound or smelling an odor.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "He should not leave (the prayer) until he hears a sound or smells an odor."
+          },
+          "options": [
+            {
+              "text": "You skip that prayer"
+            },
+            {
+              "text": "You repeat wudu every time you doubt"
+            },
+            {
+              "text": "Certainty - wudu stays valid until breaking it is certain"
+            },
+            {
+              "text": "You ask a scholar online"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l3.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: wudu = Ablution (washing before prayer); taharah = Purification / purity; najasah = Ritual impurity (something najis); ghusl = Full-body ritual bath.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "wudu",
+              "right": "Ablution (washing before prayer)",
+              "leftArabic": "وُضُوء"
+            },
+            {
+              "left": "taharah",
+              "right": "Purification / purity",
+              "leftArabic": "طَهَارَة"
+            },
+            {
+              "left": "najasah",
+              "right": "Ritual impurity (something najis)",
+              "leftArabic": "نَجَاسَة"
+            },
+            {
+              "left": "ghusl",
+              "right": "Full-body ritual bath",
+              "leftArabic": "غُسْل"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l3.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"najasah\" (نَجَاسَة) mean?",
+          "explanation": "najasah (نَجَاسَة) means \"Ritual impurity (something najis)\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "A natural tooth-cleaning stick"
+            },
+            {
+              "text": "Natural human disposition"
+            },
+            {
+              "text": "Ritual impurity (something najis)"
+            },
+            {
+              "text": "Ablution (washing before prayer)"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l3.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Full-body ritual bath\"?",
+          "explanation": "\"Full-body ritual bath\" is ghusl (غُسْل).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "najasah",
+              "arabic": "نَجَاسَة"
+            },
+            {
+              "text": "fitrah",
+              "arabic": "فِطْرَة"
+            },
+            {
+              "text": "ghusl",
+              "arabic": "غُسْل"
+            },
+            {
+              "text": "taharah",
+              "arabic": "طَهَارَة"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l3.e8",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In the name of Allah (before wudu).\"",
+          "explanation": "Bismillah (بِسْمِ اللَّه): In the name of Allah (before wudu). Said when you begin wudu.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "101",
+            "grading": "hasan",
+            "text": "There is no wudu for the one who does not mention the name of Allah upon it."
+          },
+          "options": [
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            },
+            {
+              "text": "When you begin wudu"
+            },
+            {
+              "text": "When you go to sleep"
+            },
+            {
+              "text": "When you look in the mirror"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "islam.taharah.l4",
+      "title": "Cleanliness Habits",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.taharah.l4.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: najasah = Ritual impurity (something najis); miswak = A natural tooth-cleaning stick; istinja = Cleaning oneself after relieving; fitrah = Natural human disposition.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "najasah",
+              "right": "Ritual impurity (something najis)",
+              "leftArabic": "نَجَاسَة"
+            },
+            {
+              "left": "miswak",
+              "right": "A natural tooth-cleaning stick",
+              "leftArabic": "سِوَاك"
+            },
+            {
+              "left": "istinja",
+              "right": "Cleaning oneself after relieving",
+              "leftArabic": "اِسْتِنْجَاء"
+            },
+            {
+              "left": "fitrah",
+              "right": "Natural human disposition",
+              "leftArabic": "فِطْرَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "You are travelling with no water after using the toilet. What do you do?",
+          "explanation": "Impurity must be removed; where water is unavailable, clean dry material serves the purpose, and tayammum covers the wudu need.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "Book of Purification (Kitab al-Taharah)",
+            "grading": "sahih",
+            "text": "The Prophet allowed cleaning with stones (dry material) when water was scarce."
+          },
+          "options": [
+            {
+              "text": "Skip istinja completely"
+            },
+            {
+              "text": "Use any liquid including juice"
+            },
+            {
+              "text": "Leave it until you find water days later"
+            },
+            {
+              "text": "Clean yourself with whatever pure dry material is available until the impurity is gone"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "Which habits did the Prophet list as part of the natural fitrah?",
+          "explanation": "These are the everyday hygiene habits of the fitrah - Islam builds cleanliness into routine.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "Book of Purification (Kitab al-Taharah)",
+            "grading": "sahih",
+            "text": "The fitrah includes clipping the moustache, trimming nails and cleaning the private parts with water."
+          },
+          "options": [
+            {
+              "text": "Wearing perfume daily"
+            },
+            {
+              "text": "Sleeping before sunset"
+            },
+            {
+              "text": "Fasting every Monday"
+            },
+            {
+              "text": "Trimming the moustache, cleaning after the toilet, cutting nails and using the siwak"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "Why did the Prophet stress the miswak so much?",
+          "explanation": "The Prophet wished he could make the miswak obligatory at every prayer - purity of the mouth is worship hygiene.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "887",
+            "grading": "sahih",
+            "text": "Were it not that I would burden my community, I would have ordered them to use the miswak with every prayer."
+          },
+          "options": [
+            {
+              "text": "It is required before every meal"
+            },
+            {
+              "text": "It is only for elders"
+            },
+            {
+              "text": "It replaces wudu"
+            },
+            {
+              "text": "It cleans the mouth that remembers Allah and recites His book"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l4.e5",
+          "type": "multipleChoice",
+          "prompt": "What is istinja?",
+          "explanation": "Istinja is basic dignity hygiene and was practiced by the Prophet - it removes impurity right at its source.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "The Prophet used water for istinja and taught the Companions to do so."
+          },
+          "options": [
+            {
+              "text": "Sprinkling water on the floor"
+            },
+            {
+              "text": "Washing the face before prayer"
+            },
+            {
+              "text": "Cleaning yourself with water after using the toilet"
+            },
+            {
+              "text": "A type of voluntary fast"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l4.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"miswak\" (سِوَاك) mean?",
+          "explanation": "miswak (سِوَاك) means \"A natural tooth-cleaning stick\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Ablution (washing before prayer)"
+            },
+            {
+              "text": "Full-body ritual bath"
+            },
+            {
+              "text": "A natural tooth-cleaning stick"
+            },
+            {
+              "text": "Dry purification using clean earth"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l4.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Cleaning oneself after relieving\"?",
+          "explanation": "\"Cleaning oneself after relieving\" is istinja (اِسْتِنْجَاء).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "taharah",
+              "arabic": "طَهَارَة"
+            },
+            {
+              "text": "ghusl",
+              "arabic": "غُسْل"
+            },
+            {
+              "text": "miswak",
+              "arabic": "سِوَاك"
+            },
+            {
+              "text": "istinja",
+              "arabic": "اِسْتِنْجَاء"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.taharah.l5",
+      "title": "When Water Is Not Found",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.taharah.l5.e1",
+          "type": "orderSteps",
+          "prompt": "Arrange the steps of tayammum in the correct order.",
+          "explanation": "Tayammum replaces wudu or ghusl when water is unavailable or harmful: one strike of clean earth, then wipe the face and the hands.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "If you are ill or on a journey... and you do not find water, then strike clean earth and wipe your faces and hands with it."
+          },
+          "steps": [
+            {
+              "text": "Make the intention and say \"Bismillah\""
+            },
+            {
+              "text": "Strike clean earth lightly with both palms"
+            },
+            {
+              "text": "Wipe the face once"
+            },
+            {
+              "text": "Wipe the backs of the hands up to the wrists"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "When is ghusl required?",
+          "explanation": "Ghusl is the full purifying bath for major impurity - and Islam makes it accessible: the Quran’s command is followed by the concession of tayammum when water is not usable.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "If you are in a state of major impurity, purify yourselves; but if you are ill or... do not find water, then strike clean earth."
+          },
+          "options": [
+            {
+              "text": "Before every prayer"
+            },
+            {
+              "text": "In states of major impurity, such as after a wet dream or after a woman’s menses end"
+            },
+            {
+              "text": "Whenever you feel tired"
+            },
+            {
+              "text": "Every Friday morning"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.taharah.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "What do you strike for tayammum?",
+          "explanation": "The Quran says \"clean earth (sa’id tayyib)\" - any natural pure dusty surface works.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "Then strike clean earth and wipe your faces and hands with it."
+          },
+          "options": [
+            {
+              "text": "Clean earth or a dusty, pure surface"
+            },
+            {
+              "text": "A wet towel"
+            },
+            {
+              "text": "A painted wall"
+            },
+            {
+              "text": "Your clothes"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "When is tayammum allowed?",
+          "explanation": "Tayammum is Allah’s concession: no one is trapped without a path to prayer.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "If you are ill or on a journey... and you do not find water, then strike clean earth and wipe your faces and hands with it."
+          },
+          "options": [
+            {
+              "text": "Whenever it is faster than wudu"
+            },
+            {
+              "text": "Only in desert countries"
+            },
+            {
+              "text": "Only during Hajj"
+            },
+            {
+              "text": "When water is unavailable or unusable, or illness makes using it harmful"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l5.e5",
+          "type": "multipleChoice",
+          "prompt": "Which parts are wiped in tayammum?",
+          "explanation": "One strike, two wipes: the face and the hands - simpler than wudu, same purpose.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "Wipe your faces and hands with it."
+          },
+          "options": [
+            {
+              "text": "The arms up to the elbows"
+            },
+            {
+              "text": "The hands only"
+            },
+            {
+              "text": "The head and the feet"
+            },
+            {
+              "text": "The face and the hands"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"tayammum\" (تَيَمُّم) mean?",
+          "explanation": "tayammum (تَيَمُّم) means \"Dry purification using clean earth\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Full-body ritual bath"
+            },
+            {
+              "text": "Ablution (washing before prayer)"
+            },
+            {
+              "text": "Natural human disposition"
+            },
+            {
+              "text": "Dry purification using clean earth"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l5.e7",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger.\"",
+          "explanation": "Ashhadu an la ilaha illallahu wahdahu la sharika lah, wa ashhadu anna Muhammadan abduhu wa rasuluh (أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ): I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger. Said after finishing wudu.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "234",
+            "grading": "sahih",
+            "text": "Whoever performs wudu and says this, the eight gates of Paradise are opened for him."
+          },
+          "options": [
+            {
+              "text": "When you wake up from sleep"
+            },
+            {
+              "text": "When you forgot Bismillah at the start of a meal"
+            },
+            {
+              "text": "After finishing wudu"
+            },
+            {
+              "text": "When you leave the house"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l5.e8",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: tayammum = Dry purification using clean earth; ghusl = Full-body ritual bath; taharah = Purification / purity; wudu = Ablution (washing before prayer).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "tayammum",
+              "right": "Dry purification using clean earth",
+              "leftArabic": "تَيَمُّم"
+            },
+            {
+              "left": "ghusl",
+              "right": "Full-body ritual bath",
+              "leftArabic": "غُسْل"
+            },
+            {
+              "left": "taharah",
+              "right": "Purification / purity",
+              "leftArabic": "طَهَارَة"
+            },
+            {
+              "left": "wudu",
+              "right": "Ablution (washing before prayer)",
+              "leftArabic": "وُضُوء"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islam.taharah.l6",
+      "title": "Taharah Review",
+      "xp": 15,
+      "exercises": [
+        {
+          "id": "islam.taharah.l6.e1",
+          "type": "multipleChoice",
+          "prompt": "The Prophet called cleanliness \"half of faith\". What does that mean for daily life?",
+          "explanation": "Taharah is not a formality - it is worship itself: the same care you give your body is counted as faith.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "223",
+            "grading": "sahih",
+            "text": "Cleanliness is half of faith."
+          },
+          "options": [
+            {
+              "text": "Washing more than three times is always better"
+            },
+            {
+              "text": "Cleanliness matters only inside a mosque"
+            },
+            {
+              "text": "Only clothes must be clean before prayer"
+            },
+            {
+              "text": "Keeping body, clothes and surroundings clean is a major part of the religion"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.taharah.l6.e2",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say after finishing wudu?",
+          "explanation": "The shahada dua after wudu is the full-circle moment: purification ends with a testimony of faith.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "234",
+            "grading": "sahih",
+            "text": "Whoever performs wudu and says the shahada, the eight gates of Paradise are opened for him."
+          },
+          "options": [
+            {
+              "text": "The shahada dua - and the eight gates of Paradise open for it"
+            },
+            {
+              "text": "\"Yarhamukallah\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "Nothing is said after wudu"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l6.e3",
+          "type": "multipleChoice",
+          "prompt": "Why does deep sleep while lying down break wudu, while light dozing while seated may not?",
+          "explanation": "The issue is not sleep itself but awareness: deep sleep while lying down removes the certainty needed for wudu’s validity.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Wudu (Kitab al-Wudu)",
+            "grading": "sahih",
+            "text": "The Companions waited for the Prophet to wake for prayer; deep sleep was treated as breaking wudu."
+          },
+          "options": [
+            {
+              "text": "Because full awareness of bodily control is lost"
+            },
+            {
+              "text": "Because lying down is always impure"
+            },
+            {
+              "text": "Because the bed may be dirty"
+            },
+            {
+              "text": "Because sleep is a sin"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l6.e4",
+          "type": "multipleChoice",
+          "prompt": "You are travelling with no water after using the toilet. What do you do?",
+          "explanation": "Impurity must be removed; where water is unavailable, clean dry material serves the purpose, and tayammum covers the wudu need.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "Book of Purification (Kitab al-Taharah)",
+            "grading": "sahih",
+            "text": "The Prophet allowed cleaning with stones (dry material) when water was scarce."
+          },
+          "options": [
+            {
+              "text": "Leave it until you find water days later"
+            },
+            {
+              "text": "Skip istinja completely"
+            },
+            {
+              "text": "Clean yourself with whatever pure dry material is available until the impurity is gone"
+            },
+            {
+              "text": "Use any liquid including juice"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l6.e5",
+          "type": "multipleChoice",
+          "prompt": "What do you strike for tayammum?",
+          "explanation": "The Quran says \"clean earth (sa’id tayyib)\" - any natural pure dusty surface works.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "Then strike clean earth and wipe your faces and hands with it."
+          },
+          "options": [
+            {
+              "text": "Clean earth or a dusty, pure surface"
+            },
+            {
+              "text": "Your clothes"
+            },
+            {
+              "text": "A wet towel"
+            },
+            {
+              "text": "A painted wall"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l6.e6",
+          "type": "multipleChoice",
+          "prompt": "When does wudu matter most?",
+          "explanation": "Allah commands wudu when you rise to pray: purity is the gateway to standing before Him.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "5:6",
+            "text": "O you who believe, when you rise to pray, wash your faces and your forearms to the elbows."
+          },
+          "options": [
+            {
+              "text": "Only on Fridays"
+            },
+            {
+              "text": "Only during Ramadan"
+            },
+            {
+              "text": "Before the ritual prayer and when handling the Quran (per most scholars)"
+            },
+            {
+              "text": "Only inside the mosque"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.taharah.l6.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: wudu = Ablution (washing before prayer); ghusl = Full-body ritual bath; tayammum = Dry purification using clean earth; najasah = Ritual impurity (something najis); istinja = Cleaning oneself after relieving; miswak = A natural tooth-cleaning stick.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "wudu",
+              "right": "Ablution (washing before prayer)",
+              "leftArabic": "وُضُوء"
+            },
+            {
+              "left": "ghusl",
+              "right": "Full-body ritual bath",
+              "leftArabic": "غُسْل"
+            },
+            {
+              "left": "tayammum",
+              "right": "Dry purification using clean earth",
+              "leftArabic": "تَيَمُّم"
+            },
+            {
+              "left": "najasah",
+              "right": "Ritual impurity (something najis)",
+              "leftArabic": "نَجَاسَة"
+            },
+            {
+              "left": "istinja",
+              "right": "Cleaning oneself after relieving",
+              "leftArabic": "اِسْتِنْجَاء"
+            },
+            {
+              "left": "miswak",
+              "right": "A natural tooth-cleaning stick",
+              "leftArabic": "سِوَاك"
+            }
+          ]
+        },
+        {
+          "id": "islam.taharah.l6.e8",
+          "type": "multipleChoice",
+          "prompt": "What does \"taharah\" (طَهَارَة) mean?",
+          "explanation": "taharah (طَهَارَة) means \"Purification / purity\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Purification / purity"
+            },
+            {
+              "text": "Ritual impurity (something najis)"
+            },
+            {
+              "text": "Ablution (washing before prayer)"
+            },
+            {
+              "text": "Full-body ritual bath"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.taharah.l6.e9",
+          "type": "multipleChoice",
+          "prompt": "You have just completed wudu. What do you say?",
+          "explanation": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger. (Ashhadu an la ilaha illallahu wahdahu la sharika lah, wa ashhadu anna Muhammadan abduhu wa rasuluh). Said after completing wudu; the eight gates of Paradise are opened for the one who says it.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "234",
+            "grading": "sahih",
+            "text": "Whoever performs wudu and says this, the eight gates of Paradise are opened for him."
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            },
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger."
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    }
+  ]
+}

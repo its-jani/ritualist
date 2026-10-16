@@ -1,0 +1,35 @@
+name: ritualist
+description: "Ritualist - an ultra-lean, offline-first micro-learning app with a Duolingo-style path. V1 course module: Islam."
+publish_to: 'none'
+version: 1.0.0+1
+
+# Zero external package dependencies on purpose.
+# The app builds from the Flutter SDK alone, so it stays small, boots fast,
+# works fully offline, and "flutter pub get --offline" always succeeds.
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Pure-Dart lesson engine, shared by the app, CLI tools and tests.
+  ritualist_engine:
+    path: ../packages/ritualist_engine
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/modules/islam/
+    - assets/modules/islam/units/
+
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito-VariableFont_wght.ttf
+        - asset: assets/fonts/Nunito-Italic-VariableFont_wght.ttf
+          style: italic

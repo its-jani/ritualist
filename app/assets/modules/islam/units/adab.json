@@ -1,0 +1,1881 @@
+{
+  "unitId": "adab",
+  "lessons": [
+    {
+      "id": "islam.adab.l1",
+      "title": "Living with Bismillah",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: du’a = Supplication / calling upon Allah; dhikr = Remembrance of Allah; bismillah = Saying \"In the name of Allah\"; alhamdulillah = Saying \"All praise is for Allah\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "du’a",
+              "right": "Supplication / calling upon Allah",
+              "leftArabic": "دُعَاء"
+            },
+            {
+              "left": "dhikr",
+              "right": "Remembrance of Allah",
+              "leftArabic": "ذِكْر"
+            },
+            {
+              "left": "bismillah",
+              "right": "Saying \"In the name of Allah\"",
+              "leftArabic": "بِسْمِ اللَّه"
+            },
+            {
+              "left": "alhamdulillah",
+              "right": "Saying \"All praise is for Allah\"",
+              "leftArabic": "الْحَمْدُ لِلَّه"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"dhikr\" (ذِكْر) mean?",
+          "explanation": "dhikr (ذِكْر) means \"Remembrance of Allah\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Supplication / calling upon Allah"
+            },
+            {
+              "text": "The greeting of peace"
+            },
+            {
+              "text": "Saying \"In the name of Allah\""
+            },
+            {
+              "text": "Remembrance of Allah"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Supplication / calling upon Allah\"?",
+          "explanation": "\"Supplication / calling upon Allah\" is du’a (دُعَاء).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "alhamdulillah",
+              "arabic": "الْحَمْدُ لِلَّه"
+            },
+            {
+              "text": "bismillah",
+              "arabic": "بِسْمِ اللَّه"
+            },
+            {
+              "text": "salaam",
+              "arabic": "سَلَام"
+            },
+            {
+              "text": "du’a",
+              "arabic": "دُعَاء"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "What is dhikr?",
+          "explanation": "Allah commands abundant remembrance - it is the continuous background hum of a believer’s day.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "33:41",
+            "text": "O you who believe, remember Allah with much remembrance."
+          },
+          "options": [
+            {
+              "text": "Remembrance of Allah with the heart, the tongue and in action"
+            },
+            {
+              "text": "A silent meditation without words or movement"
+            },
+            {
+              "text": "A formal prayer said in congregation"
+            },
+            {
+              "text": "Only reciting the Quran in Arabic"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "A Muslim says Bismillah before which of these?",
+          "explanation": "The basmalah is a lifestyle tool: it converts ordinary moments into remembered, blessed moments.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "When one of you eats, let him mention the name of Allah."
+          },
+          "options": [
+            {
+              "text": "Only before formal prayer"
+            },
+            {
+              "text": "Only when leaving for travel"
+            },
+            {
+              "text": "Only when nervous"
+            },
+            {
+              "text": "Eating, drinking, entering the home and other good acts"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "Why does a believer say Alhamdulillah even after hardship?",
+          "explanation": "The Prophet’s criterion: the believer’s affairs are all good - gratitude in ease, patience in hardship, both counted as good.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2999",
+            "grading": "sahih",
+            "text": "Amazing is the affair of the believer: if good befalls him he is grateful, and if hardship befalls him he is patient - and both are good for him."
+          },
+          "options": [
+            {
+              "text": "Because hardship is not real"
+            },
+            {
+              "text": "Because it impresses others"
+            },
+            {
+              "text": "Because the affair of the believer is always good - in ease and in difficulty"
+            },
+            {
+              "text": "Because saying it removes the hardship"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "What does \"Bismillah\" mean?",
+          "explanation": "The basmalah opens the Quran and every good act: it names the One whose help is being sought.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "27:30",
+            "text": "Indeed, it is from Solomon, and indeed, it reads: In the name of Allah, the Entirely Merciful, the Especially Merciful."
+          },
+          "options": [
+            {
+              "text": "Allah is the greatest"
+            },
+            {
+              "text": "All praise is for Allah"
+            },
+            {
+              "text": "Glory be to Allah"
+            },
+            {
+              "text": "In the name of Allah"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l2",
+      "title": "Waking and Sleeping",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l2.e1",
+          "type": "multipleChoice",
+          "prompt": "Your alarm goes off and you wake up. What do you say?",
+          "explanation": "All praise is for Allah who gave us life after death, and to Him is the return. (Alhamdulillahi alladhi ahyana ba’da ma amatana wa ilayhin-nushur). Said when waking up - life and return both belong to Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6312",
+            "grading": "sahih",
+            "text": "When the Prophet woke up he would say: \"All praise is for Allah who gave us life after death, and to Him is the return.\""
+          },
+          "options": [
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "All praise is for Allah who gave us life after death, and to Him is the return."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "You are lying down to sleep at night. What do you say?",
+          "explanation": "In Your name, O Allah, I die and I live. (Bismika Allahumma amutu wa ahya). Said when going to sleep - sleep is likened to a minor death.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6324",
+            "grading": "sahih",
+            "text": "When the Prophet went to bed he would say: \"In Your name, O Allah, I die and I live.\""
+          },
+          "options": [
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l2.e3",
+          "type": "orderSteps",
+          "prompt": "Arrange the start of a Muslim day in the correct order.",
+          "explanation": "The day starts with the waking dua, washing the hands before touching water, wudu with its dua, then dressing and dhikr.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6312, 162",
+            "grading": "sahih",
+            "text": "When the Prophet woke he would say: \"All praise is for Allah who gave us life after death, and to Him is the return.\" He also said: when one of you wakes, let him not dip his hands in the vessel until he washes them three times."
+          },
+          "steps": [
+            {
+              "text": "Say the waking dua: \"Alhamdulillahi alladhi ahyana...\""
+            },
+            {
+              "text": "Wash your hands three times before touching the water"
+            },
+            {
+              "text": "Perform wudu"
+            },
+            {
+              "text": "Say the shahada dua after wudu"
+            },
+            {
+              "text": "Get dressed saying the clothing dua"
+            },
+            {
+              "text": "Start the day with Bismillah and dhikr"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l2.e4",
+          "type": "multipleChoice",
+          "prompt": "Late-night scroll until 2am, then struggle for Fajr. What does the Prophetic guidance favor?",
+          "explanation": "The Prophet disliked idle talk after Isha; rest exists to power worship, and Fajr is where the day’s barakah begins.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Prayer Times (Mawaqit as-Salah)",
+            "grading": "sahih",
+            "text": "The Prophet disliked sleeping before Isha and idle talk after it."
+          },
+          "options": [
+            {
+              "text": "Guarding sleep and daily dhikr over entertainment that wrecks the night"
+            },
+            {
+              "text": "Skipping Fajr and compensating with Dhuhr"
+            },
+            {
+              "text": "Completely abandoning all screens forever"
+            },
+            {
+              "text": "Sleeping right after Isha only"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "What do you say as you lie down to sleep?",
+          "explanation": "Sleep is a minor death; the bedtime words name the One who holds life and death.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6324",
+            "grading": "sahih",
+            "text": "When the Prophet went to bed he would say: In Your name, O Allah, I die and I live."
+          },
+          "options": [
+            {
+              "text": "\"Yahdikumullah\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "\"Subhanal-ladhi sakhkhara lana hadha\""
+            },
+            {
+              "text": "\"Bismika Allahumma amutu wa ahya\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "Your alarm goes off. What did the Prophet say when waking?",
+          "explanation": "The day begins with gratitude: life itself was returned after sleep, and the return to Allah is always the destination.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6312",
+            "grading": "sahih",
+            "text": "When the Prophet woke up he would say: All praise is for Allah who gave us life after death and to Him is the return."
+          },
+          "options": [
+            {
+              "text": "\"Bismika Allahumma amutu wa ahya\""
+            },
+            {
+              "text": "\"Allahu Akbar\""
+            },
+            {
+              "text": "Nothing - just get up"
+            },
+            {
+              "text": "\"Alhamdulillahi alladhi ahyana ba’da ma amatana wa ilayhin-nushur\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l2.e7",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet advise before sleeping?",
+          "explanation": "The Prophet taught al-Bara: wudu before sleep, then the bedtime shahada-style dua - sleep as a prepared servant.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6311",
+            "grading": "sahih",
+            "text": "When you go to bed, perform ablution as you do for prayer, then lie on your right side."
+          },
+          "options": [
+            {
+              "text": "Eat a heavy meal first"
+            },
+            {
+              "text": "Sleep only after midnight"
+            },
+            {
+              "text": "Perform wudu as for prayer, then lie down on the right side"
+            },
+            {
+              "text": "Sleep on the back facing the door"
+            }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l3",
+      "title": "Eating and Drinking",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l3.e1",
+          "type": "orderSteps",
+          "prompt": "Arrange the etiquette of a meal in the correct order.",
+          "explanation": "The Prophet taught the young boy: say Bismillah, eat with your right hand, eat from what is in front of you, and praise Allah when you finish.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "The Prophet said to me: \"O young man, say Bismillah, eat with your right hand, and eat from what is in front of you.\""
+          },
+          "steps": [
+            {
+              "text": "Say \"Bismillah\""
+            },
+            {
+              "text": "Eat with your right hand"
+            },
+            {
+              "text": "Eat from the food closest to you"
+            },
+            {
+              "text": "Say \"Alhamdulillah\" when you finish"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "You are about to start your meal. What do you say first?",
+          "explanation": "In the name of Allah. (Bismillah). Said before eating or drinking; a habit that opens every good act with Allah’s name.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "When one of you eats, let him mention the name of Allah; the Prophet said: \"Say Bismillah, eat with your right hand...\""
+          },
+          "options": [
+            {
+              "text": "May Allah guide you and set your affairs right."
+            },
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "In the name of Allah."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "You started eating and then remembered you forgot to say Bismillah. What do you say now?",
+          "explanation": "In the name of Allah at its beginning and its end. (Bismillahi awwalahu wa akhirah). Said mid-meal when you realize you forgot Bismillah at the start.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3767",
+            "grading": "hasan",
+            "text": "When one of you eats and forgets to mention Allah, let him say: \"Bismillahi awwalahu wa akhirah.\""
+          },
+          "options": [
+            {
+              "text": "In the name of Allah, I place my trust in Allah; there is no strength or power except with Allah."
+            },
+            {
+              "text": "In the name of Allah at its beginning and its end."
+            },
+            {
+              "text": "I ask Your forgiveness, O Allah."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In the name of Allah at its beginning and its end.\"",
+          "explanation": "Bismillahi awwalahu wa akhirah (بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ): In the name of Allah at its beginning and its end. Said when you forgot Bismillah at the start of a meal.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3767",
+            "grading": "hasan",
+            "text": "When one of you eats and forgets to mention Allah, let him say: \"Bismillahi awwalahu wa akhirah.\""
+          },
+          "options": [
+            {
+              "text": "When you leave the house"
+            },
+            {
+              "text": "When you enter the home"
+            },
+            {
+              "text": "When you forgot Bismillah at the start of a meal"
+            },
+            {
+              "text": "When you enter the bathroom"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l3.e5",
+          "type": "multipleChoice",
+          "prompt": "You have finished your meal and feel full. What do you say?",
+          "explanation": "All praise is for Allah who fed us, gave us drink, and made us Muslims. (Alhamdulillahi alladhi at’amana wa saqana wa ja’alana minal-muslimin). Said after finishing a meal, thanking Allah for the food and the blessing of Islam.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3850",
+            "grading": "hasan",
+            "text": "Whoever eats food and says this dua, his previous sins will be forgiven."
+          },
+          "options": [
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "I ask Your forgiveness, O Allah."
+            },
+            {
+              "text": "In the name of Allah at its beginning and its end."
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l3.e6",
+          "type": "multipleChoice",
+          "prompt": "Halfway through your meal you realize you never said Bismillah. What now?",
+          "explanation": "The Sunnah covers the forgetful: the dua for mid-meal recognizes both ends of the meal.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3767",
+            "grading": "hasan",
+            "text": "When one of you eats and forgets to mention Allah, let him say: Bismillahi awwalahu wa akhirah."
+          },
+          "options": [
+            {
+              "text": "Stop eating immediately"
+            },
+            {
+              "text": "Restart the entire meal"
+            },
+            {
+              "text": "Say \"Bismillahi awwalahu wa akhirah\""
+            },
+            {
+              "text": "Say nothing - the chance has passed"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l3.e7",
+          "type": "multipleChoice",
+          "prompt": "Which behavior should you avoid while drinking?",
+          "explanation": "The Prophet would pause and breathe outside the vessel - hygiene and manners in one habit.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Drinks (Kitab al-Ashribah)",
+            "grading": "sahih",
+            "text": "The Prophet would breathe three times while drinking (pausing outside the vessel)."
+          },
+          "options": [
+            {
+              "text": "Saying Bismillah first"
+            },
+            {
+              "text": "Breathing into the water vessel"
+            },
+            {
+              "text": "Sharing the water with others"
+            },
+            {
+              "text": "Sitting down comfortably"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l3.e8",
+          "type": "multipleChoice",
+          "prompt": "What three things did the Prophet teach a young boy about meals?",
+          "explanation": "The famous instruction to Umar ibn Abi Salamah packs the whole meal etiquette into one sentence.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "O young man, say Bismillah, eat with your right hand, and eat from what is in front of you."
+          },
+          "options": [
+            {
+              "text": "Say Bismillah, eat with your right hand, eat from what is in front of you"
+            },
+            {
+              "text": "Never eat meat on Mondays"
+            },
+            {
+              "text": "Eat fast, take big bites, finish everything"
+            },
+            {
+              "text": "Eat only with family, never alone"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l3.e9",
+          "type": "multipleChoice",
+          "prompt": "How should a Muslim think about filling the stomach?",
+          "explanation": "The Prophet’s rule about the stomach: moderate portions keep the body light for worship.",
+          "source": {
+            "collection": "Jami’ at-Tirmidhi",
+            "reference": "2380",
+            "grading": "hasan (per some scholars)",
+            "text": "The son of Adam fills no vessel worse than his stomach. A few morsels suffice; if he must, then a third for food, a third for drink, a third for breath."
+          },
+          "options": [
+            {
+              "text": "Eat until tired, then rest"
+            },
+            {
+              "text": "Only eat when in pain"
+            },
+            {
+              "text": "Fill it completely - wasting food is wrong"
+            },
+            {
+              "text": "A third for food, a third for drink, a third for breath"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l4",
+      "title": "Mirror, Clothes and Doors",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l4.e1",
+          "type": "multipleChoice",
+          "prompt": "You glance in the mirror while getting ready. What do you say?",
+          "explanation": "O Allah, You have made my creation beautiful, so make my character beautiful. (Allahumma anta hassanta khalqi fa hassin khuluqi). Said when looking at yourself in the mirror - a reminder that character matters more than appearance.",
+          "source": {
+            "collection": "Musnad Ahmad; also reported by Ibn Hibban",
+            "reference": "Book of Supplications",
+            "grading": "hasan (per some scholars)",
+            "text": "\"O Allah, You have beautified my creation, so beautify my character.\""
+          },
+          "options": [
+            {
+              "text": "In the name of Allah at its beginning and its end."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "In the name of Allah."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "You put on your clothes in the morning. What do you say?",
+          "explanation": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me. (Alhamdulillahi alladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah). Said when putting on a garment - clothes are a provision, not a personal achievement.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4023",
+            "grading": "hasan",
+            "text": "Whoever puts on a garment and says this, his previous sins will be forgiven."
+          },
+          "options": [
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "In the name of Allah at its beginning and its end."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"All praise is for Allah who clothed me with this and provided it for me without any strength or power from me.\"",
+          "explanation": "Alhamdulillahi alladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah (الْحَمْدُ لِلَّهِ الَّذِي كَسَانِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ): All praise is for Allah who clothed me with this and provided it for me without any strength or power from me. Said when you put on clothes.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4023",
+            "grading": "hasan",
+            "text": "Whoever puts on a garment and says this, his previous sins will be forgiven."
+          },
+          "options": [
+            {
+              "text": "When you put on clothes"
+            },
+            {
+              "text": "When you wake up from sleep"
+            },
+            {
+              "text": "When you leave the bathroom"
+            },
+            {
+              "text": "When you finish eating"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "You step out of your front door to leave home. What do you say?",
+          "explanation": "In the name of Allah, I place my trust in Allah; there is no strength or power except with Allah. (Bismillahi tawakkaltu alallah, la hawla wa la quwwata illa billah). Said when leaving home; it is answered: \"You have been guided, protected, and taken care of.\"",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5095",
+            "grading": "hasan",
+            "text": "It is said to him: you have been guided, you have been protected, you have been taken care of."
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            },
+            {
+              "text": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me."
+            },
+            {
+              "text": "In the name of Allah, I place my trust in Allah; there is no strength or power except with Allah."
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l4.e5",
+          "type": "multipleChoice",
+          "prompt": "You come back home and step inside. What do you say?",
+          "explanation": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend. (Bismillahi walajna wa bismillahi kharajna wa ala rabbina tawakkalna). Said when entering the home, welcoming Allah’s name into the household.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5096",
+            "grading": "hasan",
+            "text": "When the Prophet entered his home he would say this dua."
+          },
+          "options": [
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            },
+            {
+              "text": "O Allah, I seek refuge in You from male and female devils."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l4.e6",
+          "type": "orderSteps",
+          "prompt": "Arrange the etiquette of arriving home in the correct order.",
+          "explanation": "When you return home: say the dua for entering, greet your household with salaam, and begin eating with Bismillah.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5096",
+            "grading": "hasan",
+            "text": "When the Prophet entered his home he would say: \"In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend.\""
+          },
+          "steps": [
+            {
+              "text": "Say the entering dua: \"Bismillahi walajna...\""
+            },
+            {
+              "text": "Give salaam to the household"
+            },
+            {
+              "text": "Say \"Bismillah\" before eating"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l4.e7",
+          "type": "multipleChoice",
+          "prompt": "You return home after work. What do you say as you enter?",
+          "explanation": "Entering with Allah’s name welcomes barakah into the household - and it is followed by salaam to the family.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5096",
+            "grading": "hasan",
+            "text": "When the Prophet entered his home he would say: In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+          },
+          "options": [
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Bismillahi walajna wa bismillahi kharajna wa ala rabbina tawakkalna\""
+            },
+            {
+              "text": "\"Subhanal-ladhi sakhkhara lana hadha\""
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l4.e8",
+          "type": "multipleChoice",
+          "prompt": "What do you say when looking in the mirror?",
+          "explanation": "The mirror dua connects outside to inside: if the reflection is good, the character inside should be better.",
+          "source": {
+            "collection": "Musnad Ahmad; also reported by Ibn Hibban",
+            "reference": "Book of Supplications",
+            "grading": "hasan (per some scholars)",
+            "text": "O Allah, You have beautified my creation, so beautify my character."
+          },
+          "options": [
+            {
+              "text": "\"Allahumma anta hassanta khalqi fa hassin khuluqi\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l4.e9",
+          "type": "multipleChoice",
+          "prompt": "Stepping out of your front door, what is said?",
+          "explanation": "Leaving home is trusting home’s Owner: the dua hands over the trip and its outcome to Allah.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5095",
+            "grading": "hasan",
+            "text": "It is said to him: you have been guided, protected and taken care of."
+          },
+          "options": [
+            {
+              "text": "\"Alhamdulillah\""
+            },
+            {
+              "text": "\"Yarhamukallah\""
+            },
+            {
+              "text": "\"Bismillahi walajna\""
+            },
+            {
+              "text": "\"Bismillahi tawakkaltu alallah, la hawla wa la quwwata illa billah\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l4.e10",
+          "type": "multipleChoice",
+          "prompt": "You put on a new shirt. What do you say?",
+          "explanation": "The clothing dua strips pride from fashion: the garment is provision from Allah, not an achievement.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4023",
+            "grading": "hasan",
+            "text": "Whoever puts on a garment and says this dua, his previous sins will be forgiven."
+          },
+          "options": [
+            {
+              "text": "Nothing - it is just clothing"
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Azim\""
+            },
+            {
+              "text": "\"Alhamdulillahi alladhi kasani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah\""
+            },
+            {
+              "text": "\"Bismika Allahumma amutu wa ahya\""
+            }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l5",
+      "title": "Salaam and Kind Words",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l5.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: salaam = The greeting of peace; subhanallah = Saying \"Glory be to Allah\"; athan = The call to prayer; adab = Etiquette and good manners.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "salaam",
+              "right": "The greeting of peace",
+              "leftArabic": "سَلَام"
+            },
+            {
+              "left": "subhanallah",
+              "right": "Saying \"Glory be to Allah\"",
+              "leftArabic": "سُبْحَانَ اللَّه"
+            },
+            {
+              "left": "athan",
+              "right": "The call to prayer",
+              "leftArabic": "أَذَان"
+            },
+            {
+              "left": "adab",
+              "right": "Etiquette and good manners",
+              "leftArabic": "أَدَب"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"salaam\" (سَلَام) mean?",
+          "explanation": "salaam (سَلَام) means \"The greeting of peace\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "The greeting of peace"
+            },
+            {
+              "text": "Saying \"Glory be to Allah\""
+            },
+            {
+              "text": "Saying \"All praise is for Allah\""
+            },
+            {
+              "text": "Etiquette and good manners"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "What does \"subhanallah\" (سُبْحَانَ اللَّه) mean?",
+          "explanation": "subhanallah (سُبْحَانَ اللَّه) means \"Saying \"Glory be to Allah\"\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Saying \"Glory be to Allah\""
+            },
+            {
+              "text": "Saying \"In the name of Allah\""
+            },
+            {
+              "text": "The greeting of peace"
+            },
+            {
+              "text": "Remembrance of Allah"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Etiquette and good manners\"?",
+          "explanation": "\"Etiquette and good manners\" is adab (أَدَب).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "adab",
+              "arabic": "أَدَب"
+            },
+            {
+              "text": "bismillah",
+              "arabic": "بِسْمِ اللَّه"
+            },
+            {
+              "text": "subhanallah",
+              "arabic": "سُبْحَانَ اللَّه"
+            },
+            {
+              "text": "dhikr",
+              "arabic": "ذِكْر"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l5.e5",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say increases love between people?",
+          "explanation": "The Prophet tied faith itself to a simple free habit: warm greetings everywhere.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "54",
+            "grading": "sahih",
+            "text": "You will not enter Paradise until you believe, and you will not believe until you love one another. Shall I tell you what makes you love one another? Spread salaam among you."
+          },
+          "options": [
+            {
+              "text": "Matching clothes"
+            },
+            {
+              "text": "Long conversations late at night"
+            },
+            {
+              "text": "Spreading salaam"
+            },
+            {
+              "text": "Giving expensive gifts only"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "Who greets whom first according to the Sunnah?",
+          "explanation": "The Prophet set the order so that salaam flows from strength and movement toward stillness and need.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2160",
+            "grading": "sahih",
+            "text": "The rider should greet the pedestrian, the pedestrian the one seated, and the smaller group the larger."
+          },
+          "options": [
+            {
+              "text": "The rider greets the walker, the walker the seated, the smaller group the larger"
+            },
+            {
+              "text": "The elder greets only other elders"
+            },
+            {
+              "text": "Nobody greets first until names are known"
+            },
+            {
+              "text": "The seated greet the walker"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l5.e7",
+          "type": "multipleChoice",
+          "prompt": "What is the complete form of the greeting?",
+          "explanation": "The fuller greeting carries peace, mercy and blessings - and returning it better is Quranically encouraged.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5195",
+            "grading": "hasan",
+            "text": "A man came and said: As-salamu alaykum. The Prophet responded and said: Ten (rewards). Another added: wa rahmatullah - Twenty. Another: wa barakatuh - Thirty."
+          },
+          "options": [
+            {
+              "text": "\"As-salamu alaykum wa rahmatullahi wa barakatuh\""
+            },
+            {
+              "text": "\"As-salamu alaykum\" only"
+            },
+            {
+              "text": "\"Good morning\""
+            },
+            {
+              "text": "\"Salam alayk\""
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l5.e8",
+          "type": "multipleChoice",
+          "prompt": "Someone greets you: \"As-salamu alaykum\". What is the better reply?",
+          "explanation": "Allah commands: when greeted, greet with something better or at least return it - generosity starts with words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:86",
+            "text": "When you are greeted with a greeting, greet with one better than it or return it."
+          },
+          "options": [
+            {
+              "text": "\"Alaykum salam\" with a wave"
+            },
+            {
+              "text": "A silent nod"
+            },
+            {
+              "text": "\"Hello, how are you?\""
+            },
+            {
+              "text": "\"Wa alaykum as-salam wa rahmatullahi wa barakatuh\""
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l6",
+      "title": "Bathroom, Travel and Rain",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.adab.l6.e1",
+          "type": "multipleChoice",
+          "prompt": "You are about to step into the bathroom. What do you say?",
+          "explanation": "O Allah, I seek refuge in You from male and female devils. (Allahumma inni a’udhu bika minal-khubthi wal-khaba’ith). Said before entering the bathroom - a place where one should not be undefended.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "142",
+            "grading": "sahih",
+            "text": "When the Prophet entered the privy he would say: \"O Allah, I seek refuge in You from male and female devils.\""
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me."
+            },
+            {
+              "text": "I seek refuge with Allah from the accursed devil."
+            },
+            {
+              "text": "O Allah, I seek refuge in You from male and female devils."
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l6.e2",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"O Allah, I seek refuge in You from male and female devils.\"",
+          "explanation": "Allahumma inni a’udhu bika minal-khubthi wal-khaba’ith (اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبَائِثِ): O Allah, I seek refuge in You from male and female devils. Said when you enter the bathroom.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "142",
+            "grading": "sahih",
+            "text": "When the Prophet entered the privy he would say: \"O Allah, I seek refuge in You from male and female devils.\""
+          },
+          "options": [
+            {
+              "text": "After finishing wudu"
+            },
+            {
+              "text": "When rain begins to fall"
+            },
+            {
+              "text": "When you enter the bathroom"
+            },
+            {
+              "text": "When seeking knowledge"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l6.e3",
+          "type": "multipleChoice",
+          "prompt": "You step out of the bathroom. What do you say?",
+          "explanation": "I ask Your forgiveness, O Allah. (Ghufranak). Said when leaving the bathroom - a short, humble return to remembrance.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "30",
+            "grading": "hasan",
+            "text": "When the Prophet left the privy he would say: \"Ghufranak.\""
+          },
+          "options": [
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "In the name of Allah, I place my trust in Allah; there is no strength or power except with Allah."
+            },
+            {
+              "text": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me."
+            },
+            {
+              "text": "I ask Your forgiveness, O Allah."
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l6.e4",
+          "type": "multipleChoice",
+          "prompt": "You sit down in a car or bus for a journey. What do you say?",
+          "explanation": "Glory to Him who has subjected this to us, though we could not have subdued it; and indeed to our Lord we are returning. (Subhanal-ladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina lamunqalibun). Said when boarding a vehicle - a journey is a reminder of the final return to Allah.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "43:13-14",
+            "text": "...that you may settle yourselves upon their backs and then remember the favor of your Lord when you have settled upon them."
+          },
+          "options": [
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "Glory to Him who has subjected this to us, though we could not have subdued it; and indeed to our Lord we are returning."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l6.e5",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"Glory to Him who has subjected this to us, though we could not have subdued it; and indeed to our Lord we are returning.\"",
+          "explanation": "Subhanal-ladhi sakhkhara lana hadha wa ma kunna lahu muqrinin, wa inna ila rabbina lamunqalibun (سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ): Glory to Him who has subjected this to us, though we could not have subdued it; and indeed to our Lord we are returning. Said when boarding a vehicle or starting a journey.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "43:13-14",
+            "text": "...that you may settle yourselves upon their backs and then remember the favor of your Lord when you have settled upon them."
+          },
+          "options": [
+            {
+              "text": "When someone replies Yarhamukallah to your sneeze"
+            },
+            {
+              "text": "When you wake up from sleep"
+            },
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            },
+            {
+              "text": "When seeking knowledge"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l6.e6",
+          "type": "multipleChoice",
+          "prompt": "Rain starts pouring and you watch from the window. What do you say?",
+          "explanation": "O Allah, make it a beneficial rain. (Allahumma sayyiban nafi’a). Said when rain falls - rain is mercy, and the dua asks that it benefits rather than harms.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1032",
+            "grading": "sahih",
+            "text": "When the Prophet saw rain he would say: \"O Allah, make it a beneficial rain.\""
+          },
+          "options": [
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            },
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "In the name of Allah at its beginning and its end."
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l6.e7",
+          "type": "multipleChoice",
+          "prompt": "Your friend sneezed, praised Allah, and you replied \"Yarhamukallah\". What does your friend reply to you?",
+          "explanation": "May Allah guide you and set your affairs right. (Yahdikumullahu wa yuslihu balakum). Said by the sneezer in reply to \"Yarhamukallah\" - completing the exchange.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6224",
+            "grading": "sahih",
+            "text": "The sneezer says Alhamdulillah, the companion says Yarhamukallah, and the sneezer replies: Yahdikumullahu wa yuslihu balakum."
+          },
+          "options": [
+            {
+              "text": "May Allah guide you and set your affairs right."
+            },
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "O Allah, make it a beneficial rain."
+            },
+            {
+              "text": "I bear witness that there is no god but Allah alone, without partner, and that Muhammad is His servant and messenger."
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l6.e8",
+          "type": "orderSteps",
+          "prompt": "Arrange the sneeze exchange in the correct order.",
+          "explanation": "The sneezer praises Allah, the one who hears replies with a dua of mercy, and the sneezer answers with a dua of guidance.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6224",
+            "grading": "sahih",
+            "text": "When one of you sneezes, let him say Alhamdulillah, and let his companion say Yarhamukallah; the sneezer then replies: Yahdikumullahu wa yuslihu balakum."
+          },
+          "steps": [
+            {
+              "text": "The sneezer says \"Alhamdulillah\""
+            },
+            {
+              "text": "The companion replies \"Yarhamukallah\""
+            },
+            {
+              "text": "The sneezer answers \"Yahdikumullahu wa yuslihu balakum\""
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l6.e9",
+          "type": "multipleChoice",
+          "prompt": "Rain begins after months of drought. What do you say?",
+          "explanation": "Rain is mercy in motion; the dua asks that the mercy arrive as benefit, not harm.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1032",
+            "grading": "sahih",
+            "text": "When the Prophet saw rain he would say: O Allah, make it a beneficial rain."
+          },
+          "options": [
+            {
+              "text": "\"Allahu Akbar\""
+            },
+            {
+              "text": "\"Bismika Allahumma amutu wa ahya\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l6.e10",
+          "type": "multipleChoice",
+          "prompt": "What is said when leaving the bathroom?",
+          "explanation": "A tiny dua after a humbling necessity - the believer’s tongue stays connected to Allah even in the washroom doorway.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "30",
+            "grading": "hasan",
+            "text": "When the Prophet left the privy he would say: Ghufranak."
+          },
+          "options": [
+            {
+              "text": "\"Yahdikumullah\""
+            },
+            {
+              "text": "\"Ghufranak\" - I ask Your forgiveness"
+            },
+            {
+              "text": "Nothing at all"
+            },
+            {
+              "text": "\"Alhamdulillah\""
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l6.e11",
+          "type": "multipleChoice",
+          "prompt": "You get into a car for a long highway trip. What do you recite?",
+          "explanation": "The vehicle is subjected to us by Allah - the dua honors the Giver and remembers the final return.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "43:13-14",
+            "text": "That you may settle upon their backs, then remember the favor of your Lord and say: Glory to Him who has subjected this to us... and indeed to our Lord we are returning."
+          },
+          "options": [
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Subhanal-ladhi sakhkhara lana hadha...\" - the journey dua"
+            },
+            {
+              "text": "\"Subhana Rabbiyal-Ala\""
+            }
+          ],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "islam.adab.l7",
+      "title": "Adab Review",
+      "xp": 15,
+      "exercises": [
+        {
+          "id": "islam.adab.l7.e1",
+          "type": "multipleChoice",
+          "prompt": "What is dhikr?",
+          "explanation": "Allah commands abundant remembrance - it is the continuous background hum of a believer’s day.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "33:41",
+            "text": "O you who believe, remember Allah with much remembrance."
+          },
+          "options": [
+            {
+              "text": "Remembrance of Allah with the heart, the tongue and in action"
+            },
+            {
+              "text": "Only reciting the Quran in Arabic"
+            },
+            {
+              "text": "A silent meditation without words or movement"
+            },
+            {
+              "text": "A formal prayer said in congregation"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l7.e2",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet advise before sleeping?",
+          "explanation": "The Prophet taught al-Bara: wudu before sleep, then the bedtime shahada-style dua - sleep as a prepared servant.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6311",
+            "grading": "sahih",
+            "text": "When you go to bed, perform ablution as you do for prayer, then lie on your right side."
+          },
+          "options": [
+            {
+              "text": "Perform wudu as for prayer, then lie down on the right side"
+            },
+            {
+              "text": "Sleep on the back facing the door"
+            },
+            {
+              "text": "Eat a heavy meal first"
+            },
+            {
+              "text": "Sleep only after midnight"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.adab.l7.e3",
+          "type": "multipleChoice",
+          "prompt": "Which behavior should you avoid while drinking?",
+          "explanation": "The Prophet would pause and breathe outside the vessel - hygiene and manners in one habit.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Drinks (Kitab al-Ashribah)",
+            "grading": "sahih",
+            "text": "The Prophet would breathe three times while drinking (pausing outside the vessel)."
+          },
+          "options": [
+            {
+              "text": "Saying Bismillah first"
+            },
+            {
+              "text": "Breathing into the water vessel"
+            },
+            {
+              "text": "Sharing the water with others"
+            },
+            {
+              "text": "Sitting down comfortably"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l7.e4",
+          "type": "multipleChoice",
+          "prompt": "What do you say when looking in the mirror?",
+          "explanation": "The mirror dua connects outside to inside: if the reflection is good, the character inside should be better.",
+          "source": {
+            "collection": "Musnad Ahmad; also reported by Ibn Hibban",
+            "reference": "Book of Supplications",
+            "grading": "hasan (per some scholars)",
+            "text": "O Allah, You have beautified my creation, so beautify my character."
+          },
+          "options": [
+            {
+              "text": "\"Rabbi zidni ilma\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Allahumma anta hassanta khalqi fa hassin khuluqi\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l7.e5",
+          "type": "multipleChoice",
+          "prompt": "What is the complete form of the greeting?",
+          "explanation": "The fuller greeting carries peace, mercy and blessings - and returning it better is Quranically encouraged.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "5195",
+            "grading": "hasan",
+            "text": "A man came and said: As-salamu alaykum. The Prophet responded and said: Ten (rewards). Another added: wa rahmatullah - Twenty. Another: wa barakatuh - Thirty."
+          },
+          "options": [
+            {
+              "text": "\"As-salamu alaykum\" only"
+            },
+            {
+              "text": "\"Good morning\""
+            },
+            {
+              "text": "\"Salam alayk\""
+            },
+            {
+              "text": "\"As-salamu alaykum wa rahmatullahi wa barakatuh\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l7.e6",
+          "type": "multipleChoice",
+          "prompt": "What is said when leaving the bathroom?",
+          "explanation": "A tiny dua after a humbling necessity - the believer’s tongue stays connected to Allah even in the washroom doorway.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "30",
+            "grading": "hasan",
+            "text": "When the Prophet left the privy he would say: Ghufranak."
+          },
+          "options": [
+            {
+              "text": "\"Alhamdulillah\""
+            },
+            {
+              "text": "\"Yahdikumullah\""
+            },
+            {
+              "text": "Nothing at all"
+            },
+            {
+              "text": "\"Ghufranak\" - I ask Your forgiveness"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l7.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: du’a = Supplication / calling upon Allah; dhikr = Remembrance of Allah; salaam = The greeting of peace; bismillah = Saying \"In the name of Allah\"; alhamdulillah = Saying \"All praise is for Allah\"; subhanallah = Saying \"Glory be to Allah\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "du’a",
+              "right": "Supplication / calling upon Allah",
+              "leftArabic": "دُعَاء"
+            },
+            {
+              "left": "dhikr",
+              "right": "Remembrance of Allah",
+              "leftArabic": "ذِكْر"
+            },
+            {
+              "left": "salaam",
+              "right": "The greeting of peace",
+              "leftArabic": "سَلَام"
+            },
+            {
+              "left": "bismillah",
+              "right": "Saying \"In the name of Allah\"",
+              "leftArabic": "بِسْمِ اللَّه"
+            },
+            {
+              "left": "alhamdulillah",
+              "right": "Saying \"All praise is for Allah\"",
+              "leftArabic": "الْحَمْدُ لِلَّه"
+            },
+            {
+              "left": "subhanallah",
+              "right": "Saying \"Glory be to Allah\"",
+              "leftArabic": "سُبْحَانَ اللَّه"
+            }
+          ]
+        },
+        {
+          "id": "islam.adab.l7.e8",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In the name of Allah.\"",
+          "explanation": "Bismillah (بِسْمِ اللَّه): In the name of Allah. Said when you start eating.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "When one of you eats, let him mention the name of Allah; the Prophet said: \"Say Bismillah, eat with your right hand...\""
+          },
+          "options": [
+            {
+              "text": "After finishing wudu"
+            },
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            },
+            {
+              "text": "When you put on clothes"
+            },
+            {
+              "text": "When you start eating"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l7.e9",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In the name of Allah at its beginning and its end.\"",
+          "explanation": "Bismillahi awwalahu wa akhirah (بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ): In the name of Allah at its beginning and its end. Said when you forgot Bismillah at the start of a meal.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3767",
+            "grading": "hasan",
+            "text": "When one of you eats and forgets to mention Allah, let him say: \"Bismillahi awwalahu wa akhirah.\""
+          },
+          "options": [
+            {
+              "text": "When you start eating"
+            },
+            {
+              "text": "When you forgot Bismillah at the start of a meal"
+            },
+            {
+              "text": "When someone replies Yarhamukallah to your sneeze"
+            },
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l7.e10",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"All praise is for Allah who fed us, gave us drink, and made us Muslims.\"",
+          "explanation": "Alhamdulillahi alladhi at’amana wa saqana wa ja’alana minal-muslimin (الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِينَ): All praise is for Allah who fed us, gave us drink, and made us Muslims. Said when you finish eating.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "3850",
+            "grading": "hasan",
+            "text": "Whoever eats food and says this dua, his previous sins will be forgiven."
+          },
+          "options": [
+            {
+              "text": "When seeking knowledge"
+            },
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            },
+            {
+              "text": "When you finish eating"
+            },
+            {
+              "text": "When you go to sleep"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l7.e11",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In Your name, O Allah, I die and I live.\"",
+          "explanation": "Bismika Allahumma amutu wa ahya (بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا): In Your name, O Allah, I die and I live. Said when you go to sleep.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6324",
+            "grading": "sahih",
+            "text": "When the Prophet went to bed he would say: \"In Your name, O Allah, I die and I live.\""
+          },
+          "options": [
+            {
+              "text": "When you put on clothes"
+            },
+            {
+              "text": "When you go to sleep"
+            },
+            {
+              "text": "When you start eating"
+            },
+            {
+              "text": "When seeking knowledge"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l7.e12",
+          "type": "multipleChoice",
+          "prompt": "Your younger sibling breaks something of yours and you feel anger boiling inside. What should you say?",
+          "explanation": "I seek refuge with Allah from the accursed devil. (A’udhu billahi minash-shaytanir-rajim). Said when anger flares - anger comes from the devil, and refuge is sought with Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "I seek refuge with Allah from the accursed devil."
+            },
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.adab.l7.e13",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"I seek refuge with Allah from the accursed devil.\"",
+          "explanation": "A’udhu billahi minash-shaytanir-rajim (أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ): I seek refuge with Allah from the accursed devil. Said when anger rises inside you.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "When you leave the bathroom"
+            },
+            {
+              "text": "When anger rises inside you"
+            },
+            {
+              "text": "When you go to sleep"
+            },
+            {
+              "text": "When you wake up from sleep"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.adab.l7.e14",
+          "type": "multipleChoice",
+          "prompt": "You open your books to study and want Allah’s help to learn. What do you say?",
+          "explanation": "My Lord, increase me in knowledge. (Rabbi zidni ilma). A short Quranic dua for studying - knowledge is requested from its true Giver.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "O Allah, You have made my creation beautiful, so make my character beautiful."
+            },
+            {
+              "text": "All praise is for Allah who clothed me with this and provided it for me without any strength or power from me."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.adab.l7.e15",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"My Lord, increase me in knowledge.\"",
+          "explanation": "Rabbi zidni ilma (رَبِّ زِدْنِي عِلْمًا): My Lord, increase me in knowledge. Said when seeking knowledge.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "When you go to sleep"
+            },
+            {
+              "text": "When seeking knowledge"
+            },
+            {
+              "text": "When rain begins to fall"
+            },
+            {
+              "text": "When you look in the mirror"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    }
+  ]
+}

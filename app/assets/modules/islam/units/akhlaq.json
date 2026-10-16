@@ -1,0 +1,1462 @@
+{
+  "unitId": "akhlaq",
+  "lessons": [
+    {
+      "id": "islam.akhlaq.l1",
+      "title": "The Weight of Good Character",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: birr = Kindness and devotion to parents; akhlaq = Character and moral conduct; sidq = Truthfulness; tawadu’ = Humility.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "birr",
+              "right": "Kindness and devotion to parents",
+              "leftArabic": "بِرّ"
+            },
+            {
+              "left": "akhlaq",
+              "right": "Character and moral conduct",
+              "leftArabic": "أَخْلَاق"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            },
+            {
+              "left": "tawadu’",
+              "right": "Humility",
+              "leftArabic": "تَوَاضُع"
+            }
+          ]
+        },
+        {
+          "id": "islam.akhlaq.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"akhlaq\" (أَخْلَاق) mean?",
+          "explanation": "akhlaq (أَخْلَاق) means \"Character and moral conduct\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Backbiting (saying what a person dislikes)"
+            },
+            {
+              "text": "Humility"
+            },
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Character and moral conduct"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Truthfulness\"?",
+          "explanation": "\"Truthfulness\" is sidq (صِدْق).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "akhlaq",
+              "arabic": "أَخْلَاق"
+            },
+            {
+              "text": "tawadu’",
+              "arabic": "تَوَاضُع"
+            },
+            {
+              "text": "sidq",
+              "arabic": "صِدْق"
+            },
+            {
+              "text": "birr",
+              "arabic": "بِرّ"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say he was sent to perfect?",
+          "explanation": "The mission statement itself: character is the center of the religion, not an accessory to it.",
+          "source": {
+            "collection": "Musnad Ahmad",
+            "reference": "Book of Manners",
+            "grading": "sahih (per some scholars)",
+            "text": "I was sent only to perfect good character."
+          },
+          "options": [
+            {
+              "text": "Good character (makarim al-akhlaq)"
+            },
+            {
+              "text": "Trade and business rules"
+            },
+            {
+              "text": "Physical strength"
+            },
+            {
+              "text": "Poetry and eloquence"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.akhlaq.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "What does sidq (truthfulness) mean in practice?",
+          "explanation": "The Quran places the truthful on a path of safety: truthfulness is a lifestyle, not just honest words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "9:119",
+            "text": "O you who believe, fear Allah and be with the truthful."
+          },
+          "options": [
+            {
+              "text": "Saying only what people want to hear"
+            },
+            {
+              "text": "Always being brutally harsh"
+            },
+            {
+              "text": "Being truthful even when the truth is hard"
+            },
+            {
+              "text": "Never telling anyone bad news"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say happens to the one who humbles himself for Allah?",
+          "explanation": "Tawadu is strength disguised as lowliness: no one humbles himself for Allah except that Allah elevates him.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2588",
+            "grading": "sahih",
+            "text": "No one humbles himself for Allah except that Allah raises him."
+          },
+          "options": [
+            {
+              "text": "He is ignored"
+            },
+            {
+              "text": "Allah raises him up"
+            },
+            {
+              "text": "He loses respect"
+            },
+            {
+              "text": "He must lower his standards"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say is placed on the believer’s scale heavier than anything?",
+          "explanation": "On the Day of Judgement the scales weigh character - daily kindness can outweigh impressive feats.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4799",
+            "grading": "sahih (per some scholars)",
+            "text": "Nothing is placed on the scales heavier than good character."
+          },
+          "options": [
+            {
+              "text": "Long night prayers"
+            },
+            {
+              "text": "Wealth given in charity"
+            },
+            {
+              "text": "Years of fasting"
+            },
+            {
+              "text": "Good character"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l2",
+      "title": "Etiquette with Parents",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l2.e1",
+          "type": "multipleChoice",
+          "prompt": "What image does the Quran use for how you should treat your parents?",
+          "explanation": "The wings of mercy replace the wings you had as a child - the parent-child role reverses with age.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:24",
+            "text": "And lower to them the wing of humility out of mercy, and say: My Lord, have mercy on them as they brought me up when I was small."
+          },
+          "options": [
+            {
+              "text": "Give them only financial support"
+            },
+            {
+              "text": "Stand above them to guide them"
+            },
+            {
+              "text": "Decide for them without consulting them"
+            },
+            {
+              "text": "Lower to them the wing of humility (mercy) and pray for them"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "Your elderly parent asks something that frustrates you. What did Allah explicitly forbid?",
+          "explanation": "The Quran names the smallest irritation - uff - and forbids it. Anything harsher is already far past the line.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:23",
+            "text": "Do not say to them \"uff\", nor repel them, but speak to them a noble word."
+          },
+          "options": [
+            {
+              "text": "Being too busy to call"
+            },
+            {
+              "text": "Disagreeing politely"
+            },
+            {
+              "text": "Even saying \"uff\" (a word of annoyance) to them"
+            },
+            {
+              "text": "Asking a sibling for help"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l2.e3",
+          "type": "multipleChoice",
+          "prompt": "A man asked the Prophet: who deserves my best companionship? What did he answer?",
+          "explanation": "The Prophet repeated \"your mother\" three times before mentioning the father - a direct answer to the question of priority.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5971",
+            "grading": "sahih",
+            "text": "Your mother, your mother, your mother, then your father."
+          },
+          "options": [
+            {
+              "text": "Your spouse first, then parents"
+            },
+            {
+              "text": "Your mother - three times - then your father"
+            },
+            {
+              "text": "Your father - three times - then your mother"
+            },
+            {
+              "text": "Your closest friend first"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l2.e4",
+          "type": "multipleChoice",
+          "prompt": "In Surah al-Isra, how are parents linked with Allah?",
+          "explanation": "Allah joins His own right with the parents’ right in one breath - that is the weight of birr.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:23",
+            "text": "Your Lord has decreed that you worship none but Him, and that you be kind to your parents."
+          },
+          "options": [
+            {
+              "text": "Parents come after all other relatives"
+            },
+            {
+              "text": "Kindness to parents is only recommended, not commanded"
+            },
+            {
+              "text": "Parents are mentioned only once in passing"
+            },
+            {
+              "text": "Allah commands worship of Him alone, then immediately commands kindness to parents"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "What does \"birr\" (بِرّ) mean?",
+          "explanation": "birr (بِرّ) means \"Kindness and devotion to parents\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Sincere devotion, purely for Allah"
+            },
+            {
+              "text": "Kindness and devotion to parents"
+            },
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Humility"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Humility\"?",
+          "explanation": "\"Humility\" is tawadu’ (تَوَاضُع).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "sadaqah",
+              "arabic": "صَدَقَة"
+            },
+            {
+              "text": "akhlaq",
+              "arabic": "أَخْلَاق"
+            },
+            {
+              "text": "ghibah",
+              "arabic": "غِيبَة"
+            },
+            {
+              "text": "tawadu’",
+              "arabic": "تَوَاضُع"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l2.e7",
+          "type": "multipleChoice",
+          "prompt": "Your younger sibling breaks something of yours and you feel anger boiling inside. What should you say?",
+          "explanation": "I seek refuge with Allah from the accursed devil. (A’udhu billahi minash-shaytanir-rajim). Said when anger flares - anger comes from the devil, and refuge is sought with Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "In Your name, O Allah, I die and I live."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            },
+            {
+              "text": "May Allah guide you and set your affairs right."
+            },
+            {
+              "text": "I seek refuge with Allah from the accursed devil."
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l3",
+      "title": "Family and Elders",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l3.e1",
+          "type": "multipleChoice",
+          "prompt": "A relative has cut you off and skipped your calls. What does the Sunnah prefer?",
+          "explanation": "The Prophet redefined winning: the one who keeps giving even when the tie is one-sided.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5991",
+            "grading": "sahih",
+            "text": "The maintainer of ties is not the one who does it only when reciprocated; the maintainer keeps ties even when the other severs them."
+          },
+          "options": [
+            {
+              "text": "Cut back exactly the same way"
+            },
+            {
+              "text": "Post about the issue publicly"
+            },
+            {
+              "text": "Maintain the tie only after they apologize"
+            },
+            {
+              "text": "Keep maintaining the tie - the true maintainer keeps ties even when others sever"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "Who did the Prophet greet when he passed children playing?",
+          "explanation": "Anas described the Prophet passing a group of boys and giving salaam - teaching children dignity and believers humility.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6247",
+            "grading": "sahih",
+            "text": "The Prophet passed by a group of boys and gave them salaam."
+          },
+          "options": [
+            {
+              "text": "He only greeted the adults nearby"
+            },
+            {
+              "text": "He greeted them with salaam"
+            },
+            {
+              "text": "He walked past quietly"
+            },
+            {
+              "text": "He insisted they stand"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "How did the Prophet summarize the duty toward the old and young?",
+          "explanation": "A two-line social contract: respect flows upward, tenderness flows downward.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4943",
+            "grading": "hasan",
+            "text": "He is not one of us who does not respect our elders and show mercy to our young."
+          },
+          "options": [
+            {
+              "text": "Honor the elders and show mercy to the young"
+            },
+            {
+              "text": "Treat everyone exactly alike in every situation"
+            },
+            {
+              "text": "Command the elders and discipline the young"
+            },
+            {
+              "text": "Leave children to themselves"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.akhlaq.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say happens to the one who maintains family ties?",
+          "explanation": "Kinship maintenance is treated as an investment: the reward is written in this world before the next.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5986",
+            "grading": "sahih",
+            "text": "Whoever loves to have his provision expanded and his lifespan extended, let him maintain his family ties."
+          },
+          "options": [
+            {
+              "text": "He becomes wealthy automatically"
+            },
+            {
+              "text": "His provision is expanded and his life is extended"
+            },
+            {
+              "text": "He never needs to work"
+            },
+            {
+              "text": "He avoids all arguments forever"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l3.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: birr = Kindness and devotion to parents; sidq = Truthfulness; tawadu’ = Humility; salaam = The greeting of peace.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "birr",
+              "right": "Kindness and devotion to parents",
+              "leftArabic": "بِرّ"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            },
+            {
+              "left": "tawadu’",
+              "right": "Humility",
+              "leftArabic": "تَوَاضُع"
+            },
+            {
+              "left": "salaam",
+              "right": "The greeting of peace",
+              "leftArabic": "سَلَام"
+            }
+          ]
+        },
+        {
+          "id": "islam.akhlaq.l3.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"tawadu’\" (تَوَاضُع) mean?",
+          "explanation": "tawadu’ (تَوَاضُع) means \"Humility\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Charity given for Allah’s sake"
+            },
+            {
+              "text": "Sincere devotion, purely for Allah"
+            },
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Humility"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l4",
+      "title": "Neighbors and Guests",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l4.e1",
+          "type": "multipleChoice",
+          "prompt": "Honoring the guest is linked in the hadith to what?",
+          "explanation": "The Prophet tied hospitality to faith itself - the guest is a test of what you claim to believe.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6136",
+            "grading": "sahih",
+            "text": "Whoever believes in Allah and the Last Day, let him honor his guest."
+          },
+          "options": [
+            {
+              "text": "Your income bracket"
+            },
+            {
+              "text": "Being the same age as the guest"
+            },
+            {
+              "text": "Belief in Allah and the Last Day"
+            },
+            {
+              "text": "The size of your house"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "Which people does the Quran list as deserving kindness alongside parents?",
+          "explanation": "Surah an-Nisa expands the circle of goodness outward: from family to neighbor to traveler - nobody is outside the web.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "4:36",
+            "text": "Be good to parents, relatives, orphans, the poor, the neighbor who is near, the neighbor who is distant, the companion at your side, the traveler, and those in your charge."
+          },
+          "options": [
+            {
+              "text": "Only close family and friends"
+            },
+            {
+              "text": "Only people of the same income"
+            },
+            {
+              "text": "Relatives, orphans, the poor, the near and distant neighbor, the companion and the wayfarer"
+            },
+            {
+              "text": "Only those who can return the favor"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "A new family moves in next door. Which action fits the Sunnah?",
+          "explanation": "The Prophet instructed adding water to the broth and sharing with the neighbor - welcome begins with warmth.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2625",
+            "grading": "sahih",
+            "text": "When you cook broth, add enough water and share some with your neighbors."
+          },
+          "options": [
+            {
+              "text": "Complain about their parking before introductions"
+            },
+            {
+              "text": "Keep to yourself - they might be busy"
+            },
+            {
+              "text": "Wait for them to come to you first"
+            },
+            {
+              "text": "Greet them, introduce yourself, and share something simple like food"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say about a person whose neighbor is not safe from his harm?",
+          "explanation": "The Prophet swore three times about this to make the point stick: faith is measured at the property line.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6016",
+            "grading": "sahih",
+            "text": "By Allah, he is not a believer - the one whose neighbor is not safe from his harm."
+          },
+          "options": [
+            {
+              "text": "He should apologize once"
+            },
+            {
+              "text": "He only owes a gift"
+            },
+            {
+              "text": "He must move houses"
+            },
+            {
+              "text": "He is not a (complete) believer"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l4.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: sadaqah = Charity given for Allah’s sake; ghibah = Backbiting (saying what a person dislikes); ikhlas = Sincere devotion, purely for Allah; sidq = Truthfulness.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "sadaqah",
+              "right": "Charity given for Allah’s sake",
+              "leftArabic": "صَدَقَة"
+            },
+            {
+              "left": "ghibah",
+              "right": "Backbiting (saying what a person dislikes)",
+              "leftArabic": "غِيبَة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            }
+          ]
+        },
+        {
+          "id": "islam.akhlaq.l4.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"sadaqah\" (صَدَقَة) mean?",
+          "explanation": "sadaqah (صَدَقَة) means \"Charity given for Allah’s sake\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Charity given for Allah’s sake"
+            },
+            {
+              "text": "Humility"
+            },
+            {
+              "text": "Character and moral conduct"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l4.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Sincere devotion, purely for Allah\"?",
+          "explanation": "\"Sincere devotion, purely for Allah\" is ikhlas (إِخْلَاص).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "birr",
+              "arabic": "بِرّ"
+            },
+            {
+              "text": "ikhlas",
+              "arabic": "إِخْلَاص"
+            },
+            {
+              "text": "sadaqah",
+              "arabic": "صَدَقَة"
+            },
+            {
+              "text": "ghibah",
+              "arabic": "غِيبَة"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l4.e8",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"In the name of Allah.\"",
+          "explanation": "Bismillah (بِسْمِ اللَّه): In the name of Allah. Said when you start eating.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "5376",
+            "grading": "sahih",
+            "text": "When one of you eats, let him mention the name of Allah; the Prophet said: \"Say Bismillah, eat with your right hand...\""
+          },
+          "options": [
+            {
+              "text": "When you start eating"
+            },
+            {
+              "text": "After finishing wudu"
+            },
+            {
+              "text": "When you look in the mirror"
+            },
+            {
+              "text": "When anger rises inside you"
+            }
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l5",
+      "title": "Guarding the Tongue",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l5.e1",
+          "type": "multipleChoice",
+          "prompt": "What rule did the Prophet pair with belief in Allah and the Last Day regarding speech?",
+          "explanation": "One sentence filters a whole day of conversation: good words earn, silence is safe, the rest is loss.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "47",
+            "grading": "sahih",
+            "text": "Whoever believes in Allah and the Last Day, let him speak good or remain silent."
+          },
+          "options": [
+            {
+              "text": "Speak only when asked questions"
+            },
+            {
+              "text": "Only speak to close friends"
+            },
+            {
+              "text": "Speak good or remain silent"
+            },
+            {
+              "text": "Speak whatever is on your mind"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "When is speaking about an absent person permissible per scholars?",
+          "explanation": "The Quran forbids spying and backbiting; scholarship carves narrow exceptions for protecting people from harm - not for entertainment.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "49:12",
+            "text": "O you who believe, avoid much suspicion, do not spy, and do not backbite one another."
+          },
+          "options": [
+            {
+              "text": "When the person is not religious"
+            },
+            {
+              "text": "When it makes the group laugh"
+            },
+            {
+              "text": "When you are bored"
+            },
+            {
+              "text": "When seeking help to stop oppression or warning someone from real harm"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say truthfulness leads to?",
+          "explanation": "Truthfulness is a path with a destination: the honest tongue trains the whole character upward.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6094",
+            "grading": "sahih",
+            "text": "Truthfulness leads to righteousness, and righteousness leads to Paradise. A man continues to be truthful until he is recorded with Allah as truthful."
+          },
+          "options": [
+            {
+              "text": "Popularity among people"
+            },
+            {
+              "text": "Righteousness, and righteousness leads to Paradise"
+            },
+            {
+              "text": "Immediate wealth"
+            },
+            {
+              "text": "A life without conflict"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "What is ghibah (backbiting)?",
+          "explanation": "The Prophet asked the Companions: do you know what backbiting is? It is to mention about your brother what he dislikes - even if it is true.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "2589",
+            "grading": "sahih",
+            "text": "Do you know what backbiting is? Mentioning about your brother what he dislikes. It was said: even if it is true? He said: if it is true, that is backbiting; if it is not true, that is slander."
+          },
+          "options": [
+            {
+              "text": "Praising someone publicly"
+            },
+            {
+              "text": "Mentioning something about a person - behind their back - that they would dislike"
+            },
+            {
+              "text": "Only telling lies about someone"
+            },
+            {
+              "text": "Any true statement about someone"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l5.e5",
+          "type": "multipleChoice",
+          "prompt": "What does \"ghibah\" (غِيبَة) mean?",
+          "explanation": "ghibah (غِيبَة) means \"Backbiting (saying what a person dislikes)\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Character and moral conduct"
+            },
+            {
+              "text": "Sincere devotion, purely for Allah"
+            },
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Backbiting (saying what a person dislikes)"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Truthfulness\"?",
+          "explanation": "\"Truthfulness\" is sidq (صِدْق).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "ghibah",
+              "arabic": "غِيبَة"
+            },
+            {
+              "text": "akhlaq",
+              "arabic": "أَخْلَاق"
+            },
+            {
+              "text": "tawadu’",
+              "arabic": "تَوَاضُع"
+            },
+            {
+              "text": "sidq",
+              "arabic": "صِدْق"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l6",
+      "title": "Everyday Life",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l6.e1",
+          "type": "multipleChoice",
+          "prompt": "Your sibling breaks your headphones and anger spikes. What is the Prophetic action?",
+          "explanation": "Anger is from the devil, and refuge is its exit route - the Prophet named the word that cools the fire.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would leave him: I seek refuge in Allah from the accursed devil."
+          },
+          "options": [
+            {
+              "text": "Stay silent but plan revenge"
+            },
+            {
+              "text": "Break something of theirs in return"
+            },
+            {
+              "text": "Yell once and move on"
+            },
+            {
+              "text": "Say \"A’udhu billahi minash-shaytanir-rajim\" and let the anger cool"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l6.e2",
+          "type": "multipleChoice",
+          "prompt": "Which small act did the Prophet count as sadaqah (charity)?",
+          "explanation": "Charity is not only currency: every kindness - even a smile - is written as sadaqah.",
+          "source": {
+            "collection": "Jami’ at-Tirmidhi",
+            "reference": "1956",
+            "grading": "hasan (per some scholars)",
+            "text": "Your smile in the face of your brother is charity."
+          },
+          "options": [
+            {
+              "text": "Only large donations"
+            },
+            {
+              "text": "Only feeding a whole meal"
+            },
+            {
+              "text": "A smile in your brother’s face"
+            },
+            {
+              "text": "Only money given to the poor"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l6.e3",
+          "type": "multipleChoice",
+          "prompt": "Someone insults you in an online comment. Which response follows the Quran?",
+          "explanation": "Repel evil with what is better: the Quran promises that even an enemy can become a close friend through good words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "41:34",
+            "text": "Repel evil with that which is better; then the one who had enmity between you and him may become like a close friend."
+          },
+          "options": [
+            {
+              "text": "Screenshot and mock them publicly"
+            },
+            {
+              "text": "Delete your account forever"
+            },
+            {
+              "text": "Reply with a sharper insult to win"
+            },
+            {
+              "text": "Do not trade insults - respond with calm words or disengage"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l6.e4",
+          "type": "multipleChoice",
+          "prompt": "A shocking headline lands in your feed. What does the Quran require before sharing?",
+          "explanation": "The believer is a filter, not a megaphone: verification protects people from rumors that cause real harm.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "49:6",
+            "text": "If a troublemaker comes to you with news, verify it, lest you harm people in ignorance and become regretful over what you have done."
+          },
+          "options": [
+            {
+              "text": "Share it with a disclaimer"
+            },
+            {
+              "text": "Only share if it has many likes already"
+            },
+            {
+              "text": "Verify it first - do not spread news you cannot check"
+            },
+            {
+              "text": "Share it if it feels true"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l6.e5",
+          "type": "multipleChoice",
+          "prompt": "You sit down to study. Which dua fits the moment?",
+          "explanation": "The Quran’s own study dua: knowledge is requested from its true Giver before the books are even open.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "\"Rabbi zidni ilma\" - My Lord, increase me in knowledge"
+            },
+            {
+              "text": "\"Bismika Allahumma amutu wa ahya\""
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l6.e6",
+          "type": "multipleChoice",
+          "prompt": "You open your books to study and want Allah’s help to learn. What do you say?",
+          "explanation": "My Lord, increase me in knowledge. (Rabbi zidni ilma). A short Quranic dua for studying - knowledge is requested from its true Giver.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "In the name of Allah (before wudu)."
+            },
+            {
+              "text": "All praise is for Allah who gave us life after death, and to Him is the return."
+            },
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "Glory to Him who has subjected this to us, though we could not have subdued it; and indeed to our Lord we are returning."
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l6.e7",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"My Lord, increase me in knowledge.\"",
+          "explanation": "Rabbi zidni ilma (رَبِّ زِدْنِي عِلْمًا): My Lord, increase me in knowledge. Said when seeking knowledge.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "When you leave the house"
+            },
+            {
+              "text": "When boarding a vehicle or starting a journey"
+            },
+            {
+              "text": "When you forgot Bismillah at the start of a meal"
+            },
+            {
+              "text": "When seeking knowledge"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l6.e8",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"I seek refuge with Allah from the accursed devil.\"",
+          "explanation": "A’udhu billahi minash-shaytanir-rajim (أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ): I seek refuge with Allah from the accursed devil. Said when anger rises inside you.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "When you finish eating"
+            },
+            {
+              "text": "When you look in the mirror"
+            },
+            {
+              "text": "When seeking knowledge"
+            },
+            {
+              "text": "When anger rises inside you"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l6.e9",
+          "type": "multipleChoice",
+          "prompt": "What does \"ikhlas\" (إِخْلَاص) mean?",
+          "explanation": "ikhlas (إِخْلَاص) means \"Sincere devotion, purely for Allah\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Humility"
+            },
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Character and moral conduct"
+            },
+            {
+              "text": "Sincere devotion, purely for Allah"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "islam.akhlaq.l7",
+      "title": "Akhlaq Review",
+      "xp": 15,
+      "exercises": [
+        {
+          "id": "islam.akhlaq.l7.e1",
+          "type": "multipleChoice",
+          "prompt": "What does sidq (truthfulness) mean in practice?",
+          "explanation": "The Quran places the truthful on a path of safety: truthfulness is a lifestyle, not just honest words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "9:119",
+            "text": "O you who believe, fear Allah and be with the truthful."
+          },
+          "options": [
+            {
+              "text": "Always being brutally harsh"
+            },
+            {
+              "text": "Saying only what people want to hear"
+            },
+            {
+              "text": "Being truthful even when the truth is hard"
+            },
+            {
+              "text": "Never telling anyone bad news"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l7.e2",
+          "type": "multipleChoice",
+          "prompt": "In Surah al-Isra, how are parents linked with Allah?",
+          "explanation": "Allah joins His own right with the parents’ right in one breath - that is the weight of birr.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "17:23",
+            "text": "Your Lord has decreed that you worship none but Him, and that you be kind to your parents."
+          },
+          "options": [
+            {
+              "text": "Parents are mentioned only once in passing"
+            },
+            {
+              "text": "Allah commands worship of Him alone, then immediately commands kindness to parents"
+            },
+            {
+              "text": "Kindness to parents is only recommended, not commanded"
+            },
+            {
+              "text": "Parents come after all other relatives"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l7.e3",
+          "type": "multipleChoice",
+          "prompt": "How did the Prophet summarize the duty toward the old and young?",
+          "explanation": "A two-line social contract: respect flows upward, tenderness flows downward.",
+          "source": {
+            "collection": "Sunan Abu Dawud",
+            "reference": "4943",
+            "grading": "hasan",
+            "text": "He is not one of us who does not respect our elders and show mercy to our young."
+          },
+          "options": [
+            {
+              "text": "Treat everyone exactly alike in every situation"
+            },
+            {
+              "text": "Leave children to themselves"
+            },
+            {
+              "text": "Command the elders and discipline the young"
+            },
+            {
+              "text": "Honor the elders and show mercy to the young"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.akhlaq.l7.e4",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say about a person whose neighbor is not safe from his harm?",
+          "explanation": "The Prophet swore three times about this to make the point stick: faith is measured at the property line.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6016",
+            "grading": "sahih",
+            "text": "By Allah, he is not a believer - the one whose neighbor is not safe from his harm."
+          },
+          "options": [
+            {
+              "text": "He should apologize once"
+            },
+            {
+              "text": "He only owes a gift"
+            },
+            {
+              "text": "He is not a (complete) believer"
+            },
+            {
+              "text": "He must move houses"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.akhlaq.l7.e5",
+          "type": "multipleChoice",
+          "prompt": "What did the Prophet say truthfulness leads to?",
+          "explanation": "Truthfulness is a path with a destination: the honest tongue trains the whole character upward.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6094",
+            "grading": "sahih",
+            "text": "Truthfulness leads to righteousness, and righteousness leads to Paradise. A man continues to be truthful until he is recorded with Allah as truthful."
+          },
+          "options": [
+            {
+              "text": "Righteousness, and righteousness leads to Paradise"
+            },
+            {
+              "text": "A life without conflict"
+            },
+            {
+              "text": "Immediate wealth"
+            },
+            {
+              "text": "Popularity among people"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.akhlaq.l7.e6",
+          "type": "multipleChoice",
+          "prompt": "Someone insults you in an online comment. Which response follows the Quran?",
+          "explanation": "Repel evil with what is better: the Quran promises that even an enemy can become a close friend through good words.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "41:34",
+            "text": "Repel evil with that which is better; then the one who had enmity between you and him may become like a close friend."
+          },
+          "options": [
+            {
+              "text": "Screenshot and mock them publicly"
+            },
+            {
+              "text": "Do not trade insults - respond with calm words or disengage"
+            },
+            {
+              "text": "Delete your account forever"
+            },
+            {
+              "text": "Reply with a sharper insult to win"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.akhlaq.l7.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: akhlaq = Character and moral conduct; birr = Kindness and devotion to parents; sidq = Truthfulness; tawadu’ = Humility; sadaqah = Charity given for Allah’s sake; ghibah = Backbiting (saying what a person dislikes); ikhlas = Sincere devotion, purely for Allah.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "akhlaq",
+              "right": "Character and moral conduct",
+              "leftArabic": "أَخْلَاق"
+            },
+            {
+              "left": "birr",
+              "right": "Kindness and devotion to parents",
+              "leftArabic": "بِرّ"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            },
+            {
+              "left": "tawadu’",
+              "right": "Humility",
+              "leftArabic": "تَوَاضُع"
+            },
+            {
+              "left": "sadaqah",
+              "right": "Charity given for Allah’s sake",
+              "leftArabic": "صَدَقَة"
+            },
+            {
+              "left": "ghibah",
+              "right": "Backbiting (saying what a person dislikes)",
+              "leftArabic": "غِيبَة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            }
+          ]
+        },
+        {
+          "id": "islam.akhlaq.l7.e8",
+          "type": "multipleChoice",
+          "prompt": "Your younger sibling breaks something of yours and you feel anger boiling inside. What should you say?",
+          "explanation": "I seek refuge with Allah from the accursed devil. (A’udhu billahi minash-shaytanir-rajim). Said when anger flares - anger comes from the devil, and refuge is sought with Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "6115",
+            "grading": "sahih",
+            "text": "I know a word which, if he said it, his anger would go away: \"I seek refuge with Allah from the accursed devil.\""
+          },
+          "options": [
+            {
+              "text": "I seek refuge with Allah from the accursed devil."
+            },
+            {
+              "text": "All praise is for Allah who fed us, gave us drink, and made us Muslims."
+            },
+            {
+              "text": "In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we depend."
+            },
+            {
+              "text": "In the name of Allah (before wudu)."
+            }
+          ],
+          "correctIndex": 0
+        }
+      ]
+    }
+  ]
+}

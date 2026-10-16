@@ -1,0 +1,1047 @@
+{
+  "unitId": "riya",
+  "lessons": [
+    {
+      "id": "islam.riya.l1",
+      "title": "Why Intention Matters",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.riya.l1.e1",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: riya = Showing off in worship or good deeds; niyyah = Intention; ikhlas = Sincere devotion, purely for Allah; tazkiyah = Purification of the self and heart.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "riya",
+              "right": "Showing off in worship or good deeds",
+              "leftArabic": "رِيَاء"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.riya.l1.e2",
+          "type": "multipleChoice",
+          "prompt": "What does \"riya\" (رِيَاء) mean?",
+          "explanation": "riya (رِيَاء) means \"Showing off in worship or good deeds\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            },
+            {
+              "text": "Intention"
+            },
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.riya.l1.e3",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Intention\"?",
+          "explanation": "\"Intention\" is niyyah (نِيَّة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "niyyah",
+              "arabic": "نِيَّة"
+            },
+            {
+              "text": "riya",
+              "arabic": "رِيَاء"
+            },
+            {
+              "text": "tazkiyah",
+              "arabic": "تَزْكِيَة"
+            },
+            {
+              "text": "hasad",
+              "arabic": "حَسَد"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l1.e4",
+          "type": "multipleChoice",
+          "prompt": "With which hadith does Sahih al-Bukhari open?",
+          "explanation": "The very first hadith of the most authentic collection is about intention - because the heart decides the value of everything.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1",
+            "grading": "sahih",
+            "text": "Actions are only judged by intentions, and every person will have what he intended."
+          },
+          "options": [
+            {
+              "text": "\"The imam is to be followed\""
+            },
+            {
+              "text": "\"Cleanliness is half of faith\""
+            },
+            {
+              "text": "\"Speak good or remain silent\""
+            },
+            {
+              "text": "\"Actions are only judged by intentions\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l1.e5",
+          "type": "multipleChoice",
+          "prompt": "Two people give the same $100 to charity; one for Allah and one for a photo-op. What differs?",
+          "explanation": "The Quran warns that what follows a charity can void it: showing off burns the very deed that looked good.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "2:264",
+            "text": "O you who believe, do not invalidate your charities with reminders of it or injury, like one who spends to be seen by people."
+          },
+          "options": [
+            {
+              "text": "The photo adds reach, so more reward"
+            },
+            {
+              "text": "The same action earns reward or nothing depending on the heart behind it"
+            },
+            {
+              "text": "Nothing - the amount matters"
+            },
+            {
+              "text": "Both earn reward equally"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.riya.l1.e6",
+          "type": "multipleChoice",
+          "prompt": "What is riya?",
+          "explanation": "The Quran calls it out sharply: woe to those who pray to be seen - worship with an audience in mind.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "107:4-6",
+            "text": "So woe to those who pray, yet are heedless of their prayer, those who make a show of their deeds."
+          },
+          "options": [
+            {
+              "text": "Doing good deeds so people see and praise you"
+            },
+            {
+              "text": "Reciting the Quran aloud in prayer"
+            },
+            {
+              "text": "Giving charity where it is most needed"
+            },
+            {
+              "text": "Making dua for others openly"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l1.e7",
+          "type": "multipleChoice",
+          "prompt": "Can a deed done for people’s praise carry reward?",
+          "explanation": "The Quran’s condition: righteous work plus no partner associated in the worship - the motive is part of the act.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "18:110",
+            "text": "So whoever hopes to meet his Lord, let him do righteous work and associate no one in the worship of his Lord."
+          },
+          "options": [
+            {
+              "text": "No - Allah accepts only what is done purely for Him alone"
+            },
+            {
+              "text": "Yes, half reward"
+            },
+            {
+              "text": "Yes, reward only in Ramadan"
+            },
+            {
+              "text": "Yes, if the deed itself is good"
+            }
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "islam.riya.l2",
+      "title": "Hidden and Open",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.riya.l2.e1",
+          "type": "multipleChoice",
+          "prompt": "Why is secret charity described as a protection?",
+          "explanation": "The closer a deed is to secrecy, the further it is from riya - some scholars kept their best deeds hidden from everyone.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "Book of Zakat",
+            "grading": "sahih",
+            "text": "A man who gives in charity and conceals it so that his left hand does not know what his right hand spends is among those shaded on the Day of Judgement."
+          },
+          "options": [
+            {
+              "text": "It saves tax paperwork"
+            },
+            {
+              "text": "It guarantees the money is used well"
+            },
+            {
+              "text": "It hides the deed from the desire for praise - only Allah sees it"
+            },
+            {
+              "text": "It is embarrassing to give publicly"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l2.e2",
+          "type": "multipleChoice",
+          "prompt": "What single question helps separate riya from sincerity?",
+          "explanation": "The heart-check question: deeds that survive zero visibility are deeds built for Allah.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Heart-Melting Traditions (Kitab ar-Riqaq)",
+            "grading": "sahih",
+            "text": "Whoever makes his good deeds heard of for show, Allah will expose his reality."
+          },
+          "options": [
+            {
+              "text": "\"Would I still do this if no human could ever find out?\""
+            },
+            {
+              "text": "\"Will this grow my following?\""
+            },
+            {
+              "text": "\"Is this id hard to do?\""
+            },
+            {
+              "text": "\"Will this make me happy?\""
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l2.e3",
+          "type": "multipleChoice",
+          "prompt": "You film your street charity delivery for content. What remains of the reward?",
+          "explanation": "The deed is judged by the intention behind it; a camera changes the motive test, not the number of meals delivered.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "2:264",
+            "text": "Do not invalidate your charities with reminders of it or injury, like one who spends to be seen by people."
+          },
+          "options": [
+            {
+              "text": "Nothing - delete the video"
+            },
+            {
+              "text": "Double - more people were inspired"
+            },
+            {
+              "text": "Whatever was genuinely for Allah; the showing-off part earns no reward"
+            },
+            {
+              "text": "Everything - the delivery was real"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l2.e4",
+          "type": "multipleChoice",
+          "prompt": "A man prays beautifully when the group watches but rushes alone. What describes him?",
+          "explanation": "The tell is the shift: worship should look the same whether one human or zero humans can see.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "107:6",
+            "text": "Those who make a show of their deeds."
+          },
+          "options": [
+            {
+              "text": "A beginner who needs practice"
+            },
+            {
+              "text": "A person with a quiet style"
+            },
+            {
+              "text": "A person whose worship shifts with the audience - riya has entered"
+            },
+            {
+              "text": "A model of khushu"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l2.e5",
+          "type": "multipleChoice",
+          "prompt": "What does \"ikhlas\" (إِخْلَاص) mean?",
+          "explanation": "ikhlas (إِخْلَاص) means \"Sincere devotion, purely for Allah\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Truthfulness"
+            },
+            {
+              "text": "Charity given for Allah’s sake"
+            },
+            {
+              "text": "Sincere devotion, purely for Allah"
+            },
+            {
+              "text": "Humility"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l2.e6",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Showing off in worship or good deeds\"?",
+          "explanation": "\"Showing off in worship or good deeds\" is riya (رِيَاء).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "tazkiyah",
+              "arabic": "تَزْكِيَة"
+            },
+            {
+              "text": "niyyah",
+              "arabic": "نِيَّة"
+            },
+            {
+              "text": "riya",
+              "arabic": "رِيَاء"
+            },
+            {
+              "text": "ghibta",
+              "arabic": "غِبْطَة"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l2.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: riya = Showing off in worship or good deeds; ikhlas = Sincere devotion, purely for Allah; niyyah = Intention; sadaqah = Charity given for Allah’s sake.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "riya",
+              "right": "Showing off in worship or good deeds",
+              "leftArabic": "رِيَاء"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "sadaqah",
+              "right": "Charity given for Allah’s sake",
+              "leftArabic": "صَدَقَة"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "islam.riya.l3",
+      "title": "The Three Who Were Judged",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.riya.l3.e1",
+          "type": "multipleChoice",
+          "prompt": "The scholar of that hadith learned and taught. Where did he go wrong?",
+          "explanation": "The third man of the hadith: knowledge used as currency for reputation turns the same lessons into evidence against the teacher.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "1905",
+            "grading": "sahih",
+            "text": "He learned knowledge and taught it and recited Quran to be called a scholar and a reciter. It was said: you have received what you wanted."
+          },
+          "options": [
+            {
+              "text": "He sought to be called a scholar for himself"
+            },
+            {
+              "text": "He charged for teaching"
+            },
+            {
+              "text": "He taught only a few people"
+            },
+            {
+              "text": "He studied the wrong books"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l3.e2",
+          "type": "multipleChoice",
+          "prompt": "The martyr of that hadith fought bravely and died - what was his verdict?",
+          "explanation": "Even bravery on the battlefield is weighed by motive - the most dramatic deed can be hollowed out by an audience of one’s own reputation.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "1905",
+            "grading": "sahih",
+            "text": "He fought to be called brave. It was said: you have received what you wanted."
+          },
+          "options": [
+            {
+              "text": "He fought so it would be said he was brave; he is dragged into the Fire"
+            },
+            {
+              "text": "He was granted intercession"
+            },
+            {
+              "text": "His family received the reward"
+            },
+            {
+              "text": "He was forgiven for his courage"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l3.e3",
+          "type": "multipleChoice",
+          "prompt": "In the famous hadith of the three men judged first, why is the generous man condemned despite his charity?",
+          "explanation": "Muslim 1905 tells of three people whose impressive deeds were exposed by their motives - the wealthy man wanted the label, and got it.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "1905",
+            "grading": "sahih",
+            "text": "A man whom Allah gave wealth: he spent for show. It was said to him: you have received what you wanted."
+          },
+          "options": [
+            {
+              "text": "He gave to be called generous - and received that title instead of reward"
+            },
+            {
+              "text": "He gave to the wrong people"
+            },
+            {
+              "text": "He gave too little"
+            },
+            {
+              "text": "He delayed his charity"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l3.e4",
+          "type": "multipleChoice",
+          "prompt": "What single thread unites all three men of Muslim 1905?",
+          "explanation": "Three different arenas - wealth, war, scholarship - and one shared defect: visibility mattered more than Allah’s acceptance.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "1905",
+            "grading": "sahih",
+            "text": "All three were brought and judged first, and all three were told: you have received what you wanted."
+          },
+          "options": [
+            {
+              "text": "They acted for people’s praise instead of for Allah"
+            },
+            {
+              "text": "They all lacked sincerity in worship only"
+            },
+            {
+              "text": "They broke the law in secret"
+            },
+            {
+              "text": "They were all show-offs online"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l3.e5",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: riya = Showing off in worship or good deeds; sadaqah = Charity given for Allah’s sake; ikhlas = Sincere devotion, purely for Allah; sidq = Truthfulness.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "riya",
+              "right": "Showing off in worship or good deeds",
+              "leftArabic": "رِيَاء"
+            },
+            {
+              "left": "sadaqah",
+              "right": "Charity given for Allah’s sake",
+              "leftArabic": "صَدَقَة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            }
+          ]
+        },
+        {
+          "id": "islam.riya.l3.e6",
+          "type": "multipleChoice",
+          "prompt": "What does \"niyyah\" (نِيَّة) mean?",
+          "explanation": "niyyah (نِيَّة) means \"Intention\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Benign wish for a similar blessing (without wanting it removed)"
+            },
+            {
+              "text": "Intention"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l3.e7",
+          "type": "multipleChoice",
+          "prompt": "Which term means \"Charity given for Allah’s sake\"?",
+          "explanation": "\"Charity given for Allah’s sake\" is sadaqah (صَدَقَة).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "ghibah",
+              "arabic": "غِيبَة"
+            },
+            {
+              "text": "sadaqah",
+              "arabic": "صَدَقَة"
+            },
+            {
+              "text": "tawadu’",
+              "arabic": "تَوَاضُع"
+            },
+            {
+              "text": "sidq",
+              "arabic": "صِدْق"
+            }
+          ],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "islam.riya.l4",
+      "title": "Purifying Intention",
+      "xp": 10,
+      "exercises": [
+        {
+          "id": "islam.riya.l4.e1",
+          "type": "multipleChoice",
+          "prompt": "What are practical daily shields against riya?",
+          "explanation": "The habit pattern: intentions refreshed at the start of acts, and a private reserve of deeds with zero witnesses.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "Book of Heart-Melting Traditions (Kitab ar-Riqaq)",
+            "grading": "sahih",
+            "text": "Whoever intends show, Allah will expose; the one who keeps some deeds private protects their sincerity."
+          },
+          "options": [
+            {
+              "text": "Only acting when inspired"
+            },
+            {
+              "text": "Renewing intention often and hiding some good deeds completely"
+            },
+            {
+              "text": "Keeping a public good-deeds log"
+            },
+            {
+              "text": "Announcing your charity so it spreads"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.riya.l4.e2",
+          "type": "multipleChoice",
+          "prompt": "What dua is taught as the shield against hidden shirk?",
+          "explanation": "The dua covers both known and unknown shirk - a daily reminder that motives can hide even from the one doing the deed.",
+          "source": {
+            "collection": "Musnad Ahmad",
+            "reference": "Book of Supplications",
+            "grading": "sahih (per some scholars)",
+            "text": "O Allah, I seek refuge in You from knowingly associating anything with You, and I ask Your forgiveness for what I do not know."
+          },
+          "options": [
+            {
+              "text": "\"Ghufranak\""
+            },
+            {
+              "text": "\"Allahumma inni a’udhu bika an ushrika bika wa ana a’lam, wa astaghfiruka lima la a’lam\""
+            },
+            {
+              "text": "\"Allahumma sayyiban nafi’a\""
+            },
+            {
+              "text": "\"Rabbi zidni ilma\""
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.riya.l4.e3",
+          "type": "multipleChoice",
+          "prompt": "Your daily Quran reading is now recorded and posted for an audience. How can riya creep in?",
+          "explanation": "The act may stay halal and even beneficial - the danger is the axle it now turns around.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "2:264",
+            "text": "Do not invalidate your charities with reminders or injury, like one who spends to be seen by people."
+          },
+          "options": [
+            {
+              "text": "Posting makes the recitation invalid"
+            },
+            {
+              "text": "Public recitation is always riya"
+            },
+            {
+              "text": "The audience earns the reward"
+            },
+            {
+              "text": "The practice turns into content for people instead of worship for Allah"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l4.e4",
+          "type": "multipleChoice",
+          "prompt": "What shirk did the Prophet say he feared most for his ummah?",
+          "explanation": "Transparent about grading: the narration is in Musnad Ahmad and graded hasan/sahih by different scholars - the warning itself is well established.",
+          "source": {
+            "collection": "Musnad Ahmad",
+            "reference": "Book of Musnad al-Ansar",
+            "grading": "hasan (per some scholars; some grade it sahih)",
+            "text": "The thing I fear most for you is the lesser shirk. They asked: what is it? He said: showing off."
+          },
+          "options": [
+            {
+              "text": "He feared disease the most"
+            },
+            {
+              "text": "He feared war the most"
+            },
+            {
+              "text": "He feared poverty the most"
+            },
+            {
+              "text": "The lesser shirk - showing off (riya)"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l4.e5",
+          "type": "multipleChoice",
+          "prompt": "You open your books to study and want Allah’s help to learn. What do you say?",
+          "explanation": "My Lord, increase me in knowledge. (Rabbi zidni ilma). A short Quranic dua for studying - knowledge is requested from its true Giver.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "My Lord, increase me in knowledge."
+            },
+            {
+              "text": "O Allah, I seek refuge in You from male and female devils."
+            },
+            {
+              "text": "In the name of Allah."
+            },
+            {
+              "text": "O Allah, make it a beneficial rain."
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l4.e6",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: riya = Showing off in worship or good deeds; niyyah = Intention; ikhlas = Sincere devotion, purely for Allah; tazkiyah = Purification of the self and heart.",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "riya",
+              "right": "Showing off in worship or good deeds",
+              "leftArabic": "رِيَاء"
+            },
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "tazkiyah",
+              "right": "Purification of the self and heart",
+              "leftArabic": "تَزْكِيَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.riya.l4.e7",
+          "type": "multipleChoice",
+          "prompt": "What does \"tazkiyah\" (تَزْكِيَة) mean?",
+          "explanation": "tazkiyah (تَزْكِيَة) means \"Purification of the self and heart\".",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "options": [
+            {
+              "text": "Purification of the self and heart"
+            },
+            {
+              "text": "Intention"
+            },
+            {
+              "text": "Envy (resenting someone’s blessing)"
+            },
+            {
+              "text": "Showing off in worship or good deeds"
+            }
+          ],
+          "correctIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "islam.riya.l5",
+      "title": "Riya Review",
+      "xp": 20,
+      "exercises": [
+        {
+          "id": "islam.riya.l5.e1",
+          "type": "multipleChoice",
+          "prompt": "With which hadith does Sahih al-Bukhari open?",
+          "explanation": "The very first hadith of the most authentic collection is about intention - because the heart decides the value of everything.",
+          "source": {
+            "collection": "Sahih al-Bukhari",
+            "reference": "1",
+            "grading": "sahih",
+            "text": "Actions are only judged by intentions, and every person will have what he intended."
+          },
+          "options": [
+            {
+              "text": "\"Cleanliness is half of faith\""
+            },
+            {
+              "text": "\"The imam is to be followed\""
+            },
+            {
+              "text": "\"Speak good or remain silent\""
+            },
+            {
+              "text": "\"Actions are only judged by intentions\""
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l5.e2",
+          "type": "multipleChoice",
+          "prompt": "Why is secret charity described as a protection?",
+          "explanation": "The closer a deed is to secrecy, the further it is from riya - some scholars kept their best deeds hidden from everyone.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "Book of Zakat",
+            "grading": "sahih",
+            "text": "A man who gives in charity and conceals it so that his left hand does not know what his right hand spends is among those shaded on the Day of Judgement."
+          },
+          "options": [
+            {
+              "text": "It saves tax paperwork"
+            },
+            {
+              "text": "It guarantees the money is used well"
+            },
+            {
+              "text": "It hides the deed from the desire for praise - only Allah sees it"
+            },
+            {
+              "text": "It is embarrassing to give publicly"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l5.e3",
+          "type": "multipleChoice",
+          "prompt": "The scholar of that hadith learned and taught. Where did he go wrong?",
+          "explanation": "The third man of the hadith: knowledge used as currency for reputation turns the same lessons into evidence against the teacher.",
+          "source": {
+            "collection": "Sahih Muslim",
+            "reference": "1905",
+            "grading": "sahih",
+            "text": "He learned knowledge and taught it and recited Quran to be called a scholar and a reciter. It was said: you have received what you wanted."
+          },
+          "options": [
+            {
+              "text": "He taught only a few people"
+            },
+            {
+              "text": "He studied the wrong books"
+            },
+            {
+              "text": "He sought to be called a scholar for himself"
+            },
+            {
+              "text": "He charged for teaching"
+            }
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "islam.riya.l5.e4",
+          "type": "multipleChoice",
+          "prompt": "What shirk did the Prophet say he feared most for his ummah?",
+          "explanation": "Transparent about grading: the narration is in Musnad Ahmad and graded hasan/sahih by different scholars - the warning itself is well established.",
+          "source": {
+            "collection": "Musnad Ahmad",
+            "reference": "Book of Musnad al-Ansar",
+            "grading": "hasan (per some scholars; some grade it sahih)",
+            "text": "The thing I fear most for you is the lesser shirk. They asked: what is it? He said: showing off."
+          },
+          "options": [
+            {
+              "text": "He feared war the most"
+            },
+            {
+              "text": "He feared disease the most"
+            },
+            {
+              "text": "He feared poverty the most"
+            },
+            {
+              "text": "The lesser shirk - showing off (riya)"
+            }
+          ],
+          "correctIndex": 3
+        },
+        {
+          "id": "islam.riya.l5.e5",
+          "type": "multipleChoice",
+          "prompt": "Can a deed done for people’s praise carry reward?",
+          "explanation": "The Quran’s condition: righteous work plus no partner associated in the worship - the motive is part of the act.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "18:110",
+            "text": "So whoever hopes to meet his Lord, let him do righteous work and associate no one in the worship of his Lord."
+          },
+          "options": [
+            {
+              "text": "Yes, half reward"
+            },
+            {
+              "text": "No - Allah accepts only what is done purely for Him alone"
+            },
+            {
+              "text": "Yes, reward only in Ramadan"
+            },
+            {
+              "text": "Yes, if the deed itself is good"
+            }
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "islam.riya.l5.e6",
+          "type": "multipleChoice",
+          "prompt": "A man prays beautifully when the group watches but rushes alone. What describes him?",
+          "explanation": "The tell is the shift: worship should look the same whether one human or zero humans can see.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "107:6",
+            "text": "Those who make a show of their deeds."
+          },
+          "options": [
+            {
+              "text": "A person whose worship shifts with the audience - riya has entered"
+            },
+            {
+              "text": "A beginner who needs practice"
+            },
+            {
+              "text": "A person with a quiet style"
+            },
+            {
+              "text": "A model of khushu"
+            }
+          ],
+          "correctIndex": 0
+        },
+        {
+          "id": "islam.riya.l5.e7",
+          "type": "matchPairs",
+          "prompt": "Match each term to its meaning.",
+          "explanation": "Term check: niyyah = Intention; riya = Showing off in worship or good deeds; ikhlas = Sincere devotion, purely for Allah; sadaqah = Charity given for Allah’s sake; sidq = Truthfulness; ghibta = Benign wish for a similar blessing (without wanting it removed).",
+          "source": {
+            "collection": "Ritualist module glossary",
+            "reference": "Arabic-English vocabulary (Islam module)",
+            "text": "Vocabulary pairs compiled for this module using standard English renderings. Verify details with a qualified teacher."
+          },
+          "pairs": [
+            {
+              "left": "niyyah",
+              "right": "Intention",
+              "leftArabic": "نِيَّة"
+            },
+            {
+              "left": "riya",
+              "right": "Showing off in worship or good deeds",
+              "leftArabic": "رِيَاء"
+            },
+            {
+              "left": "ikhlas",
+              "right": "Sincere devotion, purely for Allah",
+              "leftArabic": "إِخْلَاص"
+            },
+            {
+              "left": "sadaqah",
+              "right": "Charity given for Allah’s sake",
+              "leftArabic": "صَدَقَة"
+            },
+            {
+              "left": "sidq",
+              "right": "Truthfulness",
+              "leftArabic": "صِدْق"
+            },
+            {
+              "left": "ghibta",
+              "right": "Benign wish for a similar blessing (without wanting it removed)",
+              "leftArabic": "غِبْطَة"
+            }
+          ]
+        },
+        {
+          "id": "islam.riya.l5.e8",
+          "type": "multipleChoice",
+          "prompt": "When would you say: \"My Lord, increase me in knowledge.\"",
+          "explanation": "Rabbi zidni ilma (رَبِّ زِدْنِي عِلْمًا): My Lord, increase me in knowledge. Said when seeking knowledge.",
+          "source": {
+            "collection": "Qur’an",
+            "reference": "20:114",
+            "text": "My Lord, increase me in knowledge."
+          },
+          "options": [
+            {
+              "text": "When you leave the bathroom"
+            },
+            {
+              "text": "When you go to sleep"
+            },
+            {
+              "text": "When you forgot Bismillah at the start of a meal"
+            },
+            {
+              "text": "When seeking knowledge"
+            }
+          ],
+          "correctIndex": 3
+        }
+      ]
+    }
+  ]
+}
