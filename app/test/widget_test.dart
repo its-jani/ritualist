@@ -80,10 +80,16 @@ class _FakeContentStore implements ContentStore {
       };
 }
 
+/// Always hands out the fake store, whatever module id is requested.
+class _FakeContentRegistry implements ContentStoreRegistry {
+  @override
+  ContentStore storeFor(String moduleId) => _FakeContentStore();
+}
+
 void main() {
   testWidgets('boots offline into the lesson path', (WidgetTester tester) async {
     final AppState state = AppState(
-      content: _FakeContentStore(),
+      registry: _FakeContentRegistry(),
       store: MemoryProgressStore(),
     );
 

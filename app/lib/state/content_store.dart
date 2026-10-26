@@ -72,3 +72,29 @@ Map<String, Object?> _asMap(Object? json) {
   }
   throw const FormatException('expected a JSON object');
 }
+
+/// Creates and caches one [ContentStore] per course module, on demand.
+///
+/// Scaling guard for future modules (Vedic, Stoic, ...): a module's manifest
+/// and unit files are only read and parsed the first time that module is
+/// actually opened, so the global cold-start footprint stays one module no
+/// matter how many bundles ship in the asset directory.
+abstract class ContentStoreRegistry {
+  /// The (lazily created, then cached) store for one module id.
+  ContentStore storeFor(String moduleId);
+}
+
+class AssetContentRegistry implements ContentStoreRegistry {
+  AssetContentRegistry({this.modulesRoot = 'assets/modules'});
+
+  /// Asset-relative parent directory shared by all module bundles.
+  final String modulesRoot;
+
+  final Map<String, ContentStore> _stores = <String, ContentStore>{};
+
+  @override
+  ContentStore storeFor(String moduleId) => _stores.putIfAbsent(
+        moduleId,
+        () => AssetContentStore(moduleDir: '$modulesRoot/$moduleId'),
+      );
+}

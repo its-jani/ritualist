@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:io';
 
 import 'package:ritualist_engine/ritualist_engine.dart';
@@ -74,9 +75,19 @@ class FileProgressStore implements ProgressStore {
     }
     try {
       return Progress.decode(file.readAsStringSync());
-    } on FormatException {
-      return null; // Corrupt file: start clean rather than crash.
     } on FileSystemException {
+      return null;
+    } on Object {
+      // Corrupt or forward-incompatible document (truncated write, schema
+      // change, unexpected decode error): keep the evidence in a single
+      // rolling backup and start clean instead of crash-looping cold start.
+      try {
+        file.copySync(
+          '${file.parent.path}${Platform.pathSeparator}progress_backup.json',
+        );
+      } on FileSystemException {
+        // Best effort - a failed backup must never block the clean start.
+      }
       return null;
     }
   }
@@ -87,12 +98,23 @@ class FileProgressStore implements ProgressStore {
     if (file == null) {
       return; // Fallback: the app continues with in-memory state.
     }
+    final tmp = File('${file.path}.tmp');
     try {
-      final tmp = File('${file.path}.tmp');
       tmp.writeAsStringSync(progress.encode(now: now), flush: true);
+      // Integrity gate: only replace the target with a document that
+      // actually parses, so a half-written tmp can never shadow a good file.
+      jsonDecode(tmp.readAsStringSync());
       tmp.renameSync(file.path); // Atomic-ish replace.
-    } on FileSystemException {
-      // Read-only location: keep going in memory only.
+    } on Object {
+      // Truncated write, full disk, locked target: drop the tmp and keep
+      // whatever valid document is already on disk (in-memory state lives on).
+      try {
+        if (tmp.existsSync()) {
+          tmp.deleteSync();
+        }
+      } on FileSystemException {
+        // Nothing else we can do about a leftover tmp.
+      }
     }
   }
 

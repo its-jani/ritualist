@@ -15,16 +15,20 @@ enum AppPhase { loading, ready, error }
 /// package would only add bytes (see docs/architecture.md).
 class AppState extends ChangeNotifier {
   AppState({
-    required this.content,
+    required this.registry,
     required this.store,
     this.config = const GameConfig(),
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
 
-  final ContentStore content;
+  final ContentStoreRegistry registry;
   final ProgressStore store;
   final GameConfig config;
   final DateTime Function() _clock;
+
+  /// The active module's content store. Resolved in [init] from
+  /// `progress.activeModuleId` - only that module's bundle is ever loaded.
+  late ContentStore content;
 
   AppPhase phase = AppPhase.loading;
   String? loadError;
@@ -46,6 +50,9 @@ class AppState extends ChangeNotifier {
           await store.load(t) ?? Progress.fresh(now: t, config: config);
       progress.onboarded = true;
       progress.applyHeartRegen(t, config);
+      // Bind content to the module this user actually plays; other module
+      // bundles stay untouched until activated (lazy, per-module stores).
+      content = registry.storeFor(progress.activeModuleId);
       manifest = await content.loadManifest();
       phase = AppPhase.ready;
       notifyListeners();
@@ -186,8 +193,12 @@ class AppState extends ChangeNotifier {
   }
 
   Future<void> resetProgress() async {
-    progress = Progress.fresh(now: _clock(), config: config)
-      ..onboarded = true;
+    // Keep the module binding: a reset wipes XP/streaks, not the course.
+    progress = Progress.fresh(
+      now: _clock(),
+      config: config,
+      activeModuleId: progress.activeModuleId,
+    )..onboarded = true;
     await store.save(progress, _clock());
     notifyListeners();
   }
