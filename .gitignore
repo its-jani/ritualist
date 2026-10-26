@@ -21,3 +21,9 @@ docs/rea/evidence/*
 # --- Local runtime files ---
 *.log
 progress.json
+
+# --- Release signing material (never commit) ---
+.release-secrets/
+*.jks
+*.keystore
+!debug.keystore
