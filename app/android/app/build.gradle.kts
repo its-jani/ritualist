@@ -33,11 +33,35 @@ android {
         versionName = flutter.versionName
     }
 
+    // Release signing is opt-in: CI decodes upload-keystore.jks and injects the
+    // ANDROID_KEYSTORE_* env vars (see .github/workflows/release.yml). Local debug
+    // release builds without a keystore fall back to debug signing so `flutter run
+    // --release` keeps working.
+    val releaseKeystorePresent =
+        file("upload-keystore.jks").exists() &&
+            System.getenv("ANDROID_KEYSTORE_PASSWORD") != null &&
+            System.getenv("ANDROID_KEY_ALIAS") != null &&
+            System.getenv("ANDROID_KEY_PASSWORD") != null
+
+    signingConfigs {
+        create("release") {
+            if (releaseKeystorePresent) {
+                storeFile = file("upload-keystore.jks")
+                storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+                keyAlias = System.getenv("ANDROID_KEY_ALIAS")
+                keyPassword = System.getenv("ANDROID_KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig =
+                if (releaseKeystorePresent) {
+                    signingConfigs.getByName("release")
+                } else {
+                    signingConfigs.getByName("debug")
+                }
         }
     }
 }
