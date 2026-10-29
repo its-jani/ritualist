@@ -1,13 +1,22 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:ritualist_engine/ritualist_engine.dart';
 
 import '../state/app_state.dart';
+import '../state/sfx.dart';
 import '../theme.dart';
+import '../widgets/celebrate.dart';
+import '../widgets/motion.dart';
 import '../widgets/primary_button.dart';
 import 'lesson_screen.dart';
 
-/// End-of-session summary: XP, accuracy, best combo and time - plus a way
-/// back to practice when hearts ran out (the "practice to earn hearts" loop).
+/// End-of-session summary: the reward moment.
+///
+/// Everything here is the retention loop made visible - one burst of
+/// confetti, a medallion, the XP tally counting up, the daily-goal ring
+/// filling and the streak flame still alive - plus a way back to practice when
+/// hearts ran out.
 class ResultsScreen extends StatefulWidget {
   const ResultsScreen({
     super.key,
@@ -32,8 +41,18 @@ class _ResultsScreenState extends State<ResultsScreen> {
   bool get _isReview => widget.spec.kind == SessionKind.review;
 
   @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      unawaited(_passed ? RitualSfx.celebrate() : RitualSfx.fail());
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     final SessionResult r = widget.result;
+    final AppState s = widget.state;
+
     final String title = _passed
         ? (_isReview ? 'Practice complete!' : 'Lesson complete!')
         : 'Out of hearts';
@@ -43,9 +62,9 @@ class _ResultsScreenState extends State<ResultsScreen> {
             : 'Come back tomorrow to keep the streak alive.')
         : 'You can practice to earn hearts back right away.';
 
-    final bool heartRestored = _passed &&
-        _isReview &&
-        r.heartsRemaining < widget.state.config.maxHearts;
+    final bool heartRestored =
+        _passed && _isReview && r.heartsRemaining < s.config.maxHearts;
+    final bool perfect = _passed && r.mistakes == 0;
 
     return Scaffold(
       backgroundColor: RitualColors.bg,
@@ -54,16 +73,27 @@ class _ResultsScreenState extends State<ResultsScreen> {
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 520),
             child: Padding(
-              padding: const EdgeInsets.all(24),
+              padding: const EdgeInsets.fromLTRB(22, 12, 22, 16),
               child: Column(
                 children: <Widget>[
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
                         children: <Widget>[
-                          const SizedBox(height: 24),
-                          _Medal(passed: _passed),
-                          const SizedBox(height: 20),
+                          const SizedBox(height: 8),
+                          Stack(
+                            alignment: Alignment.center,
+                            children: <Widget>[
+                              if (_passed)
+                                const CelebrationBurst(radius: 116),
+                              PopIn(
+                                beginScale: 0.55,
+                                beginOffset: Offset.zero,
+                                child: _Medal(passed: _passed),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 18),
                           Text(
                             title,
                             style: AppText.display,
@@ -75,53 +105,102 @@ class _ResultsScreenState extends State<ResultsScreen> {
                             style: AppText.bodyMuted,
                             textAlign: TextAlign.center,
                           ),
+                          if (perfect) ...<Widget>[
+                            const SizedBox(height: 10),
+                            PopIn(
+                              delay: const Duration(milliseconds: 260),
+                              child: _PerfectChip(
+                                bonusXp: s.config.perfectBonusXp,
+                              ),
+                            ),
+                          ],
                           if (heartRestored) ...<Widget>[
-                            const SizedBox(height: 14),
+                            const SizedBox(height: 10),
                             const _HeartRestoredNote(),
                           ],
-                          const SizedBox(height: 24),
-                          Row(
-                            children: <Widget>[
-                              Expanded(
-                                child: _StatCard(
-                                  icon: Icons.bolt_rounded,
-                                  iconColor: RitualColors.amber,
-                                  value: '+${r.xpEarned}',
-                                  label: 'XP earned',
+                          const SizedBox(height: 22),
+                          PopIn(
+                            delay: const Duration(milliseconds: 110),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  child: _GoalCard(
+                                    xpToday: s.xpToday,
+                                    goalXp: s.progress.dailyGoalXp,
+                                    progress: s.dailyGoalProgress,
+                                    reached: s.goalReachedToday,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: _StatCard(
-                                  icon: Icons.track_changes_rounded,
-                                  iconColor: RitualColors.jade,
-                                  value: '${(r.accuracy * 100).round()}%',
-                                  label: 'Accuracy',
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: _StreakCard(streak: s.streak),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                           const SizedBox(height: 12),
-                          Row(
-                            children: <Widget>[
-                              Expanded(
-                                child: _StatCard(
-                                  icon: Icons.local_fire_department_rounded,
-                                  iconColor: RitualColors.rose,
-                                  value: '${r.bestCombo}',
-                                  label: 'Best combo',
+                          PopIn(
+                            delay: const Duration(milliseconds: 200),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  child: _StatCard(
+                                    icon: Icons.bolt_rounded,
+                                    iconColor: RitualColors.amber,
+                                    value: BouncyCounter(
+                                      value: r.xpEarned,
+                                      prefix: '+',
+                                      style: AppText.title,
+                                    ),
+                                    label: 'XP earned',
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: _StatCard(
-                                  icon: Icons.schedule_rounded,
-                                  iconColor: RitualColors.sky,
-                                  value: _formatDuration(r.duration),
-                                  label: 'Time',
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: _StatCard(
+                                    icon: Icons.track_changes_rounded,
+                                    iconColor: RitualColors.jade,
+                                    value: BouncyCounter(
+                                      value: (r.accuracy * 100).round(),
+                                      suffix: '%',
+                                      style: AppText.title,
+                                    ),
+                                    label: 'Accuracy',
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: 12),
+                          PopIn(
+                            delay: const Duration(milliseconds: 290),
+                            child: Row(
+                              children: <Widget>[
+                                Expanded(
+                                  child: _StatCard(
+                                    icon: Icons.local_fire_department_rounded,
+                                    iconColor: RitualColors.sun,
+                                    value: BouncyCounter(
+                                      value: r.bestCombo,
+                                      style: AppText.title,
+                                    ),
+                                    label: 'Best combo',
+                                  ),
+                                ),
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: _StatCard(
+                                    icon: Icons.schedule_rounded,
+                                    iconColor: RitualColors.sky,
+                                    value: Text(
+                                      _formatDuration(r.duration),
+                                      style: AppText.title,
+                                    ),
+                                    label: 'Time',
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),
@@ -181,6 +260,8 @@ class _ResultsScreenState extends State<ResultsScreen> {
   }
 }
 
+/// The session medallion: two concentric discs on a lip, so it reads as a
+/// physical medal rather than an icon on a circle.
 class _Medal extends StatelessWidget {
   const _Medal({required this.passed});
 
@@ -191,17 +272,154 @@ class _Medal extends StatelessWidget {
     final Color bg = passed ? RitualColors.amberTint : RitualColors.roseTint;
     final Color fg = passed ? RitualColors.amberLip : RitualColors.rose;
     return Container(
-      width: 110,
-      height: 110,
+      width: 118,
+      height: 118,
       decoration: BoxDecoration(
         color: bg,
         shape: BoxShape.circle,
+        border: Border.all(color: fg.withValues(alpha: 0.45), width: 3),
         boxShadow: lipShadow(fg.withValues(alpha: 0.35), depth: 6),
       ),
-      child: Icon(
-        passed ? Icons.emoji_events_rounded : Icons.heart_broken_rounded,
-        size: 58,
-        color: fg,
+      child: Center(
+        child: Container(
+          width: 88,
+          height: 88,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            shape: BoxShape.circle,
+            border: Border.all(color: fg.withValues(alpha: 0.25), width: 2),
+          ),
+          child: Icon(
+            passed ? Icons.emoji_events_rounded : Icons.heart_broken_rounded,
+            size: 46,
+            color: fg,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Daily-goal ring plus the tallies that frame the next session.
+class _GoalCard extends StatelessWidget {
+  const _GoalCard({
+    required this.xpToday,
+    required this.goalXp,
+    required this.progress,
+    required this.reached,
+  });
+
+  final int xpToday;
+  final int goalXp;
+  final double progress;
+  final bool reached;
+
+  @override
+  Widget build(BuildContext context) {
+    return _Shell(
+      child: Row(
+        children: <Widget>[
+          DailyGoalRing(
+            progress: progress,
+            size: 52,
+            strokeWidth: 6,
+            reached: reached,
+            child: Icon(
+              reached ? Icons.check_rounded : Icons.bolt_rounded,
+              size: 20,
+              color: reached ? RitualColors.amberLip : RitualColors.jade,
+            ),
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  reached ? 'Goal reached' : 'Daily goal',
+                  style: AppText.caption.copyWith(fontSize: 12),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  '$xpToday / $goalXp XP',
+                  style: AppText.title.copyWith(fontSize: 15),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _StreakCard extends StatelessWidget {
+  const _StreakCard({required this.streak});
+
+  final int streak;
+
+  @override
+  Widget build(BuildContext context) {
+    return _Shell(
+      child: Row(
+        children: <Widget>[
+          StreakFlame(streak: streak, size: 26, showBadge: true),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'Day streak',
+                  style: AppText.caption.copyWith(fontSize: 12),
+                  overflow: TextOverflow.ellipsis,
+                ),
+                Text(
+                  '$streak ${streak == 1 ? 'day' : 'days'}',
+                  style: AppText.title.copyWith(fontSize: 15),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PerfectChip extends StatelessWidget {
+  const _PerfectChip({required this.bonusXp});
+
+  final int bonusXp;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+      decoration: BoxDecoration(
+        color: RitualColors.amberTint,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: RitualColors.amber, width: 2),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          const Icon(
+            Icons.auto_awesome_rounded,
+            size: 16,
+            color: RitualColors.amberLip,
+          ),
+          const SizedBox(width: 6),
+          Text(
+            'Perfect run  ·  +$bonusXp XP',
+            style: AppText.button.copyWith(
+              fontSize: 13,
+              color: RitualColors.amberLip,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -237,6 +455,27 @@ class _HeartRestoredNote extends StatelessWidget {
   }
 }
 
+/// The white lip card used by the goal/streak pair.
+class _Shell extends StatelessWidget {
+  const _Shell({required this.child});
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      decoration: BoxDecoration(
+        color: RitualColors.card,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: RitualColors.line, width: 2),
+        boxShadow: lipShadow(RitualColors.line, depth: 4),
+      ),
+      child: child,
+    );
+  }
+}
+
 class _StatCard extends StatelessWidget {
   const _StatCard({
     required this.icon,
@@ -247,25 +486,18 @@ class _StatCard extends StatelessWidget {
 
   final IconData icon;
   final Color iconColor;
-  final String value;
+  final Widget value;
   final String label;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-      decoration: BoxDecoration(
-        color: RitualColors.card,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: RitualColors.line, width: 2),
-        boxShadow: lipShadow(RitualColors.line, depth: 4),
-      ),
+    return _Shell(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Icon(icon, color: iconColor, size: 24),
           const SizedBox(height: 8),
-          Text(value, style: AppText.title),
+          value,
           Text(label, style: AppText.caption),
         ],
       ),

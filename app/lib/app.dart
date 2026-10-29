@@ -4,6 +4,7 @@ import 'screens/path_screen.dart';
 import 'screens/profile_screen.dart';
 import 'state/app_state.dart';
 import 'theme.dart';
+import 'widgets/motion.dart';
 import 'widgets/primary_button.dart';
 
 /// Root widget: builds the themed [MaterialApp] and drives [AppState.init].
@@ -214,12 +215,14 @@ class _BottomBar extends StatelessWidget {
                 children: <Widget>[
                   _BarButton(
                     icon: Icons.map_rounded,
+                    outlineIcon: Icons.map_outlined,
                     label: 'Learn',
                     selected: index == 0,
                     onTap: () => onChanged(0),
                   ),
                   _BarButton(
                     icon: Icons.person_rounded,
+                    outlineIcon: Icons.person_outline_rounded,
                     label: 'Profile',
                     selected: index == 1,
                     onTap: () => onChanged(1),
@@ -237,12 +240,14 @@ class _BottomBar extends StatelessWidget {
 class _BarButton extends StatelessWidget {
   const _BarButton({
     required this.icon,
+    required this.outlineIcon,
     required this.label,
     required this.selected,
     required this.onTap,
   });
 
   final IconData icon;
+  final IconData outlineIcon;
   final String label;
   final bool selected;
   final VoidCallback onTap;
@@ -256,20 +261,52 @@ class _BarButton extends StatelessWidget {
         onTap: onTap,
         child: MouseRegion(
           cursor: SystemMouseCursors.click,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Icon(icon, color: color, size: 26),
-              const SizedBox(height: 2),
-              Text(
-                label,
-                style: AppText.label.copyWith(
-                  fontSize: 11.5,
-                  color: color,
-                  letterSpacing: 0.4,
-                ),
+          child: Center(
+            // The selected tab wears a tinted pill that fades in rather than
+            // snapping; the icon lifts slightly and gains weight. Both are
+            // implicit animations - no controller to keep alive.
+            child: AnimatedContainer(
+              duration: RitualMotion.standard,
+              curve: RitualMotion.standardCurve,
+              padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 4),
+              decoration: BoxDecoration(
+                color: selected ? RitualColors.jadeTint : Colors.transparent,
+                borderRadius: BorderRadius.circular(16),
               ),
-            ],
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  AnimatedScale(
+                    duration: RitualMotion.standard,
+                    curve: RitualMotion.pop,
+                    scale: selected ? 1.1 : 1,
+                    child: AnimatedSwitcher(
+                      duration: RitualMotion.fast,
+                      child: Icon(
+                        selected ? icon : outlineIcon,
+                        key: ValueKey<bool>(selected),
+                        color: color,
+                        size: 25,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  AnimatedDefaultTextStyle(
+                    duration: RitualMotion.standard,
+                    curve: RitualMotion.standardCurve,
+                    style: AppText.label.copyWith(
+                      fontSize: 11.5,
+                      color: color,
+                      letterSpacing: 0.4,
+                      fontWeight:
+                          selected ? FontWeight.w800 : FontWeight.w600,
+                    ),
+                    child: Text(label),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),

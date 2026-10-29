@@ -118,12 +118,16 @@ class _RitualButtonState extends State<RitualButton> {
       );
     }
 
+    // The lip the surface sinks into. 4px is the depth measured in the
+    // reference study (--web-ui_button-lip-width), not a guess.
+    const double lipDepth = 4;
+
     final surface = AnimatedPositioned(
       duration: const Duration(milliseconds: 70),
       curve: Curves.easeOut,
       left: 0,
       right: 0,
-      top: _down && _enabled ? 3 : 0,
+      top: _down && _enabled ? lipDepth : 0,
       height: height,
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -147,13 +151,13 @@ class _RitualButtonState extends State<RitualButton> {
             : SystemMouseCursors.basic,
         child: SizedBox(
           width: widget.expand ? double.infinity : null,
-          height: height + 3,
+          height: height + lipDepth,
           child: Stack(
             children: <Widget>[
               Positioned(
                 left: 0,
                 right: 0,
-                top: 3,
+                top: lipDepth,
                 height: height,
                 child: DecoratedBox(
                   decoration: BoxDecoration(

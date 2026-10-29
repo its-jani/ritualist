@@ -4,13 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:ritualist_engine/ritualist_engine.dart';
 
 import '../theme.dart';
+import 'motion.dart';
 
 /// Matching exercise (Arabic term -> English meaning).
 ///
 /// Interaction: tap a tile on the left, then its match on the right. A correct
-/// pairing locks both tiles green; a wrong pairing flashes red and counts as a
-/// miss (matching never costs a heart - see docs/rea-duolingo-findings.md §4).
-/// Once every pair is matched the widget auto-submits via [onCompleted].
+/// pairing locks both tiles green with a small pop; a wrong pairing flashes red
+/// and counts as a miss (matching never costs a heart - see
+/// docs/rea-duolingo-findings.md §4). Once every pair is matched the widget
+/// auto-submits via [onCompleted].
 class MatchView extends StatefulWidget {
   const MatchView({
     super.key,
@@ -100,6 +102,7 @@ class _MatchViewState extends State<MatchView> {
   Widget build(BuildContext context) {
     final List<MatchPair> pairs = _exercise.pairs;
     final List<int> rightOrder = matchRightDisplayOrder(_exercise, widget.seed);
+    final int matched = _matchedLeft.length;
 
     final List<Widget> leftTiles = <Widget>[
       for (int i = 0; i < pairs.length; i++)
@@ -141,30 +144,8 @@ class _MatchViewState extends State<MatchView> {
             Expanded(child: _gapped(rightTiles)),
           ],
         ),
-        const SizedBox(height: 14),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Icon(
-              _missed == 0
-                  ? Icons.touch_app_rounded
-                  : Icons.error_outline_rounded,
-              size: 16,
-              color: _missed == 0 ? RitualColors.subInk : RitualColors.roseInk,
-            ),
-            const SizedBox(width: 6),
-            Text(
-              _missed == 0
-                  ? 'Tap a term, then tap its meaning'
-                  : '$_missed wrong ${_missed == 1 ? 'match' : 'matches'}',
-              style: AppText.caption.copyWith(
-                color: _missed == 0
-                    ? RitualColors.subInk
-                    : RitualColors.roseInk,
-              ),
-            ),
-          ],
-        ),
+        const SizedBox(height: 16),
+        _MatchStatus(matched: matched, total: pairs.length, missed: _missed),
       ],
     );
   }
@@ -200,6 +181,54 @@ class _MatchViewState extends State<MatchView> {
   }
 }
 
+/// Live status line: pairs cleared vs total, plus the running miss count.
+class _MatchStatus extends StatelessWidget {
+  const _MatchStatus({
+    required this.matched,
+    required this.total,
+    required this.missed,
+  });
+
+  final int matched;
+  final int total;
+  final int missed;
+
+  @override
+  Widget build(BuildContext context) {
+    final bool started = matched > 0;
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        Icon(
+          started ? Icons.check_circle_rounded : Icons.touch_app_rounded,
+          size: 16,
+          color: started ? RitualColors.correctInk : RitualColors.subInk,
+        ),
+        const SizedBox(width: 6),
+        Text(
+          '$matched of $total matched',
+          style: AppText.caption.copyWith(
+            color: started ? RitualColors.correctInk : RitualColors.subInk,
+          ),
+        ),
+        if (missed > 0) ...<Widget>[
+          const SizedBox(width: 12),
+          const Icon(
+            Icons.error_outline_rounded,
+            size: 15,
+            color: RitualColors.roseInk,
+          ),
+          const SizedBox(width: 4),
+          Text(
+            '$missed wrong',
+            style: AppText.caption.copyWith(color: RitualColors.roseInk),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
 enum _TileSide { left, right }
 
 enum _PairState { idle, selected, matched, wrong }
@@ -222,39 +251,36 @@ class _PairTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (Color bg, Color border) = switch (state) {
-      _PairState.idle => (Colors.white, RitualColors.line),
+      _PairState.idle => (RitualColors.card, RitualColors.line),
       _PairState.selected => (RitualColors.jadeTint, RitualColors.jade),
       _PairState.matched => (
           RitualColors.correctTint,
-          RitualColors.correctInk,
+          RitualColors.correct,
         ),
       _PairState.wrong => (RitualColors.roseTint, RitualColors.rose),
     };
     final bool matched = state == _PairState.matched;
+    final bool wrong = state == _PairState.wrong;
     final TextStyle textStyle = AppText.body.copyWith(
       fontSize: 15,
       color: matched ? RitualColors.correctInk : RitualColors.ink,
     );
 
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
-      onTap: onTap,
-      child: MouseRegion(
-        cursor: onTap != null
-            ? SystemMouseCursors.click
-            : SystemMouseCursors.basic,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 160),
-          constraints: const BoxConstraints(minHeight: 56),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: border, width: 2),
-            boxShadow: state == _PairState.idle
-                ? lipShadow(RitualColors.line, depth: 3)
-                : null,
-          ),
+    return AnimatedScale(
+      // Wrong pairs flinch; matched pairs settle with a tiny lift.
+      scale: wrong ? 0.965 : (matched ? 1.02 : 1),
+      duration: RitualMotion.fast,
+      curve: RitualMotion.pop,
+      child: PressableCard(
+        onTap: onTap,
+        color: bg,
+        border: Border.all(color: border, width: 2),
+        shadowColor: state == _PairState.idle ? RitualColors.line : border,
+        depth: 3,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+        semanticLabel: text,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 32),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,

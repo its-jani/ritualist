@@ -47,16 +47,29 @@ class RitualColors {
   static const Color sunTint = Color(0xFFFFEFE3);
 
   // Neutrals.
+  //
+  // Contrast floor is WCAG AA on the app's own surfaces: `subInk` carries body
+  // copy (>= 4.7:1 on bg), `faint` is UI-only (>= 3:1) and never body text.
   static const Color ink = Color(0xFF3C3C3C);
-  static const Color subInk = Color(0xFF777777);
-  static const Color faint = Color(0xFFAFAFAF);
+  static const Color subInk = Color(0xFF6E6E6E);
+  static const Color faint = Color(0xFF9A9A9A);
   static const Color line = Color(0xFFE5E5E5);
+
+  /// Slightly heavier hairline for surfaces that need to hold their edge
+  /// against a tinted background (feedback panel, selected chips).
+  static const Color lineStrong = Color(0xFFD6D6D6);
   static const Color bg = Color(0xFFF7F7F9);
   static const Color card = Color(0xFFFFFFFF);
 
-  // Correct-answer feedback.
+  // Correct-answer feedback. `correctInk` is dark enough for AA body text
+  // on `correctTint` (5.8:1); the brighter `correct` is for fills and borders.
+  static const Color correct = Color(0xFF4CAF50);
+  static const Color correctLip = Color(0xFF3B8C3E);
   static const Color correctTint = Color(0xFFE9F9E5);
-  static const Color correctInk = Color(0xFF3D8B40);
+  static const Color correctInk = Color(0xFF2E6B31);
+
+  /// Paper tint used behind a "why" callout inside feedback panels.
+  static const Color paper = Color(0xFFFFFDF7);
 }
 
 /// One unit's band colors, derived from its `colorIndex` (manifest rotation).

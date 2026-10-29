@@ -1,7 +1,7 @@
 name: ritualist
 description: "Ritualist - an ultra-lean, offline-first micro-learning app with a Duolingo-style path. V1 course module: Islam."
 publish_to: 'none'
-version: 1.0.2+3
+version: 1.0.3+4
 
 # Zero external package dependencies on purpose.
 # The app builds from the Flutter SDK alone, so it stays small, boots fast,

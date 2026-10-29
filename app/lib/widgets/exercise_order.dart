@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:ritualist_engine/ritualist_engine.dart';
 
 import '../theme.dart';
+import 'motion.dart';
 
 /// Step-ordering exercise (e.g. "Arrange the correct sequence of Wudu steps").
 ///
 /// The learner taps steps from the shuffled pool into numbered slots. The
 /// pool order comes from [stepDisplayOrder] so it is stable across restarts
-/// of the same exercise. After checking, each slot is graded green/red and
-/// the feedback panel shows the correct sequence.
+/// of the same exercise. Slots grow in with an animated size change, each
+/// new step presses down onto its lip, and after checking each slot is graded
+/// green/red while the feedback panel shows the correct sequence.
 class OrderView extends StatelessWidget {
   const OrderView({
     super.key,
@@ -36,35 +38,44 @@ class OrderView extends StatelessWidget {
     final List<int> pool =
         displayOrder.where((i) => !placed.contains(i)).toList(growable: false);
 
+    final List<Widget> slots = <Widget>[
+      for (int p = 0; p < placed.length; p++) ...<Widget>[
+        _SlotTile(
+          number: p + 1,
+          option: exercise.steps[placed[p]],
+          graded: locked
+              ? (placed[p] == p ? _SlotGrade.correct : _SlotGrade.wrong)
+              : _SlotGrade.none,
+          onTap: locked ? null : () => _removeAt(p),
+        ),
+        const SizedBox(height: 10),
+      ],
+      if (!locked && placed.length < exercise.steps.length)
+        _EmptySlot(number: placed.length + 1),
+    ];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
-        for (int p = 0; p < placed.length; p++) ...<Widget>[
-          _SlotTile(
-            number: p + 1,
-            option: exercise.steps[placed[p]],
-            graded: locked
-                ? (placed[p] == p ? _SlotGrade.correct : _SlotGrade.wrong)
-                : _SlotGrade.none,
-            onTap: locked ? null : () => _removeAt(p),
+        AnimatedSize(
+          duration: RitualMotion.standard,
+          curve: RitualMotion.standardCurve,
+          alignment: Alignment.topCenter,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: slots,
           ),
-          const SizedBox(height: 10),
-        ],
-        if (!locked && placed.length < exercise.steps.length) ...<Widget>[
-          _EmptySlot(number: placed.length + 1),
-          const SizedBox(height: 10),
-        ],
+        ),
         if (!locked && placed.isEmpty) ...<Widget>[
-          const SizedBox(height: 4),
+          const SizedBox(height: 12),
           const Text(
             'Tap the steps below in the correct order.',
             style: AppText.caption,
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 10),
         ],
         if (pool.isNotEmpty) ...<Widget>[
-          const Divider(height: 20),
+          const SizedBox(height: 16),
           Wrap(
             spacing: 10,
             runSpacing: 10,
@@ -84,7 +95,7 @@ class OrderView extends StatelessWidget {
   void _append(int stepIndex) => onChanged(<int>[...placed, stepIndex]);
 
   void _removeAt(int position) {
-    final next = List<int>.of(placed)..removeAt(position);
+    final List<int> next = List<int>.of(placed)..removeAt(position);
     onChanged(next);
   }
 }
@@ -108,52 +119,45 @@ class _SlotTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final (Color bg, Color border, Color badgeBg) = switch (graded) {
       _SlotGrade.none => (
-          Colors.white,
+          RitualColors.card,
           RitualColors.jade,
           RitualColors.jade,
         ),
       _SlotGrade.correct => (
           RitualColors.correctTint,
-          RitualColors.correctInk,
-          RitualColors.correctInk,
+          RitualColors.correct,
+          RitualColors.correct,
         ),
       _SlotGrade.wrong => (
           RitualColors.roseTint,
           RitualColors.rose,
-          RitualColors.roseInk,
+          RitualColors.rose,
         ),
     };
 
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
+    return PressableCard(
       onTap: onTap,
-      child: MouseRegion(
-        cursor: onTap != null
-            ? SystemMouseCursors.click
-            : SystemMouseCursors.basic,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 160),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-          decoration: BoxDecoration(
-            color: bg,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: border, width: 2),
-          ),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              _NumberBadge(number: number, color: badgeBg),
-              const SizedBox(width: 10),
-              Expanded(child: _StepText(option: option)),
-              if (graded == _SlotGrade.correct)
-                const Icon(Icons.check_rounded,
-                    size: 20, color: RitualColors.correctInk)
-              else if (graded == _SlotGrade.wrong)
-                const Icon(Icons.close_rounded,
-                    size: 20, color: RitualColors.roseInk),
-            ],
-          ),
-        ),
+      color: bg,
+      border: Border.all(color: border, width: 2),
+      shadowColor: graded == _SlotGrade.none
+          ? RitualColors.jadeLip.withValues(alpha: 0.55)
+          : border,
+      depth: 3,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+      semanticLabel: 'Step $number: ${option.text}',
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          _NumberBadge(number: number, color: badgeBg),
+          const SizedBox(width: 10),
+          Expanded(child: _StepText(option: option)),
+          if (graded == _SlotGrade.correct)
+            const Icon(Icons.check_rounded,
+                size: 20, color: RitualColors.correctInk)
+          else if (graded == _SlotGrade.wrong)
+            const Icon(Icons.close_rounded,
+                size: 20, color: RitualColors.roseInk),
+        ],
       ),
     );
   }
@@ -177,7 +181,14 @@ class _EmptySlot extends StatelessWidget {
         children: <Widget>[
           _NumberBadge(number: number, color: RitualColors.faint),
           const SizedBox(width: 10),
-          const Text('Next step goes here', style: AppText.caption),
+          const Expanded(
+            child: Text('Next step goes here', style: AppText.caption),
+          ),
+          const Icon(
+            Icons.south_rounded,
+            size: 16,
+            color: RitualColors.faint,
+          ),
         ],
       ),
     );
@@ -192,24 +203,17 @@ class _PoolTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      behavior: HitTestBehavior.opaque,
+    return PressableCard(
       onTap: onTap,
-      child: MouseRegion(
-        cursor: onTap != null
-            ? SystemMouseCursors.click
-            : SystemMouseCursors.basic,
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: 420),
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(14),
-            border: Border.all(color: RitualColors.line, width: 2),
-            boxShadow: lipShadow(RitualColors.line, depth: 3),
-          ),
-          child: _StepText(option: option),
-        ),
+      color: RitualColors.card,
+      border: Border.all(color: RitualColors.line, width: 2),
+      depth: 3,
+      radius: 14,
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+      semanticLabel: option.text,
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 400),
+        child: _StepText(option: option),
       ),
     );
   }
@@ -223,7 +227,8 @@ class _NumberBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnimatedContainer(
+      duration: RitualMotion.fast,
       width: 24,
       height: 24,
       alignment: Alignment.center,
