@@ -138,11 +138,12 @@ class _SlotTile extends StatelessWidget {
     return PressableCard(
       onTap: onTap,
       color: bg,
-      border: Border.all(color: border, width: 2),
+      radius: RitualShape.radius,
+      depth: RitualShape.lipDepth,
+      border: Border.all(color: border, width: RitualShape.borderWidth),
       shadowColor: graded == _SlotGrade.none
           ? RitualColors.jadeLip.withValues(alpha: 0.55)
           : border,
-      depth: 3,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       semanticLabel: 'Step $number: ${option.text}',
       child: Row(
@@ -174,8 +175,11 @@ class _EmptySlot extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
         color: RitualColors.bg,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: RitualColors.line, width: 2),
+        borderRadius: BorderRadius.circular(RitualShape.radius),
+        border: Border.all(
+          color: RitualColors.line,
+          width: RitualShape.borderWidth,
+        ),
       ),
       child: Row(
         children: <Widget>[
@@ -206,9 +210,12 @@ class _PoolTile extends StatelessWidget {
     return PressableCard(
       onTap: onTap,
       color: RitualColors.card,
-      border: Border.all(color: RitualColors.line, width: 2),
-      depth: 3,
-      radius: 14,
+      radius: RitualShape.radius,
+      depth: RitualShape.lipDepth,
+      border: Border.all(
+        color: RitualColors.line,
+        width: RitualShape.borderWidth,
+      ),
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
       semanticLabel: option.text,
       child: ConstrainedBox(
@@ -229,6 +236,7 @@ class _NumberBadge extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: RitualMotion.fast,
+      curve: RitualMotion.spring,
       width: 24,
       height: 24,
       alignment: Alignment.center,

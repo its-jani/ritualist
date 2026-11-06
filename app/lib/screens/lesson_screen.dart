@@ -249,6 +249,8 @@ class _LessonScreenState extends State<LessonScreen> {
           const SizedBox(width: 10),
           AnimatedSwitcher(
             duration: RitualMotion.standard,
+            switchInCurve: RitualMotion.spring,
+            switchOutCurve: Curves.easeIn,
             transitionBuilder: (Widget child, Animation<double> animation) =>
                 ScaleTransition(
               scale: animation.drive(Tween<double>(begin: 0.5, end: 1)),
@@ -274,7 +276,7 @@ class _LessonScreenState extends State<LessonScreen> {
     }
     return AnimatedSwitcher(
       duration: RitualMotion.standard,
-      switchInCurve: RitualMotion.inOut,
+      switchInCurve: RitualMotion.spring,
       switchOutCurve: Curves.easeIn,
       layoutBuilder: (Widget? current, List<Widget> previous) => Stack(
         alignment: Alignment.topCenter,
@@ -382,7 +384,12 @@ class _LessonScreenState extends State<LessonScreen> {
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 12, 20, 16),
       decoration: const BoxDecoration(
-        border: Border(top: BorderSide(color: RitualColors.line, width: 2)),
+        border: Border(
+          top: BorderSide(
+            color: RitualColors.line,
+            width: RitualShape.borderWidth,
+          ),
+        ),
       ),
       child: isMatch
           ? const SizedBox(
@@ -442,6 +449,8 @@ class _ProgressBar extends StatelessWidget {
           widthFactor: widthFactor,
           child: Container(
             decoration: BoxDecoration(
+              // Owl Green fill with the top-gloss strip: canonical Duolingo
+              // progress bar anatomy.
               color: RitualColors.jade,
               borderRadius: BorderRadius.circular(8),
             ),

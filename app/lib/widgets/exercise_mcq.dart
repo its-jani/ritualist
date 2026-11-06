@@ -6,11 +6,13 @@ import 'motion.dart';
 
 /// Multiple-choice exercise: a column of chunky option tiles.
 ///
-/// Idle tiles are white keys sitting on a hairline lip; the picked tile
-/// presses down and lifts into jade; once checked, the correct tile turns
-/// green and a wrong pick turns red, both with a small scale pop. That
-/// immediate right/wrong signal is the core of the learning loop
-/// (see docs/rea-duolingo-findings.md §4), rendered with our own palette.
+/// Idle tiles are white keycaps sitting on a 4px Swan lip; the picked tile
+/// presses down and lifts into Owl Green; once checked, the correct tile
+/// grades green and a wrong pick grades red, both with a small scale pop.
+/// That immediate right/wrong signal is the core of the learning loop
+/// (see docs/rea-duolingo-findings.md §4). Radius is the canonical 16px
+/// ([RitualShape.radius]) and every tile rides the shared tactile-press
+/// primitive from [PressableCard].
 class McqView extends StatelessWidget {
   const McqView({
     super.key,
@@ -137,18 +139,22 @@ class _OptionTile extends StatelessWidget {
 
     return AnimatedOpacity(
       duration: RitualMotion.fast,
-      opacity: faded ? 0.45 : 1,
+      opacity: faded ? RitualShape.lockedOpacity : 1,
       child: AnimatedScale(
         // A tiny pop on grading: enough to feel like a stamped result.
         scale: graded ? 1.015 : 1,
         duration: RitualMotion.fast,
-        curve: RitualMotion.pop,
+        curve: RitualMotion.spring,
         child: PressableCard(
           onTap: onTap,
           color: bg,
-          border: Border.all(color: border, width: graded ? 2.5 : 2),
+          radius: RitualShape.radius,
+          depth: RitualShape.lipDepth,
+          border: Border.all(
+            color: border,
+            width: graded ? 2.5 : RitualShape.borderWidth,
+          ),
           shadowColor: faded ? RitualColors.line : border,
-          depth: 4,
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
           semanticLabel: option.text,
           child: Row(
@@ -180,6 +186,8 @@ class _OptionTile extends StatelessWidget {
               ),
               AnimatedSwitcher(
                 duration: RitualMotion.fast,
+                switchInCurve: RitualMotion.spring,
+                switchOutCurve: Curves.easeIn,
                 transitionBuilder:
                     (Widget child, Animation<double> animation) =>
                         ScaleTransition(
@@ -218,6 +226,7 @@ class _KeyCap extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: RitualMotion.fast,
+      curve: RitualMotion.spring,
       width: 26,
       height: 26,
       alignment: Alignment.center,

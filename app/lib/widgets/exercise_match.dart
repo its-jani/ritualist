@@ -267,16 +267,21 @@ class _PairTile extends StatelessWidget {
     );
 
     return AnimatedScale(
-      // Wrong pairs flinch; matched pairs settle with a tiny lift.
+      // Wrong pairs flinch; matched pairs settle with a tiny lift. Both
+      // ride the spring curve so the grading feels stamped, not faded.
       scale: wrong ? 0.965 : (matched ? 1.02 : 1),
       duration: RitualMotion.fast,
-      curve: RitualMotion.pop,
+      curve: RitualMotion.spring,
       child: PressableCard(
         onTap: onTap,
         color: bg,
-        border: Border.all(color: border, width: 2),
+        radius: RitualShape.radius,
+        depth: RitualShape.lipDepth,
+        border: Border.all(
+          color: border,
+          width: RitualShape.borderWidth,
+        ),
         shadowColor: state == _PairState.idle ? RitualColors.line : border,
-        depth: 3,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
         semanticLabel: text,
         child: ConstrainedBox(
