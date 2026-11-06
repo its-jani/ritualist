@@ -52,6 +52,11 @@ class _PathNodeState extends State<PathNode>
   AnimationController? _pulse;
   bool _down = false;
 
+  /// Canonical Duolingo breathing: the node face itself scales
+  /// 1.0 -> 1.05 with the pulse while an outer halo ring expands and fades.
+  /// Duration matches the reference app's lazy 1.1s inhale/exhale.
+  static const double _breatheScale = 1.05;
+
   /// Lazily created so non-current nodes never build a ticker at all - and
   /// so `dispose()` can never accidentally construct one on a deactivated
   /// element (which would trip the ancestor-lookup assertion).
@@ -108,8 +113,11 @@ class _PathNodeState extends State<PathNode>
     final bool locked = widget.state == PathNodeState.locked;
     final double size = widget.diameter;
 
-    final Color base = locked ? const Color(0xFFEAEAEA) : widget.palette.base;
-    final Color lip = locked ? const Color(0xFFD3D3D3) : widget.palette.lip;
+    // Locked nodes keep the palette shape but flatten into a grey face on
+    // a grey lip; the Opacity floor ([RitualShape.lockedOpacity]) is applied
+    // to the whole node so the trail behind it still reads through.
+    final Color base = locked ? RitualColors.swanMuted : widget.palette.base;
+    final Color lip = locked ? RitualColors.swanMutedLip : widget.palette.lip;
     final Color iconColor = locked ? const Color(0xFFAFAFAF) : Colors.white;
 
     final IconData icon = widget.iconOverride ??
@@ -123,21 +131,30 @@ class _PathNodeState extends State<PathNode>
           PathNodeState.locked => Icons.lock_rounded,
         };
 
+    // Locked nodes do not accept presses - the trail never sinks.
+    final VoidCallback? tapHandler = locked ? null : widget.onTap;
+
     Widget node = GestureDetector(
       behavior: HitTestBehavior.opaque,
-      onTapDown: widget.onTap == null ? null : (_) => setState(() => _down = true),
-      onTapUp: widget.onTap == null ? null : (_) => setState(() => _down = false),
-      onTapCancel: widget.onTap == null
+      onTapDown: tapHandler == null
+          ? null
+          : (_) => setState(() => _down = true),
+      onTapUp: tapHandler == null ? null : (_) => setState(() => _down = false),
+      onTapCancel: tapHandler == null
           ? null
           : () => setState(() => _down = false),
-      onTap: widget.onTap,
+      onTap: tapHandler,
       child: MouseRegion(
-        cursor: widget.onTap != null
+        cursor: tapHandler != null
             ? SystemMouseCursors.click
             : SystemMouseCursors.basic,
         child: _nodeBox(size: size, base: base, lip: lip, icon: icon, iconColor: iconColor),
       ),
     );
+
+    if (locked) {
+      node = Opacity(opacity: RitualShape.lockedOpacity, child: node);
+    }
 
     // The START bubble floats above the node instead of pushing it down, so
     // the trail always runs exactly through the centre of the circle.
@@ -181,6 +198,61 @@ class _PathNodeState extends State<PathNode>
     required IconData icon,
     required Color iconColor,
   }) {
+    // The lip is a chunky 4px solid bottom shadow (canonical) plus a 2px
+    // lip-colored border that wraps the crown. On the current node we
+    // deepen the drop to [RitualShape.nodeLipDepth] so it floats higher
+    // than the completed / locked neighbours.
+    final double depth = _isCurrent
+        ? RitualShape.nodeLipDepth
+        : RitualShape.lipDepth;
+    final bool pressed = _down && !_isLocked;
+
+    Widget face = Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: base,
+        gradient: _isLocked
+            ? null
+            : LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: <Color>[
+                  Color.lerp(base, Colors.white, 0.16)!,
+                  base,
+                ],
+              ),
+        border: Border.all(color: lip, width: RitualShape.borderWidth),
+        boxShadow: lipShadow(lip, depth: depth),
+      ),
+      child: Icon(icon, size: size * 0.44, color: iconColor),
+    );
+
+    // The current node breathes 1.0 -> 1.05 and its halo swells in lock.
+    // Non-current nodes just scale-pop on press so the tactile collapse is
+    // uniform with the rest of the app's keycap primitive.
+    if (_isCurrent && !prefersReducedMotion(context)) {
+      face = AnimatedBuilder(
+        animation: _ensurePulse(),
+        builder: (BuildContext context, Widget? child) {
+          final double v = Curves.easeInOut.transform(_ensurePulse().value);
+          return Transform.scale(scale: 1.0 + (_breatheScale - 1.0) * v, child: child);
+        },
+        child: face,
+      );
+    } else {
+      face = AnimatedScale(
+        // Pressed nodes sink to 0.94 (about a 4px keycap collapse at this
+        // diameter) - same mechanic as PressableCard, expressed as a scale
+        // so the halo keeps its geometry.
+        scale: pressed ? 0.94 : 1,
+        duration: RitualMotion.press,
+        curve: Curves.easeOut,
+        child: face,
+      );
+    }
+
     return SizedBox(
       width: size + 40,
       height: size + 40,
@@ -188,32 +260,7 @@ class _PathNodeState extends State<PathNode>
         alignment: Alignment.center,
         children: <Widget>[
           if (_isCurrent) _Halo(pulse: _ensurePulse(), color: base, size: size),
-          AnimatedScale(
-            scale: _down ? 0.94 : 1,
-            duration: RitualMotion.press,
-            curve: Curves.easeOut,
-            child: Container(
-              width: size,
-              height: size,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: base,
-                gradient: _isLocked
-                    ? null
-                    : LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: <Color>[
-                          Color.lerp(base, Colors.white, 0.16)!,
-                          base,
-                        ],
-                      ),
-                border: Border.all(color: lip, width: 2),
-                boxShadow: lipShadow(lip, depth: _isCurrent ? 7 : 6),
-              ),
-              child: Icon(icon, size: size * 0.44, color: iconColor),
-            ),
-          ),
+          face,
         ],
       ),
     );
@@ -275,8 +322,11 @@ class _StartBubble extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(color: color, width: 2),
+        borderRadius: BorderRadius.circular(RitualShape.radiusChip),
+        border: Border.all(
+          color: color,
+          width: RitualShape.borderWidth,
+        ),
         boxShadow: lipShadow(color.withValues(alpha: 0.35), depth: 2),
       ),
       child: Text(
@@ -417,9 +467,12 @@ class UnitBand extends StatelessWidget {
             palette.base,
           ],
         ),
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: lipShadow(palette.lip, depth: 4),
-        border: Border.all(color: palette.lip, width: 2),
+        borderRadius: BorderRadius.circular(RitualShape.radius),
+        boxShadow: lipShadow(palette.lip, depth: RitualShape.lipDepth),
+        border: Border.all(
+          color: palette.lip,
+          width: RitualShape.borderWidth,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

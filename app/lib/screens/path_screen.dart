@@ -29,9 +29,12 @@ class PathScreen extends StatefulWidget {
 }
 
 class _PathScreenState extends State<PathScreen> {
-  /// Amplitude of the winding path. Period of six rows keeps the reference
-  /// app's lazy S-bend without ever clipping the 520px column.
-  static const double _amplitude = 44;
+  /// Amplitude of the winding path. Period of six rows (i.e. `pi/3` per
+  /// index) keeps the reference app's lazy S-bend without ever clipping
+  /// the 520px column. The path is a repeating sine wave across vertical
+  /// rows so the offset resolves to the same x for nodes 0, 6, 12, ...
+  static const double _amplitude = 48;
+  static const double _waveStep = math.pi / 3;
 
   /// Breathing room the node's pulse halo needs inside each row.
   static const double _nodeChrome = 40;
@@ -147,7 +150,7 @@ class _PathScreenState extends State<PathScreen> {
         border: Border(
           bottom: BorderSide(
             color: _elevated ? RitualColors.line : Colors.transparent,
-            width: 2,
+            width: RitualShape.borderWidth,
           ),
         ),
       ),
@@ -228,11 +231,17 @@ class _PathScreenState extends State<PathScreen> {
       final double height =
           PathNode.sizeFor(state, checkpoint: checkpoint) + _nodeChrome + _rowGap;
 
+      // Trail colour is code-coded by completion state (canonical parity):
+      //   done    - fully saturated brand ribbon (the path you walked),
+      //   current - soft tinted halo the node is emerging from,
+      //   locked  - flat Swan grey so the future reads as unmown.
       final Color trail = done
-          ? palette.base.withValues(alpha: 0.22)
+          ? palette.base
           : (current
-              ? palette.base.withValues(alpha: 0.16)
+              ? palette.base.withValues(alpha: 0.32)
               : RitualColors.line);
+
+      final double trailWidth = done || current ? 12 : 10;
 
       final String tip = done
           ? '${lesson.title} - tap to review'
@@ -252,6 +261,7 @@ class _PathScreenState extends State<PathScreen> {
                 dx: dx,
                 nextDx: nextDx,
                 color: trail,
+                strokeWidth: trailWidth,
               ),
               Center(
                 child: Transform.translate(
@@ -273,7 +283,9 @@ class _PathScreenState extends State<PathScreen> {
     return widgets;
   }
 
-  double _dx(int index) => _amplitude * math.sin(index * math.pi / 3);
+  /// Repeating sine-wave horizontal offset applied to each row of the path.
+  /// Nodes 0/6/12 land at the centre; nodes 3/9 land at the opposite peak.
+  double _dx(int index) => _amplitude * math.sin(index * _waveStep);
 
   Future<void> _openReview() async {
     final AppState s = widget.state;
@@ -411,7 +423,12 @@ class _PracticeCard extends StatelessWidget {
         enabled: enabled,
         color: RitualColors.card,
         shadowColor: RitualColors.line,
-        border: Border.all(color: RitualColors.line, width: 2),
+        border: Border.all(
+          color: RitualColors.line,
+          width: RitualShape.borderWidth,
+        ),
+        radius: RitualShape.radius,
+        depth: RitualShape.lipDepth,
         padding: const EdgeInsets.all(14),
         semanticLabel: 'Practice: $subtitle',
         child: Row(
@@ -490,9 +507,13 @@ class _CourseCompleteCard extends StatelessWidget {
         padding: const EdgeInsets.all(18),
         decoration: BoxDecoration(
           color: RitualColors.amberTint,
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: RitualColors.amber, width: 2),
-          boxShadow: lipShadow(RitualColors.amberLip.withValues(alpha: 0.5), depth: 4),
+          borderRadius: BorderRadius.circular(RitualShape.radius),
+          border: Border.all(
+            color: RitualColors.amber,
+            width: RitualShape.borderWidth,
+          ),
+          boxShadow: lipShadow(RitualColors.amberLip.withValues(alpha: 0.5),
+              depth: RitualShape.lipDepth),
         ),
         child: const Column(
           children: <Widget>[
