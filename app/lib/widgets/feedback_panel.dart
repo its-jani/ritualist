@@ -9,9 +9,11 @@ import 'primary_button.dart';
 /// state with praise for a hit, a red state with the correct solution for a
 /// miss - plus the "why" callout and the citation pill in both cases.
 ///
-/// This is the app's core learning loop, so the contrast is deliberately
-/// stronger than the rest of the UI: a saturated top rule, a white icon disc
-/// and a solid white solution card on the failure state.
+/// The sheet rides [RitualMotion.spring] (`cubic-bezier(0.34, 1.56, 0.64, 1)`)
+/// via the parent `AnimatedSwitcher` in [LessonScreen]. Contrast is
+/// deliberately stronger than the rest of the UI: a saturated 3px top rule,
+/// a white icon disc that enters on [PopIn], and a solid white solution card
+/// on the failure state.
 class FeedbackPanel extends StatelessWidget {
   const FeedbackPanel({
     super.key,
@@ -56,7 +58,10 @@ class FeedbackPanel extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         color: tint,
-        borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+        borderRadius: const BorderRadius.vertical(
+          top: Radius.circular(RitualShape.radius + 8),
+        ),
+        // 3px saturated top rule - the canonical Duolingo feedback sheet edge.
         border: Border(top: BorderSide(color: ink, width: 3)),
       ),
       child: SafeArea(
@@ -77,6 +82,7 @@ class FeedbackPanel extends StatelessWidget {
                           PopIn(
                             beginScale: 0.3,
                             beginOffset: Offset.zero,
+                            curve: RitualMotion.spring,
                             duration: const Duration(milliseconds: 340),
                             child: Container(
                               width: 42,
@@ -84,7 +90,10 @@ class FeedbackPanel extends StatelessWidget {
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 shape: BoxShape.circle,
-                                border: Border.all(color: ink, width: 2.5),
+                                border: Border.all(
+                                  color: ink,
+                                  width: RitualShape.borderWidth + 0.5,
+                                ),
                               ),
                               child: Icon(icon, color: ink, size: 26),
                             ),
@@ -160,8 +169,15 @@ class _SolutionBox extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: RitualColors.rose, width: 2),
+        borderRadius: BorderRadius.circular(RitualShape.radius),
+        border: Border.all(
+          color: RitualColors.rose,
+          width: RitualShape.borderWidth,
+        ),
+        boxShadow: lipShadow(
+          RitualColors.roseLip.withValues(alpha: 0.35),
+          depth: RitualShape.lipDepth,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -199,7 +215,7 @@ class _TipCallout extends StatelessWidget {
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
         color: RitualColors.paper,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(RitualShape.radiusChip),
         border: Border.all(color: RitualColors.lineStrong, width: 1.5),
       ),
       child: Row(
@@ -246,6 +262,7 @@ class _HeartLostBadge extends StatelessWidget {
       delay: const Duration(milliseconds: 140),
       beginScale: 0.5,
       beginOffset: Offset.zero,
+      curve: RitualMotion.spring,
       child: Container(
         margin: const EdgeInsets.only(left: 8),
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
@@ -254,7 +271,7 @@ class _HeartLostBadge extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
             color: RitualColors.roseLip.withValues(alpha: 0.5),
-            width: 2,
+            width: RitualShape.borderWidth,
           ),
         ),
         child: const Row(

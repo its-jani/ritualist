@@ -349,11 +349,14 @@ class _LessonScreenState extends State<LessonScreen> {
     final Feedback? feedback = _controller.feedback;
     return AnimatedSwitcher(
       duration: RitualMotion.panel,
-      switchInCurve: RitualMotion.standardCurve,
+      // Canonical: the feedback sheet rides the spring curve so it overshoots
+      // slightly on entry, matching the reference app's `cubic-bezier(0.34,
+      // 1.56, 0.64, 1)` slide-up physics.
+      switchInCurve: RitualMotion.spring,
       switchOutCurve: Curves.easeIn,
       transitionBuilder: (Widget child, Animation<double> animation) {
         final Animation<Offset> slide = Tween<Offset>(
-          begin: const Offset(0, 0.25),
+          begin: const Offset(0, 0.35),
           end: Offset.zero,
         ).animate(animation);
         return SlideTransition(

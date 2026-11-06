@@ -89,6 +89,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
                               PopIn(
                                 beginScale: 0.55,
                                 beginOffset: Offset.zero,
+                                curve: RitualMotion.spring,
                                 child: _Medal(passed: _passed),
                               ),
                             ],
@@ -278,7 +279,10 @@ class _Medal extends StatelessWidget {
         color: bg,
         shape: BoxShape.circle,
         border: Border.all(color: fg.withValues(alpha: 0.45), width: 3),
-        boxShadow: lipShadow(fg.withValues(alpha: 0.35), depth: 6),
+        boxShadow: lipShadow(
+          fg.withValues(alpha: 0.35),
+          depth: RitualShape.nodeLipDepth,
+        ),
       ),
       child: Center(
         child: Container(
@@ -287,7 +291,10 @@ class _Medal extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white,
             shape: BoxShape.circle,
-            border: Border.all(color: fg.withValues(alpha: 0.25), width: 2),
+            border: Border.all(
+              color: fg.withValues(alpha: 0.25),
+              width: RitualShape.borderWidth,
+            ),
           ),
           child: Icon(
             passed ? Icons.emoji_events_rounded : Icons.heart_broken_rounded,
@@ -401,7 +408,10 @@ class _PerfectChip extends StatelessWidget {
       decoration: BoxDecoration(
         color: RitualColors.amberTint,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: RitualColors.amber, width: 2),
+        border: Border.all(
+          color: RitualColors.amber,
+          width: RitualShape.borderWidth,
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -467,9 +477,15 @@ class _Shell extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
       decoration: BoxDecoration(
         color: RitualColors.card,
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: RitualColors.line, width: 2),
-        boxShadow: lipShadow(RitualColors.line, depth: 4),
+        borderRadius: BorderRadius.circular(RitualShape.radius),
+        border: Border.all(
+          color: RitualColors.line,
+          width: RitualShape.borderWidth,
+        ),
+        boxShadow: lipShadow(
+          RitualColors.line,
+          depth: RitualShape.lipDepth,
+        ),
       ),
       child: child,
     );

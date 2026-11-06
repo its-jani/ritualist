@@ -9,7 +9,9 @@ import 'motion.dart';
 ///
 /// Cheap by construction: ~20 circles and one ring, drawn by a plain
 /// [CustomPainter] with no blur, no images and no library. The controller
-/// runs once and is disposed with the screen, so idle cost is zero.
+/// runs once and is disposed with the screen, so idle cost is zero. Particle
+/// colors come from the canonical Duolingo reward ramp (Streak Orange, Owl
+/// Green, Humpback Blue, Gem Pink, Sun Yellow).
 class CelebrationBurst extends StatefulWidget {
   const CelebrationBurst({
     super.key,
