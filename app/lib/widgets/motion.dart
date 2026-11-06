@@ -6,14 +6,16 @@ import '../theme.dart';
 
 /// The app's whole motion vocabulary - one place, a handful of values.
 ///
-/// Economy of motion (docs/rea-duolingo-findings.md §3h): short, cheap,
-/// implicit animations; no particles systems running forever, no images.
-/// Every duration below is a paint-only effect that finishes.
+/// Canonical Duolingo parity: the tactile press translates a surface down by
+/// exactly [RitualShape.lipDepth] pixels; the sheet and pop entrances ride a
+/// spring curve; every looping effect is a paint-only, finishable animation
+/// so the working-set stays under the 150MB budget. See docs/
+/// rea-duolingo-findings.md §3h.
 class RitualMotion {
   const RitualMotion._();
 
-  /// The press: a surface sinking onto its lip. Matches the measured
-  /// 4px lip of the reference study (findings §5), our own timing.
+  /// The press: a surface sinking onto its lip. Duration matches the
+  /// reference app's 4px [RitualShape.lipDepth] collapse.
   static const Duration press = Duration(milliseconds: 70);
 
   /// Color flips on graded tiles.
@@ -22,8 +24,8 @@ class RitualMotion {
   /// Layout/state swaps (progress bar, counters).
   static const Duration standard = Duration(milliseconds: 240);
 
-  /// The feedback panel sliding up.
-  static const Duration panel = Duration(milliseconds: 260);
+  /// The feedback panel sliding up on the spring curve.
+  static const Duration panel = Duration(milliseconds: 320);
 
   /// XP / accuracy tallies on the results screen.
   static const Duration countUp = Duration(milliseconds: 800);
@@ -31,13 +33,19 @@ class RitualMotion {
   /// The end-of-session celebration burst.
   static const Duration celebrate = Duration(milliseconds: 1100);
 
-  /// Overshoot used for "pop" entrances and reward feedback.
+  /// The spring physics curve `cubic-bezier(0.34, 1.56, 0.64, 1)` — the
+  /// canonical Duolingo overshoot. Used for the feedback sheet slide, the
+  /// PopIn reward entrance and graded-tile flips.
   static const Curve pop = Cubic(0.34, 1.56, 0.64, 1);
+
+  /// Alias for [pop] used by call-sites that speak about the sheet spring
+  /// rather than the reward pop, so the intent stays readable at the site.
+  static const Curve spring = pop;
 
   /// Deceleration for anything that grows into place.
   static const Curve standardCurve = Curves.easeOutCubic;
 
-  /// The one curve used for the winding path and panel slides.
+  /// The one curve used for the winding path scroll and cross-fades.
   static const Curve inOut = Curves.easeInOutCubic;
 }
 
@@ -48,9 +56,10 @@ bool prefersReducedMotion(BuildContext context) =>
 
 /// A card that physically compresses into its darker lip when pressed.
 ///
-/// This is the app's core tactile primitive: the surface translates down by
-/// [depth] (the lip height) instead of scaling, so it reads as a physical
-/// key being pushed - the interaction measured in the reference study.
+/// The core tactile primitive: the surface translates down by
+/// [RitualShape.lipDepth] instead of scaling, so it reads as a physical
+/// keycap being pushed. This is the gamepad-button mechanic the reference
+/// app uses on every primary CTA, secondary button and lesson tile.
 class PressableCard extends StatefulWidget {
   const PressableCard({
     super.key,
@@ -60,8 +69,8 @@ class PressableCard extends StatefulWidget {
     this.shadowColor = RitualColors.line,
     this.border,
     this.padding,
-    this.radius = 14,
-    this.depth = 4,
+    this.radius = RitualShape.radius,
+    this.depth = RitualShape.lipDepth,
     this.enabled = true,
     this.semanticLabel,
   });
@@ -133,8 +142,10 @@ class _PressableCardState extends State<PressableCard> {
     );
 
     if (!_interactive) {
+      // Locked/disabled surfaces keep the same geometry but flatten to the
+      // canonical 0.4 opacity floor and never sink on press.
       return Opacity(
-        opacity: widget.enabled ? 1 : 0.55,
+        opacity: widget.enabled ? 1 : RitualShape.lockedOpacity,
         child: card,
       );
     }

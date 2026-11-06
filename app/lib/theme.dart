@@ -2,74 +2,120 @@ import 'package:flutter/material.dart';
 
 /// Ritualist design tokens.
 ///
-/// Original palette (NOT Duolingo's): the same *relationships* the REA study
-/// found in the reference app - a brand base plus a darker "lip" shade for the
-/// signature 3-D button edge, a neutral ramp, one alert red, one reward amber -
-/// but with our own values and names. See docs/rea-duolingo-findings.md §5.
+/// Canonical Duolingo parity palette (`replica-design` token extraction of
+/// https://www.duolingo.com public layout patterns). Variable names are the
+/// house style; the values are the reference brand ramp so every widget in
+/// the app inherits the same surface hierarchy, ink weights and reward
+/// accents. See docs/rea-duolingo-findings.md §5 for the mapping.
 class RitualColors {
   const RitualColors._();
 
-  // Brand: jade green.
-  static const Color jade = Color(0xFF2FB584);
-  static const Color jadeLip = Color(0xFF279A70);
-  static const Color jadeTint = Color(0xFFE4F8F0);
-  static const Color jadeDeep = Color(0xFF1B6B4F);
+  // Brand: Owl Green. Primary CTA, correct states, active path nodes.
+  static const Color jade = Color(0xFF58CC02);
+  static const Color jadeLip = Color(0xFF58A700);
+  static const Color jadeTint = Color(0xFFD7FFB8);
+  static const Color jadeDeep = Color(0xFF45A402);
 
-  // Info: sky blue.
-  static const Color sky = Color(0xFF3AA8E0);
-  static const Color skyLip = Color(0xFF2E8AB8);
-  static const Color skyTint = Color(0xFFE3F4FC);
+  // Info: Humpback Blue. Secondary action, links, sky accents.
+  static const Color sky = Color(0xFF1CB0F6);
+  static const Color skyLip = Color(0xFF1899D6);
+  static const Color skyTint = Color(0xFFDDF4FF);
 
-  // Reward: amber (streak, XP).
-  static const Color amber = Color(0xFFFFB300);
-  static const Color amberLip = Color(0xFFD99700);
-  static const Color amberTint = Color(0xFFFFF3D4);
+  // Reward: Streak Orange. Day streaks, XP, combo badges.
+  static const Color amber = Color(0xFFFF9600);
+  static const Color amberLip = Color(0xFFE08600);
+  static const Color amberTint = Color(0xFFFFE7C4);
 
-  // Violet (units).
-  static const Color violet = Color(0xFF8C6FE6);
-  static const Color violetLip = Color(0xFF7159C4);
-  static const Color violetTint = Color(0xFFEFEAFB);
+  // Violet: Gem Pink. Premium/currency accents.
+  static const Color violet = Color(0xFFCE82FF);
+  static const Color violetLip = Color(0xFFB05FDF);
+  static const Color violetTint = Color(0xFFF6E5FF);
 
-  // Rose / alert red.
-  static const Color rose = Color(0xFFE5484D);
-  static const Color roseLip = Color(0xFFC93A3F);
-  static const Color roseTint = Color(0xFFFFE3E4);
+  // Rose / Cardinal Red: incorrect answers, hearts lost, destructive actions.
+  static const Color rose = Color(0xFFFF4B4B);
+  static const Color roseLip = Color(0xFFD33131);
+  static const Color roseTint = Color(0xFFFFE0E0);
   static const Color roseInk = Color(0xFFB3261E);
 
-  // Teal (units).
-  static const Color teal = Color(0xFF2CB9C7);
-  static const Color tealLip = Color(0xFF239AA6);
-  static const Color tealTint = Color(0xFFE2F7F9);
+  // Teal (unit band).
+  static const Color teal = Color(0xFF00C4CC);
+  static const Color tealLip = Color(0xFF00A2A9);
+  static const Color tealTint = Color(0xFFDDF7F9);
 
-  // Sun orange (units).
-  static const Color sun = Color(0xFFFF8A3D);
-  static const Color sunLip = Color(0xFFD97230);
-  static const Color sunTint = Color(0xFFFFEFE3);
+  // Sun Orange (unit band).
+  static const Color sun = Color(0xFFFFC800);
+  static const Color sunLip = Color(0xFFE0A800);
+  static const Color sunTint = Color(0xFFFFF3CC);
 
-  // Neutrals.
+  // Neutrals — the reference app's Swan/Eel/Bea ramp.
   //
-  // Contrast floor is WCAG AA on the app's own surfaces: `subInk` carries body
-  // copy (>= 4.7:1 on bg), `faint` is UI-only (>= 3:1) and never body text.
-  static const Color ink = Color(0xFF3C3C3C);
-  static const Color subInk = Color(0xFF6E6E6E);
-  static const Color faint = Color(0xFF9A9A9A);
+  // `ink` is the primary body text tone (Eel #4B4B4B). `bea` is the deep
+  // display heading tone (Bea #042C60). `subInk` is muted body copy,
+  // `faint` is UI-only. Contrast floors follow WCAG AA on the pure-white
+  // canvas this theme now uses.
+  static const Color ink = Color(0xFF4B4B4B);
+  static const Color subInk = Color(0xFF777777);
+  static const Color faint = Color(0xFFAFAFAF);
+
+  /// Swan Border: the canonical hairline for cards, dividers and inactive
+  /// chips. Always used with a solid 2px width via [BorderSide].
   static const Color line = Color(0xFFE5E5E5);
 
   /// Slightly heavier hairline for surfaces that need to hold their edge
   /// against a tinted background (feedback panel, selected chips).
-  static const Color lineStrong = Color(0xFFD6D6D6);
-  static const Color bg = Color(0xFFF7F7F9);
+  static const Color lineStrong = Color(0xFFD9D9D9);
+
+  /// Canvas / Surface: pure white. Reference-app parity for the app scaffold
+  /// and every interactive card face.
+  static const Color bg = Color(0xFFFFFFFF);
   static const Color card = Color(0xFFFFFFFF);
 
+  /// Deep display heading ink (Bea). Reserved for hero titles and screen
+  /// headings; body copy keeps [ink].
+  static const Color bea = Color(0xFF042C60);
+
   // Correct-answer feedback. `correctInk` is dark enough for AA body text
-  // on `correctTint` (5.8:1); the brighter `correct` is for fills and borders.
-  static const Color correct = Color(0xFF4CAF50);
-  static const Color correctLip = Color(0xFF3B8C3E);
-  static const Color correctTint = Color(0xFFE9F9E5);
-  static const Color correctInk = Color(0xFF2E6B31);
+  // on `correctTint`; the brighter `correct` is for fills and borders.
+  static const Color correct = Color(0xFF58CC02);
+  static const Color correctLip = Color(0xFF58A700);
+  static const Color correctTint = Color(0xFFD7FFB8);
+  static const Color correctInk = Color(0xFF5A8213);
 
   /// Paper tint used behind a "why" callout inside feedback panels.
   static const Color paper = Color(0xFFFFFDF7);
+
+  /// Flat grey surface used for locked path nodes. Combined with the 0.4
+  /// opacity floor declared in [RitualShape.lockedOpacity].
+  static const Color swanMuted = Color(0xFFE0E0E0);
+  static const Color swanMutedLip = Color(0xFFC7C7C7);
+}
+
+/// Canonical geometry tokens. Every button, tile, card, chip and path node
+/// in the app resolves its radii, border widths and lip depth through this
+/// class so a shape change is a one-line edit.
+class RitualShape {
+  const RitualShape._();
+
+  /// Radius for primary CTAs, secondary buttons, exercise tiles, cards and
+  /// the results-screen shells (16px canonical).
+  static const double radius = 16;
+
+  /// Radius for compact chips, badges and key-caps.
+  static const double radiusChip = 12;
+
+  /// Solid border width on cards, exercise tiles and buttons.
+  static const double borderWidth = 2;
+
+  /// Depth of the 3D "lip" shadow under every chunky button, tile and card.
+  /// Press states translate the surface down by exactly this many pixels and
+  /// collapse the lip to zero, producing the gamepad-button feel.
+  static const double lipDepth = 4;
+
+  /// Deeper lip used on path nodes (they float higher than the cards).
+  static const double nodeLipDepth = 6;
+
+  /// Flat opacity applied to locked path nodes and disabled chrome.
+  static const double lockedOpacity = 0.4;
 }
 
 /// One unit's band colors, derived from its `colorIndex` (manifest rotation).
@@ -97,22 +143,23 @@ class UnitPalette {
       _rotation[colorIndex.abs() % _rotation.length];
 }
 
-/// Shared text styles. Duolingo-style shapes with our own values: heavy
-/// rounded headings, calm body text, wide-tracked uppercase micro-labels.
+/// Shared text styles. Duolingo-style shapes: heavy rounded headings, calm
+/// body text, wide-tracked uppercase micro-labels. Display uses the deep
+/// Bea ink; body uses the Eel ink.
 class AppText {
   const AppText._();
 
   static const TextStyle display = TextStyle(
     fontSize: 26,
     fontWeight: FontWeight.w800,
-    color: RitualColors.ink,
+    color: RitualColors.bea,
     height: 1.2,
   );
 
   static const TextStyle title = TextStyle(
     fontSize: 20,
     fontWeight: FontWeight.w800,
-    color: RitualColors.ink,
+    color: RitualColors.bea,
     height: 1.25,
   );
 
@@ -169,8 +216,9 @@ ThemeData buildAppTheme() {
       primary: RitualColors.jade,
       onPrimary: Colors.white,
       secondary: RitualColors.amber,
-      onSecondary: RitualColors.ink,
+      onSecondary: Colors.white,
       error: RitualColors.rose,
+      onError: Colors.white,
       surface: RitualColors.card,
       onSurface: RitualColors.ink,
     ),
@@ -184,16 +232,25 @@ ThemeData buildAppTheme() {
       titleTextStyle: AppText.title,
       iconTheme: IconThemeData(color: RitualColors.subInk),
     ),
-    dividerTheme: const DividerThemeData(color: RitualColors.line, thickness: 1),
+    dividerTheme: const DividerThemeData(
+      color: RitualColors.line,
+      thickness: RitualShape.borderWidth,
+    ),
     dialogTheme: const DialogThemeData(
       backgroundColor: RitualColors.card,
       surfaceTintColor: Colors.transparent,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(RitualShape.radius)),
+        side: BorderSide(color: RitualColors.line, width: RitualShape.borderWidth),
+      ),
     ),
   );
 }
 
 /// The signature 3-D "lip" shadow used on buttons, path nodes and cards:
 /// a zero-blur drop of [lip] color under a [base]-colored rounded surface.
-List<BoxShadow> lipShadow(Color lip, {double depth = 4}) => <BoxShadow>[
+/// Defaults to the canonical 4px depth ([RitualShape.lipDepth]).
+List<BoxShadow> lipShadow(Color lip, {double depth = RitualShape.lipDepth}) =>
+    <BoxShadow>[
       BoxShadow(color: lip, offset: Offset(0, depth), blurRadius: 0),
     ];

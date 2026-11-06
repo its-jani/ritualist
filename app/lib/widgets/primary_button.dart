@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../theme.dart';
+import 'motion.dart';
 
 enum RitualButtonSize { regular, small }
 
 enum RitualButtonVariant {
-  /// Filled brand button (unguessable green).
+  /// Filled brand button (Owl Green #58cc02).
   primary,
 
-  /// White button with border, blue text (secondary action).
+  /// White button with Swan border and blue label (secondary action).
   secondary,
 
-  /// Filled red button (destructive / wrong-answer continue).
+  /// Filled Cardinal Red button (destructive / wrong-answer continue).
   danger,
 
   /// Text-only, transparent.
@@ -19,8 +20,9 @@ enum RitualButtonVariant {
 }
 
 /// The signature chunky button: a rounded surface floating on a darker "lip"
-/// edge that compresses when pressed (the interaction the REA study measured
-/// at lip-width 4px; our own palette and radii).
+/// edge that compresses when pressed. Canonical Duolingo parity — 16px
+/// radius, 4px bottom lip ([RitualShape.lipDepth]), press translates the
+/// surface down by the full lip depth so the shadow collapses to zero.
 class RitualButton extends StatefulWidget {
   const RitualButton({
     super.key,
@@ -61,7 +63,7 @@ class _RitualButtonState extends State<RitualButton> {
           Colors.white,
           RitualColors.line,
           RitualColors.sky,
-          Border.all(color: RitualColors.line, width: 2),
+          Border.all(color: RitualColors.line, width: RitualShape.borderWidth),
         ),
       RitualButtonVariant.danger => (
           RitualColors.rose,
@@ -77,8 +79,8 @@ class _RitualButtonState extends State<RitualButton> {
         ),
     };
 
-    final resolvedBase = _enabled ? base : const Color(0xFFE5E5E5);
-    final resolvedLip = _enabled ? lip : const Color(0xFFD8D8D8);
+    final resolvedBase = _enabled ? base : RitualColors.swanMuted;
+    final resolvedLip = _enabled ? lip : RitualColors.swanMutedLip;
     final resolvedFg = _enabled ? fg : RitualColors.faint;
     final resolvedBorder = _enabled ? border : null;
     final height = widget.size == RitualButtonSize.small ? 44.0 : 54.0;
@@ -118,12 +120,14 @@ class _RitualButtonState extends State<RitualButton> {
       );
     }
 
-    // The lip the surface sinks into. 4px is the depth measured in the
-    // reference study (--web-ui_button-lip-width), not a guess.
-    const double lipDepth = 4;
+    // The lip the surface sinks into. 4px is the canonical depth declared in
+    // [RitualShape.lipDepth]; on press the surface translates down by this
+    // amount so the lip visually collapses to zero - the gamepad-button
+    // affordance from the reference design system.
+    const double lipDepth = RitualShape.lipDepth;
 
     final surface = AnimatedPositioned(
-      duration: const Duration(milliseconds: 70),
+      duration: RitualMotion.press,
       curve: Curves.easeOut,
       left: 0,
       right: 0,
@@ -132,7 +136,7 @@ class _RitualButtonState extends State<RitualButton> {
       child: DecoratedBox(
         decoration: BoxDecoration(
           color: resolvedBase,
-          borderRadius: BorderRadius.circular(14),
+          borderRadius: BorderRadius.circular(RitualShape.radius),
           border: resolvedBorder,
         ),
         child: Center(child: content),
@@ -162,7 +166,7 @@ class _RitualButtonState extends State<RitualButton> {
                 child: DecoratedBox(
                   decoration: BoxDecoration(
                     color: resolvedLip,
-                    borderRadius: BorderRadius.circular(14),
+                    borderRadius: BorderRadius.circular(RitualShape.radius),
                   ),
                 ),
               ),
