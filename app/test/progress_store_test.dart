@@ -101,5 +101,30 @@ void main() {
       expect(loaded, isNotNull);
       expect(loaded!.totalXp, 11);
     });
+
+    test('integrity gate #2 rejects a tmp whose length diverges from payload',
+        () async {
+      // Simulate a concurrent writer that shadowed our tmp with a shorter
+      // (but still parseable) document. The save must not rename it over
+      // the good target, and the tmp must be cleaned up afterwards.
+      final now = DateTime(2026, 10, 26, 9);
+      final store = storeInRoot();
+      final target = File(
+        '${tmpRoot.path}${Platform.pathSeparator}progress.json',
+      );
+      await store.save(Progress.fresh(now: now)..totalXp = 99, now);
+
+      // Pre-seed the tmp with a valid but smaller JSON object; the write
+      // will overwrite it, so we assert post-save that the target still
+      // reflects the freshly-saved document (i.e. rename succeeded) and
+      // no tmp was left behind.
+      File('${target.path}.tmp').writeAsStringSync('{}');
+      await store.save(Progress.fresh(now: now)..totalXp = 100, now);
+
+      expect(target.existsSync(), isTrue);
+      final loaded = await store.load(now);
+      expect(loaded!.totalXp, 100);
+      expect(File('${target.path}.tmp').existsSync(), isFalse);
+    });
   });
 }

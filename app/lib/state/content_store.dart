@@ -75,12 +75,22 @@ Map<String, Object?> _asMap(Object? json) {
 
 /// Creates and caches one [ContentStore] per course module, on demand.
 ///
-/// Scaling guard for future modules (Vedic, Stoic, ...): a module's manifest
-/// and unit files are only read and parsed the first time that module is
-/// actually opened, so the global cold-start footprint stays one module no
-/// matter how many bundles ship in the asset directory.
+/// Multi-faith scaling guard: the asset bundle can ship N module folders
+/// (Islam, Vedic, Stoic, ...) but a fresh install only ever activates one.
+/// A module's manifest and unit files are read + parsed the first time
+/// [storeFor] hands out a store AND the caller actually invokes a load
+/// method. Until then the module contributes zero asset reads and zero
+/// parsed-JSON bytes to the process, so cold-start footprint stays at one
+/// module no matter how many bundles ship.
+///
+/// The registry deliberately does not eagerly pre-create stores: switching
+/// between user modules at runtime stays O(1) and the working-set stays
+/// under the 150MB Elasser budget.
 abstract class ContentStoreRegistry {
-  /// The (lazily created, then cached) store for one module id.
+  /// The (lazily created, then cached) store for one module id. Calling
+  /// this with an unknown id does not throw - the returned store will
+  /// surface a missing-asset error only when a load is attempted, so the
+  /// UI layer can keep its cold-start code path module-agnostic.
   ContentStore storeFor(String moduleId);
 }
 
@@ -97,4 +107,9 @@ class AssetContentRegistry implements ContentStoreRegistry {
         moduleId,
         () => AssetContentStore(moduleDir: '$modulesRoot/$moduleId'),
       );
+
+  /// Number of stores currently materialised. Exposed for regression tests
+  /// that assert cold start with an unopened module never creates a store
+  /// and therefore never reads from the asset bundle.
+  int get materialisedCount => _stores.length;
 }

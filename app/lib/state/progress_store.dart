@@ -6,8 +6,16 @@ import 'package:ritualist_engine/ritualist_engine.dart';
 /// Persistence for the single local progress document.
 ///
 /// Offline-first by design: the whole user state is one small JSON file
-/// written atomically (temp file + rename). No database, no network, no
-/// external packages - see docs/architecture.md.
+/// written atomically (temp file + integrity gate + rename). No database,
+/// no network, no external packages - see docs/architecture.md.
+///
+/// Cold-start safety contract:
+///   * A truncated or forward-incompatible document is copied to
+///     `progress_backup.json` and the app boots fresh instead of looping.
+///   * A save writes the JSON to `<target>.tmp`, decodes it back, and only
+///     replaces the target if the tmp parses AND its byte length matches
+///     what was written. A failed gate leaves the previous good document
+///     untouched on disk.
 abstract class ProgressStore {
   Future<Progress?> load(DateTime now);
 
@@ -81,6 +89,8 @@ class FileProgressStore implements ProgressStore {
       // Corrupt or forward-incompatible document (truncated write, schema
       // change, unexpected decode error): keep the evidence in a single
       // rolling backup and start clean instead of crash-looping cold start.
+      // The rolling name (`progress_backup.json`) means a repeat crash
+      // never accumulates forensic files in the user's data directory.
       try {
         file.copySync(
           '${file.parent.path}${Platform.pathSeparator}progress_backup.json',
@@ -100,14 +110,23 @@ class FileProgressStore implements ProgressStore {
     }
     final tmp = File('${file.path}.tmp');
     try {
-      tmp.writeAsStringSync(progress.encode(now: now), flush: true);
-      // Integrity gate: only replace the target with a document that
-      // actually parses, so a half-written tmp can never shadow a good file.
+      final payload = progress.encode(now: now);
+      tmp.writeAsStringSync(payload, flush: true);
+      // Integrity gate #1: the tmp we just wrote must still parse. This
+      // rejects a truncated write or a full-disk partial flush.
       jsonDecode(tmp.readAsStringSync());
+      // Integrity gate #2: the tmp must contain exactly the bytes we
+      // encoded. A flush race or a concurrent writer that shadowed the
+      // tmp now shows up as a length mismatch, so the target is never
+      // replaced with a foreign document.
+      if (tmp.lengthSync() != payload.length) {
+        throw const FileSystemException('tmp length diverged from payload');
+      }
       tmp.renameSync(file.path); // Atomic-ish replace.
     } on Object {
-      // Truncated write, full disk, locked target: drop the tmp and keep
-      // whatever valid document is already on disk (in-memory state lives on).
+      // Truncated write, full disk, locked target, diverged tmp: drop the
+      // tmp and keep whatever valid document is already on disk (in-memory
+      // state lives on).
       try {
         if (tmp.existsSync()) {
           tmp.deleteSync();
