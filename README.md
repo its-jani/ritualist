@@ -1,4 +1,4 @@
-# Ritualist
+# Ritualist 
 
 Ultra-lean, offline-first micro-learning with an addictive path-style UI.
 **Version 1 ships 100% Islam content** (Taharah, Salah, Daily Adab, Akhlaq,
